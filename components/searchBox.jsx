@@ -51,7 +51,7 @@ const SearchBox = () => {
             <h1 className="text-white text-center font-semibold text-5xl mb-8">
               Spotify to mp3 downloader
             </h1>
-            <p className="text-white text-center font-semibold text-sm mb-8">
+            <p className="text-white text-center font-semibold text-sm mb-8 m-2">
               Download your favorite Spotify tunes with our efficient Spotify to
               MP3 downloader – seamlessly convert and download tracks for
               offline listening anytime, anywhere!

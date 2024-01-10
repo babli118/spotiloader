@@ -17,10 +17,12 @@ const SongCard = ({ song }) => {
     setLoading(false);
     setLoading(true);
     console.log("starting");
-    const dlLinkInfo = await getDlLink(song.title);
+    const name = song.title + song.artist;
+    const dlLinkInfo = await getDlLink(name);
 
     const dlLink = dlLinkInfo.dlLink.url;
     setTimer(0);
+
     router.push(dlLink);
   };
 
