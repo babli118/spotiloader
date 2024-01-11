@@ -10,7 +10,7 @@ const Footer = () => {
           ownership. It remains the property of the copyright holder.
         </p>
         <p>
-          spotiLoader.com doesn&LSQUO;t host any copyrighted material. We
+          spotiLoader.com doesn&lsquo;t host any copyrighted material. We
           utilize third party services to accomplish our goals.
         </p>
         <p className="text-[#1ED760] mt-2">© 2024 SpotiLoader.com</p>

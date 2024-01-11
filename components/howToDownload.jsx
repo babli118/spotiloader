@@ -24,7 +24,7 @@ const HowToDownload = () => {
           <li>
             <p>
               <span className="text-[#1ED760]">2.</span> Find the song
-              you&APOS;d like to download
+              you&apos;d like to download
             </p>
           </li>
           <li>
