@@ -16,7 +16,6 @@ const SongCard = ({ song }) => {
     setTimer(10);
     setLoading(false);
     setLoading(true);
-    console.log("starting");
     const name = song.title + song.artist;
     const dlLinkInfo = await getDlLink(name);
 

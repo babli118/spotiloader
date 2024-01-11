@@ -18,9 +18,9 @@ const FAQ = () => {
           Do I need a Spotify account to use this?
         </h1>{" "}
         <p className="text-base">
-          No. You don't need a Spotify account to use this tool. You don't even
-          need Spotify Premium to download songs from here. SpotifyDownloader is
-          fully automated and requires no login at all.
+          No. You don&LSQUO;t need a Spotify account to use this tool. You
+          don&LSQUO;t even need Spotify Premium to download songs from here.
+          SpotifyDownloader is fully automated and requires no login at all.
         </p>
         <h1 className="text-[#1ED760] font-semibold text-lg">
           Do you need Spotify premium to download songs?{" "}

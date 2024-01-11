@@ -12,9 +12,9 @@ const HowToDownload = () => {
         How to use SpotiLoader?
       </h1>
       <div className="my-4 ">
-        <h3 className="text-lg">
-          Here's a simple tutorial how to use SpotifyLoader:
-        </h3>
+        <p className="text-lg">
+          Here&apos;s a simple tutorial how to use SpotifyLoader:
+        </p>
         <ul className="my-4 flex flex-col gap-1">
           <li>
             <p>
@@ -23,36 +23,42 @@ const HowToDownload = () => {
           </li>
           <li>
             <p>
-              <span className="text-[#1ED760]">2.</span> Find the song you'd
-              like to download
+              <span className="text-[#1ED760]">2.</span> Find the song
+              you&APOS;d like to download
             </p>
           </li>
           <li>
             <p>
-              <span className="text-[#1ED760]">3.</span> Click on the "3 dots"
-              button. The button looks like this "..."
+              <span className="text-[#1ED760]">3.</span> Click on the 3
+              &quot;dots&quot; button. The button looks like this
+              &quot;...&quot;
             </p>
           </li>
           <li>
             <p>
-              <span className="text-[#1ED760]">4.</span> Click "Share" and then
-              "Copy Link" button{" "}
+              <span className="text-[#1ED760]">4.</span> Click &quot;Share&quot;
+              and then &quot;Copy Link&quot; button
             </p>
           </li>
           <li>
             <p>
               <span className="text-[#1ED760]">5.</span> Paste copied link above
-              and press "Search"
+              and press &quot;Search&quot;
             </p>
           </li>
           <li>
             <span className="text-[#1ED760]">6.</span> Wait for the processing
-            to finish and click "Download" button
+            to finish and click &quot;Download&quot; button
           </li>
         </ul>
       </div>
       <div className="  w-[22rem]">
-        <Image src={trackDl} height={80} width={400} />
+        <Image
+          src={trackDl}
+          height={80}
+          width={400}
+          alt="Image showing how to copy song url"
+        />
       </div>
     </section>
   );

@@ -23,8 +23,8 @@ const About = () => {
         button. On top of all that, we also provide the best MP3 quality at
         blazing-fast speed. The conversion time for songs is mere seconds. You
         can instantly convert and save any song you want at a super fast
-        download speed. We also don't have any rate limit. That means that you
-        can download an unlimited number of songs without any restrictions
+        download speed. We also don&LSQUO;t have any rate limit. That means that
+        you can download an unlimited number of songs without any restrictions
         totally for free!
       </p>
       <h1 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
@@ -37,8 +37,8 @@ const About = () => {
           </h1>
           <p>
             <span className="text-[#1ED760] font-semibold text-lg">1{")"}</span>
-            To start with, it's completely free and easy to use. No technical
-            knowledge or special software is required!
+            To start with, it&LSQUO;s completely free and easy to use. No
+            technical knowledge or special software is required!
           </p>
         </div>{" "}
         <p>
@@ -50,21 +50,21 @@ const About = () => {
         <p>
           <span className="text-[#1ED760] font-semibold text-lg">3{")"}</span>
           And finally, our fast and reliable service means you never have to
-          worry about waiting around for your songs - they'll be ready and
+          worry about waiting around for your songs - they&LSQUO;ll be ready and
           waiting for you the second you need them!
         </p>{" "}
         <p>
           <span className="text-[#1ED760] font-semibold text-lg">4{")"}</span>
-          So if you're an avid music fan who wants a simple way to easily
+          So if you&LSQUO;re an avid music fan who wants a simple way to easily
           download all their favorite tracks from one of the most popular
           streaming platforms, look no further than our Spotify Downloader
           online!
         </p>{" "}
         <p className="text-base mt-8">
           So why wait? Try it out today and discover the world of music
-          downloading for yourself! And don't forget to tell your friends about
-          all the amazing benefits of using our tool - we're sure they'll thank
-          you for it!
+          downloading for yourself! And don&LSQUO;t forget to tell your friends
+          about all the amazing benefits of using our tool - we&LSQUO;re sure
+          they&LSQUO;ll thank you for it!
         </p>
       </div>
     </section>

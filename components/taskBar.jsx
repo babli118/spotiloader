@@ -17,7 +17,7 @@ const TaskBar = () => {
           <h1>SpotiLoader</h1>
         </Link>
         <div className="text-white hidden md:flex justify-center items-center scroll-smooth ">
-          <ul className="text-xl font-semibold flex gap-16">
+          <div className="text-xl font-semibold flex gap-16">
             <Link
               className="text-xl hover:text-2xl hover:text-[#1ED760] transition-all"
               href="#use"
@@ -36,7 +36,7 @@ const TaskBar = () => {
             >
               Features
             </Link>
-          </ul>
+          </div>
         </div>
       </div>
     </div>

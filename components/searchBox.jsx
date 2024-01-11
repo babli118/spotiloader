@@ -12,7 +12,6 @@ const SearchBox = () => {
 
   const handleInputValue = (e) => {
     setInputValue(e.target.value);
-    console.log(inputValue);
   };
   const [error, setError] = useState("");
 
