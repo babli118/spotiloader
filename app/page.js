@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <div className=" text-sm h-auto transition-all scroll-smooth ">
         <TaskBar />
         <SearchBox />

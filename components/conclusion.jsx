@@ -2,7 +2,7 @@ import React from "react";
 
 const Conclusion = () => {
   return (
-    <div className="text-white text-start mx-auto flex flex-col items-center justify-center w-[60vw] ">
+    <div className="text-white text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw] ">
       <h1 className="text-4xl font-semibold text-[#1ED760] my-6">
         Final thoughts on the Spotify Music Downloader
       </h1>

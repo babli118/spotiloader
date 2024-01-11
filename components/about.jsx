@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex  flex-col items-center justify-center text-start w-[60vw] my-10"
+      className="flex  flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] my-10"
     >
       <h1 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
         About SpotifyDownloader

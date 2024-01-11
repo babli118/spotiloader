@@ -4,7 +4,7 @@ const Features = () => {
   return (
     <section
       id="features"
-      className="text-white text-start mx-auto flex flex-col items-center justify-center w-[60vw] "
+      className="text-white text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw] "
     >
       <h1 className="text-4xl font-semibold text-[#1ED760]">
         What are some of the top features of the Spotify mp3 Downloader?

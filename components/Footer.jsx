@@ -10,10 +10,10 @@ const Footer = () => {
           remains the property of the copyright holder.{" "}
         </p>{" "}
         <p>
-          SpotiLoader.com doesn't host any copyrighted material. We utilize
+          spotiLoader.com doesn't host any copyrighted material. We utilize
           third party services to accomplish our goals.
         </p>
-        <p className="text-[#1ED760]">© 2024 SpotifyLoader.com</p>
+        <p className="text-[#1ED760] mt-2">© 2024 SpotiLoader.com</p>
       </div>
     </div>
   );

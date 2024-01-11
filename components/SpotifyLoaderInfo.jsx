@@ -2,7 +2,7 @@ import React from "react";
 
 const SpotifyLoaderInfo = () => {
   return (
-    <div className="text-white text-start mx-auto flex flex-col items-center justify-center w-[60vw] ">
+    <div className="text-white text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw] ">
       <h1 className="text-4xl font-semibold text-[#1ED760]">SpotiLoader</h1>
       <p className="text-lg mt-4">
         SpotiLoader offers a convenient solution for downloading songs from

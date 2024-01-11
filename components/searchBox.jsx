@@ -36,20 +36,25 @@ const SearchBox = () => {
       "https://open.spotify.com/track/"
     );
     setError(isValidSyntax ? "" : "Please enter a valid Spotify track url!");
-    setLoading(true);
 
-    const songInfo = await getSongInfo(inputValue);
-    setLoading(false);
+    if (isValidSyntax === true) {
+      setLoading(true);
 
-    setSongInfo(error ? null : songInfo);
+      const songInfo = await getSongInfo(inputValue);
+      setLoading(false);
+
+      setSongInfo(songInfo);
+    } else {
+      return;
+    }
   };
   return (
     <div>
       <div className="flex flex-col justify-center content-center w-screen mt-10">
         <div className="flex justify-center content-center">
           <div className="flex flex-col justify-center content-center">
-            <h1 className="text-white text-center font-semibold text-5xl mb-8">
-              Spotify to mp3 downloader
+            <h1 className="text-[#1ED760] text-center font-semibold text-5xl mb-8">
+              Spotify To Mp3 Downloader
             </h1>
             <p className="text-white text-center font-semibold text-sm mb-8 m-2">
               Download your favorite Spotify tunes with our efficient Spotify to
@@ -71,7 +76,7 @@ const SearchBox = () => {
               />
               <button
                 onClick={handleSearchClick}
-                className="bg-[#1ED760] text-lg text-black font-bold px-4 py-3   mx-2 rounded-md"
+                className="bg-[#1ED760] hover:scale-110 transition-all    text-lg text-black font-bold px-4 py-3   mx-2 rounded-md"
               >
                 Search
               </button>

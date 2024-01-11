@@ -6,7 +6,7 @@ const HowToDownload = () => {
   return (
     <section
       id="use"
-      className="text-white scroll-smooth text-start mx-auto flex flex-col items-center justify-center w-[60vw]  mt-10"
+      className="text-white scroll-smooth text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw]  mt-10"
     >
       <h1 className="text-4xl text-[#1ED760] font-semibold ">
         How to use SpotiLoader?

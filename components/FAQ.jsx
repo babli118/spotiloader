@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQ = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-start w-[60vw] my-10">
+    <div className="flex flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] my-10">
       <h1 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
         FAQs for SpotifyDownloader
       </h1>
