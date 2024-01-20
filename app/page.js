@@ -1,7 +1,7 @@
-import SearchBox from "@/components/searchBox";
-import TaskBar from "@/components/taskBar";
-import Info from "@/components/Info";
-import Footer from "@/components/Footer";
+import SearchBox from "../components/searchBox.jsx";
+import TaskBar from "../components/taskBar.jsx";
+import Info from "../components/Info.jsx";
+import Footer from "../components/Footer.jsx";
 
 export default function Home() {
   return (

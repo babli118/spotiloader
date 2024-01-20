@@ -6,13 +6,13 @@ const Features = () => {
       id="features"
       className="text-white text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw] "
     >
-      <h1 className="text-4xl font-semibold text-[#1ED760]">
+      <h3 className="text-4xl font-semibold text-[#1ED760]">
         What are some of the top features of the Spotify mp3 Downloader?
-      </h1>
+      </h3>
       <div className="text-base mt-4">
-        <h1 className="text-xl mb-2  ">
+        <h3 className="text-xl mb-2  ">
           Some of the top features of SpotifyDown include:{" "}
-        </h1>
+        </h3>
         <p className="font-semibold  text-[#1ED760]">
           Quick and easy conversion:
         </p>{" "}

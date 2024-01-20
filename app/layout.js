@@ -1,7 +1,7 @@
-import { Montserrat } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const montserrat = Montserrat({
+const poppins = Poppins({
   weight: ["400", "700", "500"],
   subsets: ["latin"],
 });
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           "bg-black flex flex-col h-auto overflow-x-hidden  scroll-smooth   "
         }
       >
-        <div className={montserrat.className}>{children}</div>
+        <div className={poppins.className}>{children}</div>
       </body>
     </html>
   );

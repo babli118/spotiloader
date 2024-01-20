@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import getSongInfo from "@/utils/getSongInfo";
+import getSongInfo from "../utils/getSongInfo.js";
 import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 
@@ -9,6 +9,8 @@ const SearchBox = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [loading, setLoading] = useState(false);
   const [songInfo, setSongInfo] = useState(null);
+  const spotifyTrackRegex =
+    /https:\/\/open\.spotify\.com\/track\/([a-zA-Z0-9]+)/;
 
   const handleInputValue = (e) => {
     setInputValue(e.target.value);
@@ -26,25 +28,22 @@ const SearchBox = () => {
     setInputValue(pastedContent);
   };
   const handleSearchClick = async (e) => {
+    setError(null);
     setLoading(false);
     setSongInfo("");
     e.preventDefault();
-    // Check if the input value matches the expected syntax
 
-    const isValidSyntax = inputValue.startsWith(
-      "https://open.spotify.com/track/"
-    );
-    setError(isValidSyntax ? "" : "Please enter a valid Spotify track url!");
-
-    if (isValidSyntax === true) {
+    if (spotifyTrackRegex.test(inputValue)) {
       setLoading(true);
 
       const songInfo = await getSongInfo(inputValue);
+
+      console.log(songInfo.error);
       setLoading(false);
 
       setSongInfo(songInfo);
     } else {
-      return;
+      setError("Invalid Spotify track link. Please enter a valid link.");
     }
   };
   return (
@@ -52,17 +51,18 @@ const SearchBox = () => {
       <div className="flex flex-col justify-center content-center w-screen mt-10">
         <div className="flex justify-center content-center">
           <div className="flex flex-col justify-center content-center">
-            <h1 className="text-[#1ED760] text-center font-semibold text-5xl mb-8">
+            <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-8">
               Spotify To Mp3 Downloader
             </h1>
-            <p className="text-white text-center font-semibold text-sm mb-8 m-2">
+            <p className="text-white text-center font-medium  sm:font-semibold text-sm mb-8 my-4 mx-8">
               Download your favorite Spotify tunes with our efficient Spotify to
               MP3 downloader – seamlessly convert and download tracks for
               offline listening anytime, anywhere!
             </p>
-            <div className="mx-auto">
+            <div className="flex mx-auto  w-[80vw] max-w-[780px]">
+              {/* w-[25rem] sm:w-[35rem] md:w-[50rem] */}
               <input
-                className={`bg-[#121212] text-white p-4  rounded-md transition-all duration-300 ease-in-out  w-[15rem] sm:w-[35rem] md:w-[50rem] lg:${
+                className={`bg-[#121212] border-solid border-2 border-transparent focus:outline-none focus:border-white appearance-none text-white p-4 w-full rounded-md transition-all duration-300 ease-in-out  lg:${
                   isClicked ? "w-[55rem]" : ""
                 }`}
                 type="text"

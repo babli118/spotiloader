@@ -6,9 +6,9 @@ const About = () => {
       id="about"
       className="flex  flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] my-10"
     >
-      <h1 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
+      <h3 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
         About SpotifyDownloader
-      </h1>
+      </h3>
       <p className="text-white text-base ">
         SpotifyDownloader If you are looking for a method to download songs and
         playlists from Spotify at the highest possible quality, you have come to
@@ -27,14 +27,14 @@ const About = () => {
         you can download an unlimited number of songs without any restrictions
         totally for free!
       </p>
-      <h1 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
+      <h3 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
         Benefits of using the Spotify Downloader Online
-      </h1>{" "}
+      </h3>{" "}
       <div className="text-white text-base ">
         <div>
-          <h1 className="mb-2 text-lg">
+          <h3 className="mb-2 text-lg">
             There are many benefits to using Spotify Downloader online.
-          </h1>
+          </h3>
           <p>
             <span className="text-[#1ED760] font-semibold text-lg">1{")"}</span>
             To start with, it&apos;s completely free and easy to use. No

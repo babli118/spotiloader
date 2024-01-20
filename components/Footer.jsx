@@ -1,9 +1,24 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
     <div className="items-centre mt-10 ">
-      <div className="text-white text-center p-4 ">
+      <div className=" flex justify-center gap-4 text-white">
+        <Link
+          className="text-lg font-semibold bg-white/20 rounded-sm hover:scale-110 hover:underline   mx-4 px-4 hover:bg-[#1ED760] transition-all "
+          href={"/about"}
+        >
+          ・ About
+        </Link>
+        <Link
+          className="text-lg font-semibold bg-white/20 rounded-sm hover:scale-110 hover:underline   mx-4 px-4 hover:bg-[#1ED760] transition-all "
+          href={"/privacy-policy"}
+        >
+          ・ Privacy Policy
+        </Link>
+      </div>
+      <div className="text-white text-center p-4 sm:text-base text-sm ">
         <p>
           This website is not affiliated with or endorsed by Spotify AB. Our use
           of the name &quot;Spotify&quot; is for context, not claiming any

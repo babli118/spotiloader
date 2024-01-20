@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import getDlLink from "@/utils/getDlLink";
+import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import CountdownTimer from "./countDown";
@@ -16,6 +16,7 @@ const SongCard = ({ song }) => {
     setTimer(10);
     setLoading(false);
     setLoading(true);
+
     const name = song.title + song.artist;
     const dlLinkInfo = await getDlLink(name);
 
@@ -27,8 +28,8 @@ const SongCard = ({ song }) => {
 
   return (
     <div className=" flex flex-col items-center justify-center">
-      <div className="bg-[#121212] md:w-[30vw] lg:w-[20vw]  w-[70vw] text-white pt-4 py-2 px-4 rounded-md flex flex-col justify-center ">
-        <div className="flex justify-center items-center w-[50vw] sm:w-[40vw] md:w-[20vw] lg:w-[15vw] mx-auto  ">
+      <div className="bg-[#121212] text-white pt-4 py-2 px-4 rounded-md flex flex-col justify-center ">
+        <div className="flex justify-center items-center w-[60vw] sm:w-[40vw] md:w-[20vw] lg:w-[15vw] mx-auto  ">
           <Image
             className="rounded-md"
             src={song.image}
@@ -37,15 +38,15 @@ const SongCard = ({ song }) => {
             alt="song cover image"
           />
         </div>
-        <h1 className="text-xl font-bold mt-4">{song.title}</h1>
-        <h1 className="text-md mt">{song.artist}</h1>
+        <h3 className="text-xl font-bold mt-4">{song.title}</h3>
+        <h3 className="text-md mt">{song.artist}</h3>
       </div>
       {loading ? (
         <div className="flex flex-col justify-center items-center    ">
-          <h1 className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm ">
+          <h3 className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm ">
             Your download will start in&nbsp;
             <CountdownTimer />
-          </h1>
+          </h3>
           {timer === 0 ? (
             <button
               onClick={() => {
