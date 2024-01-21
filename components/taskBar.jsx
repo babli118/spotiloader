@@ -14,7 +14,7 @@ const TaskBar = () => {
           <div className="mr-2">
             <Image src={logo1} width={50} height={100} alt="SpotiLoad Logo" />
           </div>
-          <span>SpotiLoader</span>
+          <span>SpotifyLoader</span>
         </Link>
         <div className="text-white hidden md:flex justify-center items-center">
           <div className="text-xl font-semibold flex items-center justify-center">

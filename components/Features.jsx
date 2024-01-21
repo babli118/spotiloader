@@ -7,19 +7,34 @@ const Features = () => {
       className="text-white text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw] "
     >
       <h3 className="text-4xl font-semibold text-[#1ED760]">
-        What are some of the top features of the Spotify mp3 Downloader?
+        Top features of the Spotify Downloader
       </h3>
+      <div className="grid grid-cols-3 grid-rows-2 gap-x-40 gap-y-10 text-white mt-10">
+        <div className="bg-[#121212] w-[16rem] h-[16rem] rounded-md text-center">
+          <div className="px-6 py-4">
+            <p className="font-semibold  text-[#1ED760] text-xl uppercase ">
+              Quick and easy conversion:
+            </p>{" "}
+            <p className="mt-4">
+              With a simple one-click conversion, you can get all your favorite
+              songs to any audio format in no time at all.
+            </p>{" "}
+          </div>
+        </div>
+        <div className="bg-[#121212] w-[16rem] h-[16rem] rounded-md text-center">
+          <div className="px-6 py-4">
+            <p className="font-semibold  text-[#1ED760] text-xl uppercase ">
+              FAST FREE AND EASY TO USE
+            </p>{" "}
+            <p className="mt-4">
+              We support all device platforms. Easy to convert YouTube videos to
+              MP3 files regardless of whether you are using Windows, Mac or
+              Linux, Android, iPhone.
+            </p>{" "}
+          </div>
+        </div>
+      </div>
       <div className="text-base mt-4">
-        <h3 className="text-xl mb-2  ">
-          Some of the top features of SpotifyDown include:{" "}
-        </h3>
-        <p className="font-semibold  text-[#1ED760]">
-          Quick and easy conversion:
-        </p>{" "}
-        <p>
-          With a simple one-click conversion, you can get all your favorite
-          songs to any audio format in no time at all.
-        </p>{" "}
         <p className="font-semibold  text-[#1ED760]">
           Uninterrupted listening:
         </p>{" "}
