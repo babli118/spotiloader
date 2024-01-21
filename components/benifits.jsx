@@ -1,12 +1,12 @@
 import React from "react";
 
-const About = () => {
+const Benifits = () => {
   return (
     <section
       id="about"
-      className="flex  flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] mb-10"
+      className="flex  flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] mb-2"
     >
-      <h3 className="text-4xl text-start font-semibold text-[#1ED760] my-6">
+      <h3 className="text-4xl text-start font-semibold text-[#1ED760] my-16">
         Benefits of using the Spotify Downloader Online
       </h3>{" "}
       <div className="text-white text-base ">
@@ -14,25 +14,25 @@ const About = () => {
           <h3 className="mb-2 text-lg">
             There are many benefits to using Spotify Downloader online.
           </h3>
-          <p>
+          <p className="my-6">
             <span className="text-[#1ED760] font-semibold text-lg">1{")"}</span>
             To start with, it&apos;s completely free and easy to use. No
             technical knowledge or special software is required!
           </p>
         </div>{" "}
-        <p>
+        <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">2{")"}</span>
           In addition, our advanced settings allow you to customize your music
           in a number of different ways so that you can download your music at
           the highest quality possible.
         </p>{" "}
-        <p>
+        <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">3{")"}</span>
           And finally, our fast and reliable service means you never have to
           worry about waiting around for your songs - they&apos;ll be ready and
           waiting for you the second you need them!
         </p>{" "}
-        <p>
+        <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">4{")"}</span>
           So if you&apos;re an avid music fan who wants a simple way to easily
           download all their favorite tracks from one of the most popular
@@ -50,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Benifits;

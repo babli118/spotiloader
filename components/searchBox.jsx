@@ -48,7 +48,7 @@ const SearchBox = () => {
   };
   return (
     <div className="my-10 ">
-      <div className="flex flex-col justify-center content-center w-screen mt-20 mb-4">
+      <div className="flex flex-col justify-center content-center w-screen mt-20 mb-6">
         <div className="flex justify-center content-center">
           <div className="flex flex-col justify-center content-center">
             <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-8">

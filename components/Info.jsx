@@ -1,7 +1,7 @@
 import React from "react";
 import HowToDownload from "./howToDownload";
 import SpotifyLoaderInfo from "./SpotifyLoaderInfo";
-import About from "./about";
+import Benifits from "./benifits";
 import Features from "./Features";
 import FAQ from "./FAQ";
 
@@ -11,7 +11,7 @@ const Info = () => {
       <SpotifyLoaderInfo />
       <HowToDownload />
       <Features />
-      <About />
+      <Benifits />
       <FAQ />
     </div>
   );

@@ -12,7 +12,7 @@ const HowToDownload = () => {
       className="text-white scroll-smooth text-start mx-auto flex flex-col items-center justify-center w-[80vw] md:w-[60vw]  mt-10"
     >
       <h3 className="text-4xl text-[#1ED760] font-semibold ">
-        How to use SpotiLoader?
+        How to use SpotifyLoader?
       </h3>
       <div className="my-4 ">
         <p className="text-lg">
