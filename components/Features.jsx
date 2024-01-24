@@ -10,15 +10,15 @@ const Features = () => {
       <h3 className="text-4xl font-semibold text-[#1ED760]">
         Top features of the SpotifyLoader
       </h3>
-      <div className="grid sm:grid-cols-3 sm:grid-rows-2 sm:gap-x-20 gap-y-6 sm:gap-y-10 text-white mt-14 mx-10 sm:mx-auto">
+      <div className="grid sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 sm:gap-x-20 gap-y-6 sm:gap-y-10 text-white mt-14 mx-10 ">
         <FeaturesCard
           heading={"QUICK AND EASY CONVERSION:"}
           text={`With a simple one-click conversion, you can get your favorite
-              song to any audio format in no time at all.`}
+              songs to mp3 format in no time at all.`}
         />
         <FeaturesCard
           heading={"FAST FREE AND EASY TO USE"}
-          text={`We support all device platforms. Download spotify songs regardless of whether you are using Windows, Mac or
+          text={`We support all device platforms. Download spotify songs and playlists regardless of whether you are using Windows, Mac or
               Linux, Android, iPhone.`}
         />
         <FeaturesCard
@@ -28,7 +28,7 @@ const Features = () => {
         />
         <FeaturesCard
           heading={"WITHOUT LIMITATION"}
-          text={`Download as many spotify tracks as you want without limitation and always free.`}
+          text={`Download as many spotify and playlists as you want without limitation and always free.`}
         />
         <FeaturesCard
           heading={"100% SAFE AND CLEAN"}

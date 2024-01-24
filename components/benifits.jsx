@@ -29,8 +29,8 @@ const Benifits = () => {
         <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">3{")"}</span>
           And finally, our fast and reliable service means you never have to
-          worry about waiting around for your songs - they&apos;ll be ready and
-          waiting for you the second you need them!
+          worry about waiting around for your songs and playlists - they&apos;ll
+          be ready and waiting for you the second you need them!
         </p>{" "}
         <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">4{")"}</span>

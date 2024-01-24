@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import CountdownTimer from "./countDown";
 
-const SongCard = ({ song }) => {
+const SongCard = ({ song, name }) => {
   const [loading, setLoading] = useState(false);
   const [otherDl, setotherDl] = useState(false);
   const [timer, setTimer] = useState(10);
@@ -39,10 +39,10 @@ const SongCard = ({ song }) => {
           />
         </div>
         <h3 className="text-xl font-bold mt-4">{song.title}</h3>
-        <h3 className="text-md mt">{song.artist}</h3>
+        <h3 className="text-md mt">{name ? name : song.artist}</h3>
       </div>
       {loading ? (
-        <div className="flex flex-col justify-center items-center    ">
+        <div className="flex flex-col justify-center items-center">
           <h3 className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm ">
             Your download will start in&nbsp;
             <CountdownTimer />
@@ -61,12 +61,15 @@ const SongCard = ({ song }) => {
           )}
         </div>
       ) : (
-        <button
-          onClick={fetchdlLink}
-          className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4"
-        >
-          Download
-        </button>
+        // Check if the 'name' variable is false before rendering the button
+        !name && (
+          <button
+            onClick={fetchdlLink}
+            className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4"
+          >
+            Download
+          </button>
+        )
       )}
     </div>
   );

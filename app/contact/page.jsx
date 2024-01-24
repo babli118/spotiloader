@@ -11,7 +11,15 @@ const Page = () => {
         <h3 className="text-4xl text-center font-semibold  text-[#1ED760] my-10">
           CONTACT - SPOTIFYLOADER
         </h3>
-        <p className="text-white text-base  ">jy</p>
+        <div className="flex gap-x-2 items-center justify-center">
+          <p className="text-white text-base  ">
+            Want to get in touch with us for any query, Please connect with us
+            by using this link:
+          </p>
+          <a className="text-[#1ED760]" href="https://m.me/spotifyloader">
+            m.me/SpotifyLoader
+          </a>
+        </div>
         <div className="mt-10 transform  transition-all mx-auto items-center flex justify-center my-7 ">
           <Link
             href={"/"}

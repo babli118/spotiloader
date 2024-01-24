@@ -11,16 +11,17 @@ const FAQ = () => {
           Is this free to use?
         </h3>
         <p className="text-base mb-6">
-          Yes, totally free to use. You can download as many songs as you want
-          completely for free!
+          Yes, totally free to use. You can download as many songs and playlists
+          as you want completely for free!
         </p>{" "}
         <h3 className="text-[#1ED760] font-semibold text-lg mb-2">
           Do I need a Spotify account to use this?
         </h3>{" "}
         <p className="text-base mb-6">
           No. You don&apos;t need a Spotify account to use this tool. You
-          don&apos;t even need Spotify Premium to download songs from here.
-          SpotifyDownloader is fully automated and requires no login at all.
+          don&apos;t even need Spotify Premium to download songs and playlists
+          from here. SpotifyDownloader is fully automated and requires no login
+          at all.
         </p>
         <h3 className="text-[#1ED760] font-semibold text-lg mb-2">
           Do you need Spotify premium to download songs?{" "}

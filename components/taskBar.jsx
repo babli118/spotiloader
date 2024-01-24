@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const TaskBar = () => {
   return (
-    <div className="sticky top-2 ">
-      <div className="my-3 sm:mx-20 mx-4 p-4 flex justify-center sm:justify-between content-center bg-[#121212] rounded-md ">
+    <div className="sticky top-2  ">
+      <div className=" sm:mx-10 mx-4 p-4 flex justify-center   sm:justify-between content-center bg-[#121212] rounded-md ">
         <Link
           href={"/"}
           className="text-[#1ED760]  text-center text-2xl sm:text-4xl font-bold flex flex-row justify-center  items-center"
@@ -21,7 +21,7 @@ const TaskBar = () => {
           </div>
           <span>SpotifyLoader</span>
         </Link>
-        <div className="text-white hidden md:flex justify-center items-center">
+        <div className="text-white hidden lg:flex justify-center items-center">
           <div className="text-xl font-semibold flex items-center justify-center">
             <Link
               href={"/"}
