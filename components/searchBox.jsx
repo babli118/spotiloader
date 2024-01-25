@@ -42,13 +42,11 @@ const SearchBox = () => {
     e.preventDefault();
 
     if (inputValue.startsWith("https://open.spotify.com/playlist/")) {
-      console.log("playlist");
       setLoading(true);
       const playListInfo = await getPlayListInfo(inputValue);
       setLoading(false);
       setPlayListInfo(playListInfo);
     } else if (inputValue.startsWith("https://open.spotify.com/track/")) {
-      console.log("track");
       setLoading(true);
       const songInfo = await getSongInfo(inputValue);
       setLoading(false);

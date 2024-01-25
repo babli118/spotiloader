@@ -9,6 +9,7 @@ const SongCard = ({ song, name }) => {
   const [loading, setLoading] = useState(false);
   const [otherDl, setotherDl] = useState(false);
   const [timer, setTimer] = useState(10);
+  const [error, SetError] = useState(null);
 
   const router = useRouter();
 
@@ -17,9 +18,9 @@ const SongCard = ({ song, name }) => {
     setLoading(false);
     setLoading(true);
 
-    const name = song.title + song.artist;
+    const name = song.track + "SongAuthor" + song.artist;
     const dlLinkInfo = await getDlLink(name);
-
+    console.log(dlLinkInfo);
     const dlLink = dlLinkInfo.dlLink.url;
     setTimer(0);
 

@@ -4,10 +4,10 @@ import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
 
 const PlayListBlock = ({ playlist }) => {
-  console.log(playlist);
   const allTracks = playlist.tracks;
   const filteredTracks = allTracks.filter((track) => track.name.length > 0);
   const tracks = filteredTracks;
+  const [error, SetError] = useState(null);
 
   const router = useRouter();
 
@@ -17,7 +17,7 @@ const PlayListBlock = ({ playlist }) => {
   );
 
   const fetchdlLink = async (track, index, e) => {
-    const name = track.name + track.artist;
+    const name = track.name + "SongAuthor" + track.artist;
 
     // Set download status to 'Downloading' for the specific track
     setDownloadStatus((prevStatus) => {
@@ -50,17 +50,17 @@ const PlayListBlock = ({ playlist }) => {
         {tracks.map((track, index) => (
           <div key={index}>
             <div className="bg-[#121212] my-4 flex items-center justify-between px-4 rounded-md">
-              <div className="flex justify-center items-center ">
+              <div className="flex justify-center items-center mx-2 lg:mx-4">
                 <div className=" flex">
                   <div className="pr-4 text-lg flex mr-2">
                     <p>{index + 1}</p> <span>.</span>{" "}
                   </div>
                 </div>
-                <div className="flex flex-col justify-center py-4 ">
+                <div className="flex flex-col justify-center py-4  ">
                   <p className="md:text-lg text-lg text-[#1ED760] mr-2">
                     {track.name}
                   </p>
-                  <p className="text-sm">{track.artist}</p>
+                  <p className="text-sm pr-4">{track.artist}</p>
                 </div>
               </div>
               <div className="flex flex-col items-center justify-center">
@@ -69,7 +69,8 @@ const PlayListBlock = ({ playlist }) => {
                   onClick={(e) => {
                     fetchdlLink(track, index);
                   }}
-                  className="text-black font-bold text-base ml-2 disabled:bg-[#3e8f5a] focus:bg-[#3e8f5a] hover:bg-[#3e8f5a] my-4 transition-all bg-[#1ED760] py-2 px-4 rounded-full "
+                  className="text-black font-bold text-base mx-2  disabled:bg-[#3e8f5a] focus:bg-[#3e8f5a] hover:bg-[#3e8f5a] my-4 transition-all bg-[#1ED760] py-2 px-4 rounded-full"
+                  style={{ width: "130px" }} // Set a fixed width for the button
                   disabled={downloadStatus[index] === "Downloading..."}
                 >
                   {downloadStatus[index]}

@@ -1,5 +1,7 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "./GoogleAnalytics";
+require("dotenv").config();
 
 const poppins = Poppins({
   weight: ["400", "700", "500"],
@@ -29,6 +31,13 @@ export default function RootLayout({ children }) {
           "bg-black flex flex-col h-auto overflow-x-hidden  scroll-smooth   "
         }
       >
+        <GoogleAnalytics
+          ga_id={
+            process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+              ? process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
+              : "G-148JN8F3PN"
+          }
+        />
         <div className={poppins.className + "overflow-x-hidden"}>
           {children}
         </div>

@@ -6,9 +6,7 @@ const getPlayListInfo = async (inputValue) => {
   const options = {
     method: "POST",
   };
-
-  const url = `http://localhost:3001/playListInfo?id=${id}`;
-  console.log(url);
+  const url = `${process.env.NEXT_PUBLIC_API_SERVER_URl}/playListInfo?id=${id}`;
   const playListFetch = await fetch(url, options);
   const playListInfo = await playListFetch.json();
 

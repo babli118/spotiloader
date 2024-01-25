@@ -6,7 +6,7 @@ const getSongInfo = async (inputValue) => {
   const options = {
     method: "POST",
   };
-  const url = `http://localhost:3001/songInfo?id=${id}`;
+  const url = `${process.env.NEXT_PUBLIC_API_SERVER_URl}/songInfo?id=${id}`;
   const songFetch = await fetch(url, options);
   const songInfo = await songFetch.json();
 
