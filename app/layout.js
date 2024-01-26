@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
               : "G-148JN8F3PN"
           }
         />
+
         <div className={poppins.className + "overflow-x-hidden"}>
           {children}
         </div>

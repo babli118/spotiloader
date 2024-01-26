@@ -50,9 +50,9 @@ const PlayListBlock = ({ playlist }) => {
         {tracks.map((track, index) => (
           <div key={index}>
             <div className="bg-[#121212] my-4 flex items-center justify-between px-4 rounded-md">
-              <div className="flex justify-center items-center mx-2 lg:mx-4">
+              <div className="flex justify-center items-center  ">
                 <div className=" flex">
-                  <div className="pr-4 text-lg flex mr-2">
+                  <div className="pr-4 text-lg flex ">
                     <p>{index + 1}</p> <span>.</span>{" "}
                   </div>
                 </div>
@@ -69,7 +69,7 @@ const PlayListBlock = ({ playlist }) => {
                   onClick={(e) => {
                     fetchdlLink(track, index);
                   }}
-                  className="text-black font-bold text-base mx-2  disabled:bg-[#3e8f5a] focus:bg-[#3e8f5a] hover:bg-[#3e8f5a] my-4 transition-all bg-[#1ED760] py-2 px-4 rounded-full"
+                  className="text-black font-bold text-base   disabled:bg-[#3e8f5a] focus:bg-[#3e8f5a] hover:bg-[#3e8f5a] my-4 transition-all bg-[#1ED760] py-2 px-4 rounded-full"
                   style={{ width: "130px" }} // Set a fixed width for the button
                   disabled={downloadStatus[index] === "Downloading..."}
                 >
