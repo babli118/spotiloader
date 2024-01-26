@@ -67,7 +67,7 @@ const SearchBox = () => {
             </h1>
             <p className="text-white text-center font-medium  sm:font-semibold text-base mb-8 my-4 mx-8">
               Download your favorite Spotify songs and playlists with our
-              efficient Spotify to MP3 downloader – seamlessly convert and
+              efficient Spotify to MP3 downloader – instantly convert and
               download songs for offline listening anytime, anywhere!
             </p>
             <div className="flex flex-col mx-auto  ">
