@@ -21,6 +21,18 @@ export const metadata = {
     description:
       "Download your favorite Spotify music to MP3 with SpotifyLoader, the online Spotify to MP3 downloader.",
   },
+  metadataBase: new URL("https://spotifyloader.com"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+      de: "/de",
+      ar: "/ar",
+      es: "/es",
+      fr: "/fr",
+      pt: "/pt",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
