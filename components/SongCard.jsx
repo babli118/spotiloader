@@ -45,7 +45,7 @@ const SongCard = ({ song, name }) => {
       {loading ? (
         <div className="flex flex-col justify-center items-center">
           <h3 className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm ">
-            Your download will start in&nbsp;
+            Your download will start within&nbsp;
             <CountdownTimer />
           </h3>
           {timer === 0 ? (
@@ -53,7 +53,7 @@ const SongCard = ({ song, name }) => {
               onClick={() => {
                 router.push("/");
               }}
-              className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm text-lg font-semibold hover:scale-100   transition-all"
+              className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm text-lg font-semibold hover:scale-105   transition-all"
             >
               Download more Songs
             </button>

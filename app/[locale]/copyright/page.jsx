@@ -1,13 +1,13 @@
 import React from "react";
-import TaskBar from "../../components/taskBar";
-import Footer from "../../components/Footer";
+import TaskBar from "../../../components/taskBar";
+import Footer from "../../../components/Footer";
 import Link from "next/link";
 
 const Page = () => {
   return (
     <div className=" flex flex-col ">
       <TaskBar />
-      <div className="mx-10 sm:mx-[25rem]  ">
+      <div className="mx-10 sm:mx-[12rem] md:mx-[15rem] lg:mx-[25rem]  ">
         <h3 className="text-4xl  font-semibold  text-[#1ED760] my-10 text-center  ">
           COPYRIGHT - SPOTIFYLOADER
         </h3>

@@ -1,8 +1,9 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import GoogleAnalytics from "./GoogleAnalytics";
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import { locales } from "../../navigation.js";
 require("dotenv").config();
-
+import { GoogleTagManager } from "@next/third-parties/google";
 const poppins = Poppins({
   weight: ["400", "700", "500"],
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export const metadata = {
     description:
       "Download your favorite Spotify music to MP3 with SpotifyLoader, the online Spotify to MP3 downloader.",
   },
+  robots: "index,follow",
   metadataBase: new URL("https://spotifyloader.com"),
   alternates: {
     canonical: "/",
@@ -30,31 +32,33 @@ export const metadata = {
       ar: "/ar",
       es: "/es",
       fr: "/fr",
+      id: "/id",
       pt: "/pt",
+      ru: "/ru",
+      nl: "/nl",
     },
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { locale } }) {
+  if (!locales.includes(locale)) {
+    locale = "en";
+  }
+  const messages = useMessages();
   return (
-    <html lang="en">
-      <body
-        className={
-          "bg-black flex flex-col h-auto overflow-x-hidden  scroll-smooth   "
-        }
-      >
-        <GoogleAnalytics
-          ga_id={
-            process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
-              ? process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID
-              : "G-148JN8F3PN"
+    <html lang={locale}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <body
+          className={
+            "bg-black flex flex-col h-auto overflow-x-hidden  scroll-smooth   "
           }
-        />
-
-        <div className={poppins.className + "overflow-x-hidden"}>
-          {children}
-        </div>
-      </body>
+        >
+          <GoogleTagManager gtmId="GTM-TH35ND4D" />
+          <div className={poppins.className + "overflow-x-hidden"}>
+            {children}
+          </div>
+        </body>
+      </NextIntlClientProvider>
     </html>
   );
 }

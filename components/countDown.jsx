@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 const CountdownTimer = () => {
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(5);
 
   useEffect(() => {
     // Function to decrement the timer every second

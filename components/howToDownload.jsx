@@ -4,31 +4,29 @@ import dots from "../public/dots.jpg";
 import share from "../public/share.jpg";
 import download from "../public/download.jpg";
 import search from "../public/search.jpg";
+import { useTranslations } from "next-intl";
 
 const HowToDownload = () => {
+  const t = useTranslations();
   return (
     <section
       id="use"
       className="text-white scroll-smooth text-start  flex flex-col items-center justify-center mx-auto w-[80vw] md:w-[60vw]"
     >
       <h3 className="text-4xl text-[#1ED760] font-semibold mx-auto text-center ">
-        How to use SpotifyLoader?
+        {t("howto")}
       </h3>
       <div className="my-4 ">
-        <p className="text-lg">
-          Here&apos;s a simple tutorial how to use SpotifyLoader:
-        </p>
+        <p className="text-lg">{t("tut")}</p>
         <div className="my-4 flex flex-col gap-1 mx-auto">
           <p>
-            <span className="text-[#1ED760]">1.</span> Open your Spotify App
+            <span className="text-[#1ED760]">1.</span> {t("step1")}
           </p>{" "}
           <p>
-            <span className="text-[#1ED760]">2.</span> Find the song or playlist
-            you&apos;d like to download
+            <span className="text-[#1ED760]">2.</span> {t("step2")}
           </p>
           <p>
-            <span className="text-[#1ED760]">3.</span> Click on the 3
-            &quot;dots&quot; button. The button looks like this &quot;...&quot;
+            <span className="text-[#1ED760]">3.</span> {t("step3")}
           </p>
           <div className=" flex items-center justify-center w-[22rem] mx-auto my-4">
             <Image
@@ -39,8 +37,7 @@ const HowToDownload = () => {
             />
           </div>
           <p>
-            <span className="text-[#1ED760]">4.</span> Click &quot;Share&quot;
-            and then &quot;Copy Link&quot; button
+            <span className="text-[#1ED760]">4.</span> {t("step4")}
           </p>
           <div className=" flex items-center justify-center w-[22rem] mx-auto my-4">
             <Image
@@ -51,8 +48,7 @@ const HowToDownload = () => {
             />
           </div>
           <p>
-            <span className="text-[#1ED760]">5.</span> Paste copied link above
-            and press &quot;Search&quot;
+            <span className="text-[#1ED760]">5.</span> {t("step5")}
           </p>
           <div className=" flex items-center justify-center w-[22rem] mx-auto my-4">
             <Image
@@ -63,8 +59,7 @@ const HowToDownload = () => {
             />
           </div>
           <p className="flex">
-            <span className="text-[#1ED760]">6.</span> Wait for the processing
-            to finish and click &quot;Download&quot; button
+            <span className="text-[#1ED760]">6.</span> {t("step6")}
           </p>
           <div className=" flex items-center justify-center w-[22rem] mx-auto my-4">
             <Image

@@ -1,13 +1,13 @@
 import React from "react";
-import TaskBar from "../../components/taskBar";
+import TaskBar from "../../../components/taskBar";
 import Link from "next/link";
-import Footer from "../../components/Footer";
+import Footer from "../../../components/Footer";
 
 const Page = () => {
   return (
     <div className=" flex flex-col ">
       <TaskBar />
-      <div className="mx-10 sm:mx-[12rem] md:mx-[25rem] text-white ">
+      <div className="mx-10 sm:mx-[12rem] md:mx-[15rem] lg:mx-[25rem] text-white ">
         <div>
           <h3 className="text-4xl  font-semibold  text-[#1ED760] my-10 text-center   ">
             Privacy Policy - SpotifyLoader

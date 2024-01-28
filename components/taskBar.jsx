@@ -2,8 +2,9 @@ import React from "react";
 import Image from "next/image";
 import logo1 from "../public/logo1.png";
 import Link from "next/link";
-
+import { useTranslations } from "next-intl";
 const TaskBar = () => {
+  const t = useTranslations();
   return (
     <div className="sticky top-2  ">
       <div className=" sm:mx-10 mx-4 p-4 flex justify-center   sm:justify-between content-center bg-[#121212] rounded-md ">
@@ -27,19 +28,19 @@ const TaskBar = () => {
               href={"/"}
               className="text-xl t hover:scale-110 hover:bg-[#44ad69] hover:text-white rounded-md py-2  mx-4 px-4  transition-all "
             >
-              Spotify Downloader
+              {t("header")}
             </Link>
             <Link
               className="text-xl hover:scale-110 mx-4 px-4 hover:text-[#1ED760] transition-all "
               href="/about"
             >
-              About
+              {t("about")}
             </Link>
             <Link
               className="text-xl hover:scale-110 mx-4 px-4 hover:text-[#1ED760] transition-all "
               href="/contact"
             >
-              Contact
+              {t("contact")}
             </Link>
           </div>
         </div>

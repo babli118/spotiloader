@@ -6,6 +6,7 @@ import getPlayListInfo from "../utils/getPlayListInfo.js";
 import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
+import { useTranslations } from "next-intl";
 
 const SearchBox = () => {
   const [inputValue, setInputValue] = useState("");
@@ -14,6 +15,7 @@ const SearchBox = () => {
   const [songInfo, setSongInfo] = useState(null);
   const [playListInfo, setPlayListInfo] = useState(null);
   const [error, setError] = useState("");
+  const t = useTranslations();
 
   const spotifyTrackRegex =
     /https:\/\/open\.spotify\.com\/track\/([a-zA-Z0-9]+)/;
@@ -43,19 +45,44 @@ const SearchBox = () => {
 
     if (inputValue.startsWith("https://open.spotify.com/playlist/")) {
       setLoading(true);
-      const playListInfo = await getPlayListInfo(inputValue);
-      setLoading(false);
-      setPlayListInfo(playListInfo);
+      try {
+        const playListInfo = await getPlayListInfo(inputValue);
+        console.log(playListInfo);
+        setLoading(false);
+        setPlayListInfo(playListInfo);
+      } catch (error) {
+        console.log("error:", error);
+        setError("Something went Wrong. Please try again later");
+        setLoading(false);
+        return;
+      }
+      if (playListInfo.length < 0) {
+        setError("Something went Wrong. Please try again later");
+        setLoading(false);
+      }
     } else if (inputValue.startsWith("https://open.spotify.com/track/")) {
-      setLoading(true);
-      const songInfo = await getSongInfo(inputValue);
-      setLoading(false);
-      setSongInfo(songInfo);
+      try {
+        setLoading(true);
+        const songInfo = await getSongInfo(inputValue);
+        setLoading(false);
+        setSongInfo(songInfo);
+        if (songInfo.error) {
+          setError(
+            "Something went Wrong, Please recheck ur link or try again later"
+          );
+          setLoading(false);
+          setSongInfo(null);
+        }
+      } catch (error) {
+        setError("Something went Wrong. Please try again later");
+      }
     } else {
       setError(
         "Invalid Spotify Song or Playlist url. Please enter a valid url and try again."
       );
+      setLoading(false);
     }
+    setLoading(false);
   };
   return (
     <div className="md:my-10 mb-12 mt-10 ">
@@ -63,12 +90,10 @@ const SearchBox = () => {
         <div className="flex justify-center content-center">
           <div className="flex flex-col justify-center content-center">
             <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-8">
-              Spotify Downloader
+              {t("header")}
             </h1>
             <p className="text-white text-center font-medium  sm:font-semibold text-base mb-8 my-4 mx-8">
-              Download your favorite Spotify songs and playlists with our
-              efficient Spotify to MP3 downloader – instantly convert and
-              download songs for offline listening anytime, anywhere!
+              {t("tagline")}
             </p>
             <div className="flex flex-col mx-auto  ">
               {/* w-[25rem] sm:w-[35rem] md:w-[50rem] */}
@@ -76,7 +101,7 @@ const SearchBox = () => {
                 <input
                   className={`bg-[#121212] border-solid border-2 border-transparent focus:outline-none focus:border-white appearance-none text-white p-4 w-full rounded-md transition-all duration-300 ease-in-out`}
                   type="text"
-                  placeholder="https://open.spotify.com/..../...."
+                  placeholder={t("pholder")}
                   required
                   autoComplete="off"
                   onClick={handleInputChange}
@@ -87,7 +112,7 @@ const SearchBox = () => {
                   onClick={handleSearchClick}
                   className="bg-[#1ED760] hover:scale-110 transition-all    text-lg text-black font-bold px-4 py-3   mx-2 rounded-md"
                 >
-                  Search
+                  {t("search")}
                 </button>
               </div>
               <div className="flex mx-12 lg:mx-4 mt-2">
@@ -107,7 +132,7 @@ const SearchBox = () => {
               </div>
             </div>
             <div className="text-center">
-              {error && <p className="text-red-500 ml-2 mt-2">{error}</p>}
+              {error && <p className="text-red-500 ml-2 mt-2"> {t("error")}</p>}
             </div>
           </div>
         </div>
