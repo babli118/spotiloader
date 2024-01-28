@@ -29,15 +29,11 @@ export async function generateMetadata({
     author: "SpotifyLoader",
     manifest: "/manifest.webmanifest",
     twitter: {
-      title: t("twtitle"),
+      title: t("SpotifyLoader - Spotify to MP3 Downloader Online"),
       card: "summary_large_image",
       description: t("twdesc"),
     },
-    openGraph: {
-      title: "twtitle",
-      description: t("twdesc"),
-      card: "summary_large_image",
-    },
+
     robots: "index,follow",
     metadataBase: new URL("https://spotifyloader.com"),
     alternates: {
