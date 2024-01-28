@@ -12,32 +12,31 @@ const Benifits = () => {
       <div className="text-white text-base ">
         <div>
           <h3 className="mb-2 text-lg">
-            There are many benefits to using Spotify Downloader online.
+            There are many benefits to using spotify to mp3 converter.
           </h3>
           <p className="my-6">
             <span className="text-[#1ED760] font-semibold text-lg">1{")"}</span>
-            To start with, it&apos;s completely free and easy to use. No
-            technical knowledge or special software is required!
+            To start with, spotify downloader is completely free and easy to
+            use. You can convert unlimited spotify songs to mp3.
           </p>
         </div>{" "}
         <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">2{")"}</span>
-          In addition, our advanced settings allow you to customize your music
-          in a number of different ways so that you can download your music at
-          the highest quality possible.
+          In addition, our mp3 downloader allow you to customize your music in a
+          number of different ways so that you can download your music at the
+          highest quality possible.
         </p>{" "}
         <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">3{")"}</span>
-          And finally, our fast and reliable service means you never have to
+          And finally, our spotify downloader service means you never have to
           worry about waiting around for your songs and playlists - they&apos;ll
           be ready and waiting for you the second you need them!
         </p>{" "}
         <p className="my-6">
           <span className="text-[#1ED760] font-semibold text-lg">4{")"}</span>
-          So if you&apos;re an avid music fan who wants a simple way to easily
-          download all their favorite tracks from one of the most popular
-          streaming platforms, look no further than our Spotify Downloader
-          online!
+          So if you&apos;re a music lover who wants a simple way to easily
+          download all their favorite tracks from Spotify, look no further than
+          our Spotify Downloader online!
         </p>{" "}
         <p className="text-base mt-8">
           So why wait? Try it out today and discover the world of music

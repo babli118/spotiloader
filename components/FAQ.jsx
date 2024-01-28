@@ -8,7 +8,7 @@ const FAQ = () => {
       </h3>
       <div className="text-white ">
         <h3 className="text-[#1ED760] font-semibold text-lg mb-2">
-          Is this free to use?
+          Is spotify to mp3 converter free to use?
         </h3>
         <p className="text-base mb-6">
           Yes, totally free to use. You can download as many songs and playlists
@@ -24,7 +24,7 @@ const FAQ = () => {
           at all.
         </p>
         <h3 className="text-[#1ED760] font-semibold text-lg mb-2">
-          Do you need Spotify premium to download songs?{" "}
+          Do you need Spotify premium to download spotify songs?{" "}
         </h3>
         <p className="text-base mb-6">
           No. With SpotfiyDown, you can download songs from Spotify without a
@@ -45,10 +45,10 @@ const FAQ = () => {
           Is SpotifyLoader safe to use?
         </h3>{" "}
         <p className="text-base mb-6">
-          Yes. The Spotify Downloader uses cutting-edge encryption technologies
-          to protect your data and privacy completely. In addition, our tool is
-          regularly updated to avoid potential security threats so that you can
-          trust us with all your downloading needs.
+          Yes. The spotify to mp3 converter uses cutting-edge encryption
+          technologies to protect your data and privacy completely. In addition,
+          our tool is regularly updated to avoid potential security threats so
+          that you can trust us with all your downloading needs.
         </p>
       </div>
     </div>

@@ -13,7 +13,7 @@ const Features = () => {
       <div className="grid sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2 sm:gap-x-20 gap-y-6 sm:gap-y-10 text-white mt-14 mx-10 ">
         <FeaturesCard
           heading={"QUICK AND EASY CONVERSION:"}
-          text={`With a simple one-click conversion, you can get your favorite
+          text={`With a simple one-click conversion, you can convert your favorite
               songs to mp3 format in no time at all.`}
         />
         <FeaturesCard
@@ -23,12 +23,12 @@ const Features = () => {
         />
         <FeaturesCard
           heading={"UNINTERRUPTED LISTENING:"}
-          text={`Our powerful ad-block feature allows you to enjoy your music free from
+          text={`Our powerful ad-block feature allows you to download music free from
           those pesky and annoying Spotify ads!`}
         />
         <FeaturesCard
           heading={"WITHOUT LIMITATION"}
-          text={`Download as many spotify and playlists as you want without limitation and always free.`}
+          text={`Download as many spotify and playlists as you want using spotify to mp3 converter without limitation and always free.`}
         />
         <FeaturesCard
           heading={"100% SAFE AND CLEAN"}

@@ -1,8 +1,14 @@
 const withNextIntl = require("next-intl/plugin")();
 /** @type {import('next').NextConfig} */
 
-module.exports = withNextIntl({
-  images: {
-    domains: ["i.scdn.co", "mosaic.scdn.co"],
-  },
+const withPWA = require("next-pwa")({
+  dest: "public",
 });
+
+module.exports = withNextIntl(
+  withPWA({
+    images: {
+      domains: ["i.scdn.co", "mosaic.scdn.co"],
+    },
+  })
+);
