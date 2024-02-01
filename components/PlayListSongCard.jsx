@@ -3,7 +3,14 @@ import Image from "next/image";
 import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-const SongCard = ({ song, name, duration, resetState, pl }) => {
+
+const PlayListSongCard = ({
+  song,
+  name,
+  duration,
+  resetState,
+  setDownloadMode,
+}) => {
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0); // State to track download progress
   const [downloadstatus, setdownloadstatus] = useState(false); // State to track download progress
@@ -17,35 +24,67 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
 
     try {
       setProgress(1); // Reset progress
-      await delay(500); // Simulate delay
-      setProgress(5); // Reset progress
 
+      await delay(1000); // Simulate delay
+      setProgress(3); // Reset progress
+      await delay(1000); // Simulate delay
+      setProgress(6); // Reset progress
       // Simulate initial delay
-
+      await delay(1000); // Simulate delay
       setProgress(10); // Reset progress
+      await delay(500); // Simulate delay
 
       const name = song.track + "SongAuthor" + song.artist;
       setProgress(20); // Reset progress
-
+      await delay(3000); // Simulate delay
       const dlLinkInfo = await getDlLink(name, duration);
       setProgress(30); // Reset progress
+      await delay(1000); // Simulate delay
 
       const dlLink = dlLinkInfo.dlLink.url;
+      setProgress(40); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(41); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(43); // Reset progress
+      await delay(500); // Simulate delay
       setProgress(45); // Reset progress
       await delay(500); // Simulate delay
+      setProgress(47); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(48); // Reset progress
+      await delay(500); // Simulate delay
       const title = song.track;
-      setProgress(55); // Reset progress
-
-      setProgress(65); // Reset progress
+      setProgress(50); // Reset progress
+      await delay(1000); // Simulate delay
       const imageUrl = song.image;
       const songUrl = dlLink;
-      await delay(500); // Simulate delay
-      setProgress(70); // Reset progress
+      setProgress(60); // Reset progress
       await delay(500); // Simulate delay
       const artist = song.artist;
       const album = song.title;
-
       setProgress(70); // Reset progress
+      await delay(1000); // Simulate delay
+
+      // Simulate processing delay
+      setProgress(80); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(81); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(82); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(83); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(84); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(85); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(86); // Reset progress
+      await delay(500); // Simulate delay
+      setProgress(87); // Reset progress
+      await delay(500); // Simulate delay
+
+      setProgress(90); // Reset progress
       const response = await axios({
         method: "post",
         url: "http://localhost:3001/api/embed-metadata",
@@ -58,9 +97,8 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
         },
         responseType: "blob",
       });
-
-      // Simulate processing delay
-      setProgress(80); // Reset progress
+      setProgress(95); // Reset progress
+      await delay(500); // Simulate delay
 
       const url = window.URL.createObjectURL(new Blob([response.data]));
 
@@ -106,7 +144,7 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
         <div className="  ">
           <div className=" sm:w-[500px] h-6 text-center bg-[#282828] rounded-full">
             <div
-              className="h-full bg-green-500  rounded-lg flex justify-center items-center my-4 transition-all duration-[1553ms]  text-sm font-semibold"
+              className="h-full bg-green-500  rounded-lg flex justify-center items-center my-4 transition-all duration-1000 px-6 text-sm font-semibold"
               style={{ width: `${progress}%` }}
             >
               {progress}%
@@ -121,27 +159,37 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
       )}
 
       {downloadstatus && (
-        <button
-          onClick={() => {
-            resetState();
-            router.push("/");
-          }}
-          className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm text-lg font-semibold hover:scale-105 transition-all"
-        >
-          Download more Songs
-        </button>
+        <div className="flex flex-row sm:mt-4  sm:flex-col gap-2 mt-2">
+          <button
+            onClick={() => {
+              resetState();
+              router.push("/");
+            }}
+            className="bg-[#1ED760]   sm:w-[300px] hover:bg-[#3e8f5a] sm:text-lg py-2 px-1 text-black  text-center rounded-full text-base font-bold hover:scale-105 transition-all"
+          >
+            Download more Songs
+          </button>
+          <button
+            onClick={() => {
+              setDownloadMode(false);
+            }}
+            className="bg-[#1ED760]   sm:w-[300px] hover:bg-[#3e8f5a]  sm:text-lg py-2 px-1 text-black  text-center rounded-full text-base font-bold hover:scale-105 transition-all"
+          >
+            Back to Playlist
+          </button>
+        </div>
       )}
 
-      {downloadbtn && pl === false ? (
+      {downloadbtn && (
         <button
           onClick={fetchdlLink}
-          className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4"
+          className="text-black   font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4"
         >
           Download
         </button>
-      ) : null}
+      )}
     </div>
   );
 };
 
-export default SongCard;
+export default PlayListSongCard;

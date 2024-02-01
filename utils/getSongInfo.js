@@ -1,13 +1,21 @@
-const getSongInfo = async (inputValue) => {
+const getSongInfo = async (inputValue, id) => {
   try {
-    const parts = inputValue.split("/");
-    const trackId = parts[parts.length - 1];
-    const id = trackId.split("?")[0];
+    let trackId;
+
+    // Check if 'id' is provided directly
+    if (id) {
+      trackId = id;
+    } else {
+      // Extract track ID from 'inputValue'
+      const parts = inputValue.split("/");
+      const trackIdWithQuery = parts[parts.length - 1];
+      trackId = trackIdWithQuery.split("?")[0];
+    }
 
     const options = {
       method: "POST",
     };
-    const url = `${process.env.NEXT_PUBLIC_API_SERVER_URl}/songInfo?id=${id}`;
+    const url = `${process.env.NEXT_PUBLIC_API_SERVER_URl}/songInfo?id=${trackId}`;
     const songFetch = await fetch(url, options);
     const songInfo = await songFetch.json();
 

@@ -1,7 +1,11 @@
-const getDlLink = async (name) => {
+const getDlLink = async (name, duration) => {
   try {
     const options = {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json", // Set the content type to JSON
+      },
+      body: JSON.stringify({ duration: duration }),
     };
     const trimmedname = encodeURIComponent(name);
 

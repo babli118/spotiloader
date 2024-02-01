@@ -7,6 +7,7 @@ import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
 import { useTranslations } from "next-intl";
+import EmbedMetaData from "../utils/EmbedMetaData.js";
 
 const SearchBox = () => {
   const [inputValue, setInputValue] = useState("");
@@ -15,6 +16,7 @@ const SearchBox = () => {
   const [songInfo, setSongInfo] = useState(null);
   const [playListInfo, setPlayListInfo] = useState(null);
   const [error, setError] = useState("");
+  const [duration, setDuration] = useState("");
   const t = useTranslations();
 
   const spotifyTrackRegex =
@@ -33,8 +35,10 @@ const SearchBox = () => {
   };
 
   const handleInputPaste = (e) => {
+    e.preventDefault(); // Prevent the default paste behavior
     const pastedContent = e.clipboardData.getData("text");
     setInputValue(pastedContent);
+    console.log(inputValue);
   };
   const handleSearchClick = async (e) => {
     setError(null);
@@ -47,7 +51,6 @@ const SearchBox = () => {
       setLoading(true);
       try {
         const playListInfo = await getPlayListInfo(inputValue);
-        console.log(playListInfo);
         setLoading(false);
         setPlayListInfo(playListInfo);
       } catch (error) {
@@ -56,16 +59,13 @@ const SearchBox = () => {
         setLoading(false);
         return;
       }
-      if (playListInfo.length < 0) {
-        setError("Something went Wrong. Please try again later");
-        setLoading(false);
-      }
     } else if (inputValue.startsWith("https://open.spotify.com/track/")) {
       try {
         setLoading(true);
         const songInfo = await getSongInfo(inputValue);
         setLoading(false);
-        setSongInfo(songInfo);
+        setDuration(songInfo.tracks[0].duration);
+        setSongInfo(songInfo.preview);
         if (songInfo.error) {
           setError(
             "Something went Wrong, Please recheck ur link or try again later"
@@ -84,12 +84,19 @@ const SearchBox = () => {
     }
     setLoading(false);
   };
+  const resetState = () => {
+    setSongInfo(null);
+    setPlayListInfo(null);
+    setInputValue(null);
+    setInputValue("");
+  };
+
   return (
     <div className="md:my-10 mb-12 mt-10 ">
       <div className="flex flex-col justify-center content-center w-screen mt-4 md:mt-20 mb-6">
         <div className="flex justify-center content-center">
           <div className="flex flex-col justify-center content-center">
-            <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-8">
+            <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-4 sm:mb-8">
               {t("header")}
             </h1>
             <p className="text-white text-center font-medium  sm:font-semibold text-base mb-8 my-4 mx-8">
@@ -103,6 +110,7 @@ const SearchBox = () => {
                   type="text"
                   placeholder={t("pholder")}
                   required
+                  value={inputValue}
                   autoComplete="off"
                   onClick={handleInputChange}
                   onPaste={handleInputPaste}
@@ -157,7 +165,12 @@ const SearchBox = () => {
       {songInfo ? (
         <div className="flex flex-col justify-center content-center  mt-4">
           <div className="flex content-center mx-auto justify-between">
-            <SongCard song={songInfo} />
+            <SongCard
+              duration={duration}
+              song={songInfo}
+              resetState={resetState}
+              pl={false}
+            />
           </div>
         </div>
       ) : (
@@ -166,7 +179,7 @@ const SearchBox = () => {
       {playListInfo ? (
         <div className="flex flex-col justify-center content-center  mt-4 mx-10 lg:mx-0">
           <div className="flex content-center mx-auto justify-between">
-            <PlayListBlock playlist={playListInfo} />
+            <PlayListBlock resetState={resetState} playlist={playListInfo} />
           </div>
         </div>
       ) : null}

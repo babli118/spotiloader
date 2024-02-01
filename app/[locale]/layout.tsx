@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import { locales } from "../../navigation.js";
@@ -6,7 +6,7 @@ require("dotenv").config();
 import { ReactNode } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
-const poppins = Poppins({
+const roboto = Roboto({
   weight: ["400", "700", "500"],
   subsets: ["latin"],
 });
@@ -59,7 +59,7 @@ export default function RootLayout({ children, params: { locale } }) {
   }
   const messages = useMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className={roboto.className}>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body
           className={
@@ -67,7 +67,7 @@ export default function RootLayout({ children, params: { locale } }) {
           }
         >
           <GoogleTagManager gtmId="GTM-TH35ND4D" />
-          <div className={poppins.className + "overflow-x-hidden"}>
+          <div className={roboto.className + "overflow-x-hidden"}>
             {children}
           </div>
         </body>
