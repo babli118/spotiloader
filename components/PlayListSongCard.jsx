@@ -59,7 +59,7 @@ const PlayListSongCard = ({
       setProgress(70); // Reset progress
       const response = await axios({
         method: "post",
-        url: "http://localhost:3001/api/embed-metadata",
+        url: `${NEXT_PUBLIC_API_SERVER_URl}/api/embed-metadata`,
         data: {
           mp3Url: songUrl,
           title: title,
