@@ -1,7 +1,7 @@
 import axios from "axios";
 const EmbedMetaData = async () => {
   const response = await axios.post(
-    "http://localhost:3001/embed-metadata",
+    `${NEXT_PUBLIC_API_SERVER_URl}/embed-metadata`,
     {
       mp3Url:
         "https://file-examples.com/storage/fed61549c865b2b5c9768b5/2017/11/file_example_MP3_700KB.mp3",
