@@ -4,7 +4,7 @@ import FootLink from "../containers/footLink.jsx";
 const Footer = () => {
   return (
     <div className="items-centre mt-10 ">
-      <div className=" sm:flex sm:justify-center sm:items-center flex  mx-0   sm:gap-4 text-sm text-white ">
+      <div className=" flex justify-center items-center   mx-0   sm:gap-4 text-sm text-white ">
         <FootLink name={"About"} href={"/about"} />
         <FootLink name={"Privacy Policy"} href={"/privacy-policy"} />
         <FootLink name={"Copyright"} href={"/copyright"} />

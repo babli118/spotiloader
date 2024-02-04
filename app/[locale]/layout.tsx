@@ -41,13 +41,13 @@ export async function generateMetadata({
       languages: {
         en: "/en",
         de: "/de",
-        ar: "/ar",
         es: "/es",
-        fr: "/fr",
-        id: "/id",
         pt: "/pt",
+        id: "/id",
+        fr: "/fr",
         ru: "/ru",
         nl: "/nl",
+        ar: "/ar",
       },
     },
   };

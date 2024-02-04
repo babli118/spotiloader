@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
+import { HiDownload } from "react-icons/hi";
 import axios from "axios";
-const SongCard = ({ song, name, duration, resetState, pl }) => {
+const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
   const [loading, setLoading] = useState(false);
+  const [song, setSong] = useState(songInfo);
   const [progress, setProgress] = useState(0); // State to track download progress
   const [downloadstatus, setdownloadstatus] = useState(false); // State to track download progress
   const [downloadbtn, setdownloadbtn] = useState(true); // State to track download progress
@@ -28,6 +30,7 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
       setProgress(20); // Reset progress
 
       const dlLinkInfo = await getDlLink(name, duration);
+      await delay(500); // Simulate delay
       setProgress(30); // Reset progress
 
       const dlLink = dlLinkInfo.dlLink.url;
@@ -68,7 +71,7 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
       setProgress(98); // Reset progress
       await delay(500); // Simulate delay
       link.href = url;
-      link.setAttribute("download", `spotifyloader.com - ${title}.mp3`);
+      link.setAttribute("download", `spotifyLoader.com - ${title}.mp3`);
       setProgress(100); // Reset progress
       await delay(500); // Simulate delay
       document.body.appendChild(link);
@@ -78,8 +81,6 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
       setdownloadstatus(true);
       setProgress(0); // Reset progress
     } catch (error) {
-      console.error("Error:", error.message);
-      setError("Failed to embed metadata.");
       setLoading(false);
     }
   };
@@ -135,9 +136,10 @@ const SongCard = ({ song, name, duration, resetState, pl }) => {
       {downloadbtn && pl === false ? (
         <button
           onClick={fetchdlLink}
-          className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4"
+          className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4 flex justify-center items-center gap-1"
         >
-          Download
+          <HiDownload />
+          <p>Download</p>
         </button>
       ) : null}
     </div>

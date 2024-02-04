@@ -1,3 +1,5 @@
+"use client";
+import { useRef } from "react";
 import React, { useState, useEffect } from "react";
 import SongCard from "./SongCard";
 import getDlLink from "../utils/getDlLink.js";
@@ -8,29 +10,47 @@ const PlayListBlock = ({ playlist, resetState }) => {
   const [duration, setDuration] = useState(null);
   const [songInfo, setSongInfo] = useState(null);
   const [downloadMode, setDownloadMode] = useState(null);
+  const songRef = useRef(null);
 
   const allTracks = playlist.tracks;
   const filteredTracks = allTracks.filter((track) => track.name.length > 0);
   const tracks = filteredTracks;
 
   useEffect(() => {
-    console.log(songInfo);
+    console.log("");
   }, [songInfo]);
+
+  const handleResize = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth < 640) {
+      // Check if screen width is less than the 'sm' breakpoint
+      window.scrollTo({
+        top: 440,
+
+        behavior: "smooth", // Set behavior to 'smooth' for smooth scrolling
+      }); // Call your function here
+    } else {
+      window.scrollTo({
+        top: 0,
+
+        behavior: "smooth", // Set behavior to 'smooth' for smooth scrolling
+      });
+    }
+  };
 
   const fetchdlLink = async (track, index, e) => {
     try {
       const uri = track.uri;
       const parts = uri.split(":");
       const id = parts[parts.length - 1];
-      console.log(id);
 
       const fetchedSongInfo = await getSongInfo(id);
       setDuration(fetchedSongInfo.tracks[0].duration);
       setSongInfo(fetchedSongInfo.preview);
       setDownloadMode(true);
-      window.scrollTo(0, 0);
+      handleResize();
     } catch (error) {
-      console.error("Error fetching song info:", error);
+      console.error("Error fetching song info:");
       // Handle errors here
     }
   };
@@ -40,7 +60,7 @@ const PlayListBlock = ({ playlist, resetState }) => {
       {downloadMode ? (
         <PlayListSongCard
           duration={duration}
-          song={songInfo}
+          songInfo={songInfo}
           resetState={resetState}
           setDownloadMode={setDownloadMode}
         />
@@ -48,7 +68,7 @@ const PlayListBlock = ({ playlist, resetState }) => {
         <div>
           <div className="flex justify-center items-center ">
             <SongCard
-              song={playlist.preview}
+              songInfo={playlist.preview}
               name={playlist.preview.description}
             />
           </div>
