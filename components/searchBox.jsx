@@ -8,6 +8,7 @@ import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
 import { useTranslations } from "next-intl";
 import { MdOutlineContentPaste } from "react-icons/md";
+import { FaWindows } from "react-icons/fa6";
 
 const SearchBox = () => {
   const [inputValue, setInputValue] = useState("");
@@ -57,11 +58,11 @@ const SearchBox = () => {
     }
   };
   const handleSearchClick = async (e) => {
+    e.preventDefault();
     setError(null);
     setLoading(false);
     setSongInfo("");
     setPlayListInfo("");
-    e.preventDefault();
 
     if (inputValue.startsWith("https://open.spotify.com/playlist/")) {
       setLoading(true);
@@ -103,6 +104,10 @@ const SearchBox = () => {
     setPlayListInfo(null);
     setInputValue(null);
     setInputValue("");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (

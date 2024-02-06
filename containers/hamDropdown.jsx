@@ -45,7 +45,7 @@ const HamDropdown = ({ locale }) => {
       <div>
         <div
           onClick={() => setShowOptions(!showOptions)}
-          className="flex relative gap-1 cursor-pointer  text-xl  mx-4 px-4 rounded-md items-center duration-50 hover:text-white transition-all "
+          className="flex  gap-1 cursor-pointer  text-xl  mx-4 px-4 rounded-md items-center duration-50 hover:text-white transition-all "
         >
           <button className=" transition-all py-2   font-bold ">
             Language
@@ -55,8 +55,8 @@ const HamDropdown = ({ locale }) => {
           </div>
         </div>
         {showOptions && (
-          <div className="absolute -mt-2 shadow-lg shadow-black  text-[#121212] bottom w-[300px] mx-auto left-10 transition-all  bg-[#121212] rounded-md">
-            <div className="py-1 flex  text-[#121212] flex-col transition-all items-center justify-center">
+          <div className=" -mt-2 shadow-lg shadow-black  bottom w-[300px] mx-auto left-10 transition-all  bg-[#121212] rounded-md">
+            <div className="py-1 flex  flex-col transition-all items-center justify-center">
               <button
                 className={`mt-2 block px-2 py-2 text-left text-sm font-semibold `}
                 onClick={() => handleChangeLanguage("en")}

@@ -52,19 +52,19 @@ const TaskBar = () => {
               {t("contact")}
             </Link>
             <div
-              className="text-[#1ED760] sm:hidden absolute right-8 text-2xl cursor-pointer transition-all "
+              className="text-[#1ED760] sm:hidden   text-2xl cursor-pointer transition-all "
               onClick={toggleDropDown}
             >
               {isDropDownOpen ? <RxCross2 /> : <RiMenuLine />}
             </div>
-            <div className="text-black  sm:block hidden transition-all">
+            <div className=" text-black  sm:block hidden transition-all">
               <LanguageChanger />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="-mt-2 transition-all ">
+      <div className="-mt-2 transition-all">
         {isDropDownOpen && <HamDropDown />}
       </div>
     </div>

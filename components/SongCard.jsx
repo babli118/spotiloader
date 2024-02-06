@@ -3,89 +3,31 @@ import Image from "next/image";
 import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
 import { HiDownload } from "react-icons/hi";
-import axios from "axios";
+import { IoMdArrowRoundBack } from "react-icons/io";
 const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
   const [loading, setLoading] = useState(false);
   const [song, setSong] = useState(songInfo);
-  const [progress, setProgress] = useState(0); // State to track download progress
+
   const [downloadstatus, setdownloadstatus] = useState(false); // State to track download progress
   const [downloadbtn, setdownloadbtn] = useState(true); // State to track download progress
   const router = useRouter();
 
   const fetchdlLink = async () => {
     setLoading(true);
-    setProgress(0); // Reset progress
+
     setdownloadbtn(false);
 
     try {
-      setProgress(1); // Reset progress
-      await delay(500); // Simulate delay
-      setProgress(5); // Reset progress
-
-      // Simulate initial delay
-
-      setProgress(10); // Reset progress
-
       const name = song.track + "SongAuthor" + song.artist;
-      setProgress(20); // Reset progress
-
       const dlLinkInfo = await getDlLink(name, duration);
-      await delay(500); // Simulate delay
-      setProgress(30); // Reset progress
-
       const dlLink = dlLinkInfo.dlLink.url;
-      setProgress(45); // Reset progress
-      await delay(500); // Simulate delay
-      const title = song.track;
-      setProgress(55); // Reset progress
 
-      setProgress(65); // Reset progress
-      const imageUrl = song.image;
-      const songUrl = dlLink;
-      await delay(500); // Simulate delay
-      setProgress(70); // Reset progress
-      await delay(500); // Simulate delay
-      const artist = song.artist;
-      const album = song.title;
-
-      setProgress(70); // Reset progress
-      const response = await axios({
-        method: "post",
-        url: `${NEXT_PUBLIC_API_SERVER_URl}/api/embed-metadata`,
-        data: {
-          mp3Url: songUrl,
-          title: title,
-          artist: artist,
-          album: album,
-          coverImageUrl: imageUrl,
-        },
-        responseType: "blob",
-      });
-
-      // Simulate processing delay
-      setProgress(80); // Reset progress
-
-      const url = window.URL.createObjectURL(new Blob([response.data]));
-
-      const link = document.createElement("a");
-      setProgress(98); // Reset progress
-      await delay(500); // Simulate delay
-      link.href = url;
-      link.setAttribute("download", `spotifyLoader.com - ${title}.mp3`);
-      setProgress(100); // Reset progress
-      await delay(500); // Simulate delay
-      document.body.appendChild(link);
-      link.click();
-
-      setLoading(false);
+      router.push(dlLink);
       setdownloadstatus(true);
-      setProgress(0); // Reset progress
     } catch (error) {
       setLoading(false);
     }
   };
-
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -105,17 +47,9 @@ const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
 
       {loading && (
         <div className="  ">
-          <div className=" sm:w-[500px] h-6 text-center bg-[#282828] rounded-full">
-            <div
-              className="h-full bg-green-500  rounded-lg flex justify-center items-center my-4 transition-all duration-[1553ms]  text-sm font-semibold"
-              style={{ width: `${progress}%` }}
-            >
-              {progress}%
-            </div>
-          </div>
           <div className="flex items-center justify-center">
-            <h3 className=" flex p-2 bg-green-500 text-black mt-4 rounded-sm font-semibold text-center">
-              Your Song is Downloading, Please wait...
+            <h3 className=" flex p-2  bg-[#121212] text-white mt-4 rounded-sm font-base text-center ">
+              Your Song is Now Downloading ...
             </h3>
           </div>
         </div>
@@ -127,8 +61,11 @@ const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
             resetState();
             router.push("/");
           }}
-          className="bg-[#1ED760] flex p-2 text-black mt-4 text-center rounded-sm text-lg font-semibold hover:scale-105 transition-all"
+          className="bg-[#1ED760] flex p-2 justify-center items-center gap-1 text-black mt-2 text-center rounded-sm text-lg font-semibold hover:scale-105 transition-all"
         >
+          <div className="text-xl">
+            <IoMdArrowRoundBack />
+          </div>{" "}
           Download more Songs
         </button>
       )}
