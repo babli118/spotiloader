@@ -18,7 +18,7 @@ const TaskBar = ({ locale }) => {
 
   return (
     <div className="mt-2 text-text bg-background shadow-md  ">
-      <div className=" mx-auto p-4 flex justify-between sm:justify-between items-center gap-2 w-[85vw] md:w-[80vw] xl:min-w-[50vw]  ">
+      <div className=" mx-auto p-4 flex justify-between sm:justify-between items-center gap-2 w-[100vw] sm:w-[85vw] md:w-[80vw] xl:min-w-[50vw]  ">
         <Link
           locale={locale}
           href={"/"}

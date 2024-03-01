@@ -6,7 +6,7 @@
   "error": "! Invalid Spotify url. Please enter a valid url and try again.",
   "header": "Spotify Downloader",
   "howto": "How To Download Spotify Songs?",
-  "pholder": "Paste Spotify Song or Playlist Link Here",
+  "pholder": "Paste Spotify Url Here ...",
   "return": "Return to homepage",
   "search": "Search",
   "download": "Download",
