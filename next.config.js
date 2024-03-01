@@ -9,7 +9,7 @@ const withPWA = require("next-pwa")({
 module.exports = withNextIntl(
   withPWA({
     images: {
-      domains: ["i.scdn.co", "mosaic.scdn.co"],
+      domains: ["i.scdn.co", "mosaic.scdn.co", "image-cdn-ak.spotifycdn.com"],
     },
   })
 );

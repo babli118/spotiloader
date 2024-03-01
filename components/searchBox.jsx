@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import Link from "next/link.js";
+import { Link } from "../navigation";
 import getSongInfo from "../utils/getSongInfo.js";
 import getPlayListInfo from "../utils/getPlayListInfo.js";
 import SongCard from "./SongCard";
