@@ -1,65 +1,149 @@
 "use client";
 import { useState } from "react";
-import { useRouter, usePathname } from "../navigation.js";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
+import NavLink from "./NavLink.jsx";
 
-export default function LanguageChanger({ locale }) {
-  const router = useRouter();
-  const pathname = usePathname();
+export default function LanguageChanger({ locale, pathname }) {
   const [showOptions, setShowOptions] = useState(false);
-
-  const handleChangeLanguage = (newLocale) => {
-    router.push(pathname, { locale: newLocale });
-  };
 
   return (
     <div
+      value={locale}
       onClick={() => setShowOptions(!showOptions)}
-      className="relative cursor-pointer "
+      className="relative cursor-pointer z-40 "
     >
-      <div className="flex  text-xl text-black  justify-center gap-2 bg-[#1ED760] p-2 hover:text-white rounded-md items-center duration-50     transition-all ">
-        <button className=" transition-all hover:text-white ">Language</button>
-        <div className=" mt-1.8 text-base hover:text-white">
+      <div
+        style={{
+          padding: "0.5rem 1rem",
+          background: "#41fc9c",
+        }}
+        className={
+          "flex text-lg font-medium    justify-center  gap-2 rounded-md items-center duration-50 transition-all bg-text/10" +
+          (showOptions
+            ? "bg-text/10 text-text"
+            : "text-text hover:text-primary")
+        }
+      >
+        <button>Language</button>
+        <div className=" mt-1.8 text-base transition-all   ">
           {showOptions ? <FaAngleUp /> : <FaAngleDown />}
         </div>
       </div>
-      {showOptions && (
-        <div className="absolute mt-4  bottom w-full transition-all duration-50  bg-[#1ED760] rounded-md">
-          <div className="py-1 flex  flex-col items-center justify-center">
-            <button
-              className={`mt-2 block px-6 py-2 text-left text-sm   hover:text-white `}
-              onClick={() => handleChangeLanguage("en")}
-            >
-              English
-            </button>
-            <button
-              className={`block px-4 py-2 text-left text-sm   hover:text-white `}
-              onClick={() => handleChangeLanguage("de")}
-            >
-              Deutsch
-            </button>
-            <button
-              className={`block px-4 py-2 text-left text-sm hover:text-white `}
-              onClick={() => handleChangeLanguage("es")}
-            >
-              Español
-            </button>
-            <button
-              className={`block px-4 py-2 text-left text-sm hover:text-white`}
-              onClick={() => handleChangeLanguage("pt")}
-            >
-              português
-            </button>
-            <button
-              className={`block px-4 py-2 text-left text-sm hover:text-white`}
-              onClick={() => handleChangeLanguage("id")}
-            >
-              indonesian
-            </button>
+
+      <div style={{ position: "absoulute" }}>
+        {showOptions && (
+          <div
+            style={{
+              position: "absolute",
+              left: "4px",
+              background: "#1ED760",
+            }}
+            className=" mt-2 transition-all duration-50  rounded-md absolute shadow-md"
+          >
+            <div className="py-2 transition-all px-4 text-grey  flex flex-col">
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="en"
+                name={<span className="flex gap-2 text-base ">English</span>}
+              />
+
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="de"
+                name={<span className="flex gap-2 text-base ">Deutsch</span>}
+              />
+
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="es"
+                name={<span className="flex gap-2 text-base ">Español</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="pt"
+                name={<span className="flex gap-2 text-base ">português</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="it"
+                name={<span className="flex gap-2 text-base ">Italian</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="nl"
+                name={<span className="flex gap-2 text-base ">Dutch</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="id"
+                name={<span className="flex gap-2 text-base ">Indonesian</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="ar"
+                name={<span className="flex gap-2 text-base ">Arabic</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="tr"
+                name={<span className="flex gap-2 text-base ">Türkçe</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="vi"
+                name={<span className="flex gap-2 text-base ">Vietnamese</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="ru"
+                name={<span className="flex gap-2 text-base ">россия</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="hi"
+                name={<span className="flex gap-2 text-base ">Hindi</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="fr"
+                name={<span className="flex gap-2 text-base ">Français</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="zh"
+                name={<span className="flex gap-2 text-base ">Chinese</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="ja"
+                name={<span className="flex gap-2 text-base ">Japanese</span>}
+              />
+              <NavLink
+                c={true}
+                href={pathname}
+                locale="th"
+                name={<span className="flex gap-2 text-base ">Thai</span>}
+              />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

@@ -1,1 +1,94 @@
-{"about":"Tentang","aboutpara":"Jika Anda sedang mencari metode bebas repot untuk mengunduh lagu dan daftar putar favorit Anda dari Spotify dengan kualitas setinggi mungkin, tidak perlu mencari lagi – SpotifyLoader siap membantu Anda! Alat yang mudah digunakan ini menyederhanakan prosesnya, memungkinkan Anda mengunduh lagu atau daftar putar Spotify apa pun hanya dengan satu klik. Bagian terbaik? Anda tidak perlu menginstal apa pun. Semuanya terjadi dengan lancar di browser web Anda. Nikmati kenyamanan kecepatan unduh tercepat yang tersedia. Pengunduh Spotify kami mengambil langkah lebih jauh, memungkinkan Anda mengunduh lagu ke dalam file mp3 dengan mudah hanya dengan satu klik. Semudah menempelkan tautan lagu, menekan tombol unduh, dan voila! Yang membedakan kami bukan hanya kecepatannya namun kualitas MP3 luar biasa yang kami sediakan. Waktu konversi lagu sangat cepat – hanya beberapa detik – memungkinkan Anda mengonversi dan menyimpan lagu apa pun yang Anda inginkan secara instan dengan kecepatan unduh super cepat. Dan inilah bagian terbaiknya: tidak ada batasan tarif! Unduh lagu dalam jumlah tak terbatas tanpa batasan apa pun, dan bagian terbaiknya adalah, semuanya gratis! Ucapkan selamat tinggal pada proses dan keterbatasan yang rumit. Dengan SpotifyLoader, nikmati kebebasan membuat koleksi musik Anda dengan mudah dan dalam kualitas terbaik. Cobalah hari ini dan rasakan kemudahan mengunduh lagu dan playlist Spotify favorit Anda yang belum pernah ada sebelumnya!","cntinfo":"Ingin menghubungi kami untuk pertanyaan apa pun, Silakan terhubung dengan kami dengan menggunakan tautan ini:","contact":"Kontak","descripton":"SpotifyLoader adalah Pengunduh Lagu Spotify yang memungkinkan Anda dengan mudah mengunduh lagu, daftar putar, dan album Spotify favorit Anda dalam format mp3 hanya dengan satu klik.","error":"Url Lagu Spotify atau Daftar Putar tidak valid. Silakan masukkan url yang valid dan coba lagi.","header":"Pengunduh Spotify","howto":"Bagaimana cara menggunakan SpotifyLoader?","pholder":"https://open.spotify.com/..../....","return":"Kembali ke beranda","search":"Mencari","SpotifyLoader - Spotify to MP3 Downloader Online":"SpotifyLoader - Pengunduh Spotify ke MP3 Online","spotiinfo":"SpotifyLoader menawarkan solusi nyaman untuk mengunduh lagu dan daftar putar dari Spotify, memungkinkan pengguna mengunduh lagu dengan mudah. SpotifyLoader memastikan pengalaman yang ramah pengguna, membuat proses mengunduh lagu dari Spotify menjadi sederhana dan efisien. Mengutamakan pertimbangan hukum dan etika, SpotifyLoader menjaga kualitas dan integritas lagu aslinya. Unduh lagu Spotify favorit Anda dengan satu klik untuk pengalaman mendengarkan offline yang lancar. Cepat, sederhana, dan dibuat untuk pecinta musik yang ingin mendengarkan musiknya kapan saja!","step1":"Buka Aplikasi Spotify Anda","step2":"Temukan lagu atau playlist yang ingin Anda download","step3":"Klik pada tombol 3 \"titik\". Tombolnya terlihat seperti ini \"...\"","step4":"Klik \"Bagikan\" dan kemudian tombol \"Salin Tautan\".","step5":"Tempel tautan yang disalin di atas dan tekan \"Cari\"","step6":"Tunggu hingga prosesnya selesai dan klik tombol \"Unduh\".","tagline":"Unduh lagu dan daftar putar Spotify favorit Anda dengan pengunduh Spotify ke MP3 kami yang efisien – konversikan dan unduh lagu dengan cepat untuk didengarkan secara offline kapan saja, di mana saja!","title":"Pengunduh Spotify - Pengunduh Lagu dan Daftar Putar Spotify Online","tut":"Berikut tutorial sederhana cara menggunakan SpotifyLoader:","twdesc":"Unduh musik Spotify favorit Anda ke MP3 dengan SpotifyLoader, pengunduh Spotify ke MP3 online"}
+{
+  "header": "Pengunduh Spotify",
+  "tagline": "Unduh Lagu dan Daftar Putar Spotify ke MP3 secara gratis",
+  "faq": {
+    "heading": "FAQ untuk Pengunduh Lagu Spotify",
+    "questions": {
+      "0": {
+        "question": "Apakah pengunduh lagu spotify gratis untuk digunakan?",
+        "answer": "Ya, benar-benar gratis untuk digunakan. \nAnda dapat mengunduh lagu dan playlist Spotify ke mp3 sebanyak yang Anda inginkan secara gratis!"
+      },
+      "1": {
+        "answer": "Tidak, Anda tidak perlu membayar apa pun, karena layanan pengunduhan lagu Spotify ke Mp3 kami selalu gratis! \nKami mendukung semua browser modern seperti Google Chrome, Mozilla Firefox, Safari, Microsoft Edge dll.",
+        "question": "Apakah saya harus membayar untuk mengunduh lagu Spotify?"
+      },
+      "2": {
+        "question": "Apakah Anda memerlukan Spotify premium untuk mengunduh lagu Spotify?",
+        "answer": "Tidak. Dengan SpotifyLoader, Anda dapat mendownload lagu dari Spotify tanpa akun premium. \nAlat kami berfungsi dengan akun gratis dan premium, sehingga siapa pun dapat menikmati manfaat mengunduh musik untuk didengarkan secara offline kapan pun mereka mau."
+      },
+      "3": {
+        "question": "Di mana Spotify Mp3 disimpan setelah diunduh?",
+        "answer": "Saat Anda menyimpan dari Spotify ke Mp3, file biasanya disimpan ke folder 'unduhan' Anda. \nDalam pengaturan browser Anda, Anda dapat mengubah dan secara manual memilih folder tujuan untuk file Anda."
+      },
+      "4": {
+        "question": "Seberapa cepat Pengunduh Spotify?",
+        "answer": "Pengunduh mp3 Spotify sangat cepat, memungkinkan Anda mengunduh lagu dalam hitungan detik. \nTeknologi canggih kami memastikan proses pengunduhan lancar dan lancar setiap saat, jadi Anda tidak perlu khawatir menunggu musik Anda."
+      },
+      "5": {
+        "question": "Apakah SpotifyLoader mendukung Unduh Daftar Putar Spotify?",
+        "answer": "Ya. \nAnda dapat mengunduh daftar putar Spotify dari Spotify. \nCukup tempel tautan daftar putar dan klik Unduh. \nAnda juga dapat mengunduh lagu dan musik Spotify."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "Ada banyak manfaat menggunakan pengunduh spotify ke mp3.",
+        "points": {
+          "0": "Pertama-tama, pengunduh spotify sepenuhnya gratis dan mudah digunakan. \nAnda dapat mengonversi lagu Spotify tanpa batas ke mp3.",
+          "1": "Selain itu, pengunduh Spotify ke mp3 kami memungkinkan Anda menyesuaikan musik dengan beberapa cara berbeda sehingga Anda dapat mengunduh musik dengan kualitas setinggi mungkin.",
+          "2": "Alat online ini memungkinkan Anda mengunduh lagu, album, atau daftar putar Spotify apa pun dengan cepat dan mudah dari Spotify. \nYang terbaik dari semuanya, gratis dan mudah digunakan!",
+          "3": "Pengunduh lagu Spotify juga memungkinkan Anda menyimpan lagu Spotify ke mp3 di perangkat Anda.",
+          "4": "Jadi, jika Anda seorang pencinta musik yang menginginkan cara sederhana untuk mengunduh semua lagu favoritnya dari Spotify dengan mudah, kunjungi Pengunduh Lagu Spotify online kami!"
+        }
+      },
+      "1": {
+        "conclusion": "Jadi mengapa menunggu? \nCobalah hari ini dan temukan sendiri pengunduhan lagu Spotify tanpa batas! \nJadi, jika Anda mencari solusi lengkap untuk semua kebutuhan pengunduhan Spotify Anda, Anda bisa mengunjungi Spotify Downloader hari ini!"
+      }
+    },
+    "heading": "Manfaat menggunakan Spotify Downloader Online"
+  },
+  "features": {
+    "c5heading": "100% GRATIS, AMAN DAN BERSIH",
+    "c3text": "Tidak perlu mengunduh ekstensi, cobalah fitur PWA (Aplikasi Web Progresif) kami untuk pengalaman terbaik.",
+    "c4heading": "UNDUH TANPA BATASAN",
+    "c4text": "Unduh spotify dan playlist sebanyak yang Anda inginkan menggunakan pengunduh lagu spotify tanpa batasan dan selalu gratis.",
+    "c5text": "Lagu Spotify yang Diunduh ke mp3 dengan SpotifyLoader benar-benar bersih tanpa virus apa pun.",
+    "c6heading": "SEMUA PLATFORM DIDUKUNG",
+    "c6text": "Kami mendukung semua platform perangkat. \nMengunduh lagu Spotify dengan mudah terlepas dari apakah Anda menggunakan Windows, Mac atau Linux, Android, iPhone.",
+    "heading": "Apa sajakah fitur unggulan Pengunduh Spotify ke mp3?",
+    "c1text": "Dengan konversi satu klik yang sederhana, Anda dapat mengonversi dan mengunduh lagu Spotify favorit Anda ke format mp3 dalam waktu singkat.",
+    "c2text": "Mendukung semua browser dan perangkat pribadi seperti ponsel, komputer, dan tablet.",
+    "c3heading": "APLIKASI WEB PROGRESIF",
+    "c1heading": "KONVERSI CEPAT DAN MUDAH:",
+    "c2heading": "CEPAT GRATIS DAN MUDAH DIGUNAKAN"
+  },
+  "info": {
+    "text": "Jadi jika Anda ingin cara mudah mengunduh lagu, album, dan daftar putar dari Spotify, Anda bisa mengunjungi Spotify Downloader kami! \nProses konversinya yang cepat dan sederhana, mendengarkan bebas iklan, dan keluaran berkualitas tinggi menjadikannya solusi sempurna untuk semua kebutuhan musik Anda. \nCobalah hari ini!",
+    "heading": "Spotify Downloader - Unduh lagu, album, dan playlist dari Spotify!"
+  },
+  "spotiinfo": "SpotifyLoader adalah alat gratis yang memungkinkan Anda mengunduh lagu, album, dan daftar putar Spotify dalam MP3 online. \nSimpan lagu Spotify dengan kualitas terbaik dalam format file MP3. \nPengunduh Musik Spotify kami sepenuhnya gratis untuk digunakan, cepat dan aman. \nTidak perlu menginstal aplikasi, ekstensi, atau program apa pun, Anda hanya memerlukan tautan Lagu Spotify atau Daftar Putar untuk ditempelkan di kotak Pencarian di situs web SpotifyLoader Spotify Music Downloader dan mengunduh format file MP3.",
+  "spdlQ": "Apa itu Pengunduh Spotify?",
+  "tut": "Berikut tutorial sederhana download lagu spotify:",
+  "step1": "Buka Aplikasi Spotify Anda",
+  "step2": "Temukan lagu atau playlist yang ingin Anda download",
+  "step3": "Klik pada tombol 3 \"titik\". \nTombolnya terlihat seperti ini \"...\"",
+  "step4": "Klik \"Bagikan\" dan kemudian tombol \"Salin Tautan\".",
+  "step5": "Tempel tautan yang disalin di atas dan tekan \"Cari\"",
+  "step6": "Tunggu hingga pemrosesan selesai dan klik tombol \"Unduh\".",
+  "pholder": "Tempel Lagu Spotify atau Tautan Daftar Putar Di Sini",
+  "download": "Unduh",
+  "error": "! \nUrl Spotify tidak valid. \nSilakan masukkan url yang valid dan coba lagi.",
+  "downloadMore": "Unduh Lebih Banyak Lagu",
+  "downloading": "Lagu Anda Sekarang Sedang Diunduh...",
+  "return": "Kembali ke beranda",
+  "title": "Pengunduh Spotify: Unduh Lagu dan Daftar Putar Spotify ke MP3",
+  "descripton": "SpotifyLoader adalah Pengunduh Lagu Spotify yang memungkinkan Anda mengunduh lagu, musik, dan daftar putar Spotify dalam mp3 online secara gratis.",
+  "twdesc": "Unduh musik Spotify favorit Anda ke MP3 dengan SpotifyLoader, pengunduh Spotify ke MP3 online",
+  "about": "Tentang",
+  "aboutpara": "Jika Anda sedang mencari metode bebas repot untuk mengunduh lagu, album, dan daftar putar favorit Anda dari Spotify dengan kualitas setinggi mungkin, tidak perlu mencari lagi – SpotifyLoader siap membantu Anda! \nAlat yang mudah digunakan ini menyederhanakan prosesnya, memungkinkan Anda mengunduh lagu atau daftar putar Spotify apa pun hanya dengan satu klik. \nBagian terbaik? \nAnda tidak perlu menginstal apa pun. \nSemuanya terjadi dengan lancar di browser web Anda. \nNikmati kenyamanan kecepatan unduh tercepat yang tersedia. \nPengunduh Spotify kami mengambil langkah lebih jauh, memungkinkan Anda mengunduh lagu ke dalam file mp3 dengan mudah hanya dengan satu klik. \nSemudah menempelkan tautan lagu, menekan tombol unduh, dan voila! \nYang membedakan kami bukan hanya kecepatannya namun kualitas MP3 luar biasa yang kami sediakan. \nWaktu konversi lagu sangat cepat – hanya beberapa detik – memungkinkan Anda mengonversi dan menyimpan lagu apa pun yang Anda inginkan secara instan dengan kecepatan unduh super cepat. \nDan inilah bagian terbaiknya: tidak ada batasan tarif! \nUnduh lagu dalam jumlah tak terbatas tanpa batasan apa pun, dan bagian terbaiknya adalah, semuanya gratis! \nUcapkan selamat tinggal pada proses dan keterbatasan yang rumit. \nDengan SpotifyLoader, nikmati kebebasan membuat koleksi musik Anda dengan mudah dan dalam kualitas terbaik. \nCobalah hari ini dan rasakan kemudahan mengunduh lagu dan playlist Spotify favorit Anda yang belum pernah ada sebelumnya!",
+  "cntinfo": "Ingin menghubungi kami untuk pertanyaan apa pun, Silakan terhubung dengan kami dengan menggunakan tautan ini:",
+  "contact": "Kontak",
+  "search": "Mencari",
+  "howto": "Bagaimana Cara Mengunduh Lagu Spotify?"
+}

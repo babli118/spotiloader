@@ -1,1 +1,96 @@
-{"about":"Acerca de","aboutpara":"Si está buscando un método sencillo para descargar sus canciones y listas de reproducción favoritas de Spotify con la mayor calidad posible, no busque más: ¡SpotifyLoader lo tiene cubierto! Esta herramienta fácil de usar simplifica el proceso y le permite descargar cualquier canción o lista de reproducción de Spotify con un solo clic. ¿La mejor parte? No necesitas instalar nada. Todo sucede a la perfección dentro de su navegador web. Disfrute de la comodidad de las velocidades de descarga más rápidas disponibles. Nuestro descargador de Spotify va un paso más allá y le permite descargar canciones sin esfuerzo en un archivo mp3 con un solo clic. Es tan fácil como pegar el enlace de la canción, presionar el botón de descarga y ¡listo! Lo que nos diferencia no es sólo la velocidad sino la excepcional calidad MP3 que ofrecemos. El tiempo de conversión de canciones es increíblemente rápido (solo segundos), lo que le permite convertir y guardar instantáneamente cualquier canción que desee a una velocidad de descarga súper rápida. Y aquí está la mejor parte: ¡no hay límites de tarifas! Descarga una cantidad ilimitada de canciones sin restricciones y la mejor parte es que ¡todo es completamente gratis! Diga adiós a los procesos complicados y a las limitaciones. Con SpotifyLoader, disfruta de la libertad de crear tu colección de música sin esfuerzo y con la mejor calidad posible. ¡Pruébalo hoy y experimenta la facilidad de descargar tus canciones y listas de reproducción favoritas de Spotify como nunca antes!","cntinfo":"Si desea ponerse en contacto con nosotros para cualquier consulta, conéctese con nosotros mediante este enlace:","contact":"Contacto","descripton":"SpotifyLoader es un descargador de canciones de Spotify que te permite descargar sin esfuerzo tus canciones, listas de reproducción y álbumes favoritos de Spotify en mp3 con solo un clic.","error":"URL de canción o lista de reproducción de Spotify no válida. Introduzca una URL válida e inténtelo de nuevo.","header":"Descargador de Spotify","howto":"¿Cómo utilizar SpotifyLoader?","pholder":"https://open.spotify.com/..../....","return":"Regresar a la página principal","search":"Buscar","SpotifyLoader - Spotify to MP3 Downloader Online":"SpotifyLoader - Descargador de Spotify a MP3 en línea","spotiinfo":"SpotifyLoader ofrece una solución conveniente para descargar canciones y listas de reproducción de Spotify, lo que permite a los usuarios descargar pistas sin esfuerzo. SpotifyLoader garantiza una experiencia fácil de usar, haciendo que el proceso de descarga de canciones de Spotify sea simple y eficiente. Al priorizar las consideraciones legales y éticas, SpotifyLoader mantiene la calidad e integridad de las pistas originales. Descarga tus canciones favoritas de Spotify con un solo clic para disfrutar de una experiencia auditiva sin conexión perfecta. ¡Rápido, simple y hecho para amantes de la música que quieren escuchar sus canciones mientras viajan!","step1":"Abre tu aplicación Spotify","step2":"Encuentra la canción o lista de reproducción que deseas descargar","step3":"Haga clic en el botón de 3 \"puntos\". El botón se ve así \"...\"","step4":"Haga clic en \"Compartir\" y luego en el botón \"Copiar enlace\".","step5":"Pegue el enlace copiado arriba y presione \"Buscar\"","step6":"Espere a que finalice el procesamiento y haga clic en el botón \"Descargar\"","tagline":"Descargue sus canciones y listas de reproducción favoritas de Spotify con nuestro eficiente descargador de Spotify a MP3: convierta y descargue canciones rápidamente para escucharlas sin conexión en cualquier momento y en cualquier lugar.","title":"Spotify Downloader - Descargador de canciones y listas de reproducción de Spotify en línea","tut":"Aquí hay un tutorial simple sobre cómo usar SpotifyLoader:","twdesc":"Descargue su música favorita de Spotify a MP3 con SpotifyLoader, el descargador en línea de Spotify a MP3"}
+{
+  "header": "Descargador de Spotify",
+  "tagline": "Descarga canciones y listas de reproducción de Spotify a MP3 gratis",
+  "faq": {
+    "heading": "Preguntas frecuentes sobre el descargador de canciones de Spotify",
+    "questions": {
+      "0": {
+        "question": "¿El descargador de canciones de Spotify es de uso gratuito?",
+        "answer": "Sí, de uso totalmente gratuito. \n¡Puedes descargar tantas canciones y listas de reproducción de Spotify en mp3 como quieras completamente gratis!"
+      },
+      "1": {
+        "answer": "No, no tienes que pagar por nada, ¡porque nuestro servicio de descarga de canciones de Spotify a Mp3 es siempre gratis! \nAdmitimos todos los navegadores modernos como Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, etc.",
+        "question": "¿Tengo que pagar para descargar la canción de Spotify?"
+      },
+      "2": {
+        "question": "¿Necesitas Spotify premium para descargar canciones de Spotify?",
+        "answer": "No. Con SpotifyLoader, puedes descargar canciones de Spotify sin una cuenta premium. \nNuestra herramienta funciona con cuentas gratuitas y premium, por lo que cualquiera puede disfrutar de los beneficios de descargar música para escucharla sin conexión cuando lo desee."
+      },
+      "3": {
+        "question": "¿Dónde se guardan los MP3 de Spotify después de la descarga?",
+        "answer": "Cuando guardas de Spotify a Mp3, los archivos generalmente se guardan en tu carpeta de \"descargas\". \nEn la configuración de su navegador, puede cambiar y seleccionar manualmente la carpeta de destino para sus archivos."
+      },
+      "4": {
+        "question": "¿Qué tan rápido es el descargador de Spotify?",
+        "answer": "El descargador de mp3 de Spotify es extremadamente rápido y te permite descargar canciones en segundos. \nNuestra tecnología avanzada garantiza un proceso de descarga fluido y fluido en todo momento, para que nunca tengas que preocuparte por esperar tu música."
+      },
+      "5": {
+        "question": "¿SpotifyLoader admite la descarga de listas de reproducción de Spotify?",
+        "answer": "Sí. \nPuede descargar la lista de reproducción de Spotify desde Spotify. \nSimplemente pegue el enlace de la lista de reproducción y haga clic en Descargar. \nTambién puedes descargar canciones y música de Spotify."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "Hay muchos beneficios al usar Spotify para descargar mp3.",
+        "points": {
+          "0": "Para empezar, Spotify Downloader es completamente gratuito y fácil de usar. \nPuedes convertir canciones ilimitadas de Spotify a mp3.",
+          "1": "Además, nuestro descargador de Spotify a mp3 te permite personalizar tu música de diferentes maneras para que puedas descargarla con la mayor calidad posible.",
+          "2": "Esta herramienta en línea le permite descargar rápida y fácilmente cualquier canción, álbum o lista de reproducción de Spotify desde Spotify. \n¡Lo mejor de todo es que es gratis y fácil de usar!",
+          "3": "Spotify song Downloader también te permite guardar canciones de Spotify en mp3 en tu dispositivo.",
+          "4": "Entonces, si eres un amante de la música y quieres una forma sencilla de descargar fácilmente todas sus canciones favoritas de Spotify, ¡no busques más que nuestro Descargador de canciones de Spotify en línea!"
+        }
+      },
+      "1": {
+        "conclusion": "Entonces, ¿por qué esperar? \n¡Pruébalo hoy y descubre la descarga ilimitada de canciones de Spotify por ti mismo! \nEntonces, si está buscando una solución todo en uno para todas sus necesidades de descarga de Spotify, ¡no busque más que Spotify Downloader hoy!"
+      }
+    },
+    "heading": "Beneficios de usar Spotify Downloader Online"
+  },
+  "features": {
+    "c5heading": "100% GRATIS, SEGURO Y LIMPIO",
+    "c3text": "No es necesario descargar la extensión; en su lugar, pruebe nuestra función PWA (aplicaciones web progresivas) para obtener la mejor experiencia.",
+    "c4heading": "DESCARGAR SIN LIMITACIÓN",
+    "c4text": "Descarga tantos Spotify y listas de reproducción como quieras usando el descargador de canciones de Spotify sin limitaciones y siempre gratis.",
+    "c5text": "Las canciones de Spotify descargadas a mp3 con SpotifyLoader están totalmente limpias y sin ningún virus.",
+    "c6heading": "TODAS LAS PLATAFORMAS SOPORTADAS",
+    "c6text": "Admitimos todas las plataformas de dispositivos. \nFácil de descargar canciones de Spotify independientemente de si estás usando Windows, Mac o Linux, Android, iPhone.",
+    "heading": "¿Cuáles son algunas de las características principales de Spotify to mp3 Downloader?",
+    "c1text": "Con una simple conversión con un solo clic, puedes convertir y descargar tus canciones favoritas de Spotify al formato mp3 en muy poco tiempo.",
+    "c2text": "Admite todos los navegadores y dispositivos personales como teléfonos, computadoras y tabletas.",
+    "c3heading": "APLICACIÓN WEB PROGRESIVA",
+    "c1heading": "CONVERSIÓN RÁPIDA Y FÁCIL:",
+    "c2heading": "RÁPIDO GRATIS Y FÁCIL DE USAR",
+    "description": "Entonces, si desea una manera fácil de descargar canciones, álbumes y listas de reproducción de Spotify, ¡no busque más que nuestro Descargador de Spotify! \nSu proceso de conversión rápido y sencillo, su escucha sin publicidad y su salida de alta calidad lo convierten en la solución perfecta para todas sus necesidades musicales. \nDarle una oportunidad hoy!",
+    "title": "Spotify Downloader: descarga canciones, álbumes y listas de reproducción de Spotify."
+  },
+  "info": {
+    "text": "Entonces, si desea una manera fácil de descargar canciones, álbumes y listas de reproducción de Spotify, ¡no busque más que nuestro Descargador de Spotify! \nSu proceso de conversión rápido y sencillo, su escucha sin publicidad y su salida de alta calidad lo convierten en la solución perfecta para todas sus necesidades musicales. \nDarle una oportunidad hoy!",
+    "heading": "Spotify Downloader: descarga canciones, álbumes y listas de reproducción de Spotify."
+  },
+  "spotiinfo": "SpotifyLoader es una herramienta gratuita que te permite descargar canciones, álbumes y listas de reproducción de Spotify en MP3 en línea. \nGuarda canciones de Spotify con la mejor calidad en formato de archivo MP3. \nNuestro Spotify Music Downloader es de uso completamente gratuito, rápido y seguro. \nNo es necesario instalar ninguna aplicación, extensión o programa, solo necesita un enlace de canción o lista de reproducción de Spotify para pegar en el cuadro de búsqueda en el sitio web SpotifyLoader Spotify Music Downloader y descargar el formato de archivo MP3.",
+  "spdlQ": "¿Qué es el Descargador de Spotify?",
+  "tut": "Aquí tienes un sencillo tutorial para descargar canciones de Spotify:",
+  "step1": "Abre tu aplicación Spotify",
+  "step2": "Encuentra la canción o lista de reproducción que deseas descargar",
+  "step3": "Haga clic en el botón de 3 \"puntos\". \nEl botón se ve así \"...\"",
+  "step4": "Haga clic en \"Compartir\" y luego en el botón \"Copiar enlace\".",
+  "step5": "Pegue el enlace copiado arriba y presione \"Buscar\"",
+  "step6": "Espere a que finalice el procesamiento y haga clic en el botón \"Descargar\"",
+  "pholder": "Pegue la canción de Spotify o el enlace de la lista de reproducción aquí",
+  "download": "Descargar",
+  "error": "! \nURL de Spotify no válida. \nIntroduzca una URL válida e inténtelo de nuevo.",
+  "downloadMore": "Descargar más canciones",
+  "downloading": "Tu canción ya se está descargando...",
+  "return": "Regresar a la página principal",
+  "title": "Descargador de Spotify: descargue canciones y listas de reproducción de Spotify a MP3",
+  "descripton": "SpotifyLoader es un descargador de canciones de Spotify que te permite descargar canciones, música y listas de reproducción de Spotify en mp3 en línea de forma gratuita.",
+  "twdesc": "Descargue su música favorita de Spotify a MP3 con SpotifyLoader, el descargador en línea de Spotify a MP3",
+  "about": "Acerca de",
+  "aboutpara": "Si está buscando un método sencillo para descargar sus canciones, álbumes y listas de reproducción favoritos de Spotify con la mayor calidad posible, no busque más: ¡SpotifyLoader lo tiene cubierto! \nEsta herramienta fácil de usar simplifica el proceso y le permite descargar cualquier canción o lista de reproducción de Spotify con un solo clic. \n¿La mejor parte? \nNo necesitas instalar nada. \nTodo sucede a la perfección dentro de su navegador web. \nDisfrute de la comodidad de las velocidades de descarga más rápidas disponibles. \nNuestro descargador de Spotify va un paso más allá y le permite descargar canciones sin esfuerzo en un archivo mp3 con un solo clic. \nEs tan fácil como pegar el enlace de la canción, presionar el botón de descarga y ¡listo! \nLo que nos diferencia no es sólo la velocidad sino la excepcional calidad MP3 que ofrecemos. \nEl tiempo de conversión de canciones es increíblemente rápido (solo unos segundos), lo que le permite convertir y guardar instantáneamente cualquier canción que desee a una velocidad de descarga súper rápida. \nY aquí está la mejor parte: ¡no hay límites de tarifas! \nDescarga una cantidad ilimitada de canciones sin restricciones y la mejor parte es que ¡todo es completamente gratis! \nDiga adiós a los procesos complicados y a las limitaciones. \nCon SpotifyLoader, disfruta de la libertad de crear tu colección de música sin esfuerzo y con la mejor calidad posible. \n¡Pruébalo hoy y experimenta la facilidad de descargar tus canciones y listas de reproducción favoritas de Spotify como nunca antes!",
+  "cntinfo": "Si desea ponerse en contacto con nosotros para cualquier consulta, conéctese con nosotros mediante este enlace:",
+  "contact": "Contacto",
+  "search": "Buscar",
+  "howto": "¿Cómo descargar canciones de Spotify?"
+}

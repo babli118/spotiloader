@@ -1,15 +1,20 @@
 import React from "react";
-import TaskBar from "../../../components/taskBar";
-import Link from "next/link";
-import Footer from "../../../components/Footer";
+import ReturnBtn from "../../../containers/returnBtn";
+
+export const metadata = {
+  title: "Privacy Policy - SpotifyLoader",
+  metadataBase: new URL("https://spotifyloader.com"),
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+};
 
 const Page = () => {
   return (
-    <div className=" flex flex-col ">
-      <TaskBar />
-      <div className="mx-10 sm:mx-[12rem] md:mx-[15rem] lg:mx-[25rem] text-white ">
+    <div className=" flex flex-col mt-10">
+      <div className=" mx-auto w-[85vw] md:w-[80vw] xl:w-[43vw]  text-text ">
         <div>
-          <h3 className="text-4xl  font-semibold  text-[#1ED760] my-10 text-center   ">
+          <h3 className="text-4xl  font-semibold  text-primary my-10 text-center   ">
             Privacy Policy - SpotifyLoader
           </h3>
           <p className="my-6">
@@ -31,7 +36,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             Consent
           </h3>
           <p className="my-6">
@@ -40,7 +45,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             Information we collect
           </h3>
           <p className="my-6">
@@ -61,7 +66,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             How we use your information
           </h3>
           <p className="my-6">
@@ -75,7 +80,7 @@ const Page = () => {
           </ul>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             Advertising Partners Privacy Policies
           </h3>
           <p className="my-6">
@@ -98,7 +103,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             Third Party Privacy Policies
           </h3>
           <p className="my-6">
@@ -116,7 +121,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             CCPA Privacy Rights (Do Not Sell My Personal Information)
           </h3>
           <p className="my-6">
@@ -142,7 +147,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             GDPR Data Protection Rights
           </h3>
           <p className="my-6">
@@ -183,7 +188,7 @@ const Page = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-[#1ED760] text-4xl font-semibold mb-4 mt-10">
+          <h3 className="text-text text-4xl font-semibold mb-4 mt-10">
             Children&apos;s Information
           </h3>
           <p className="my-6">
@@ -200,15 +205,7 @@ const Page = () => {
             our records.
           </p>
         </div>
-        <div className="mt-10 transform  transition-all mx-auto items-center flex justify-center my-7 ">
-          <Link
-            href={"/"}
-            className="bg-[#1ED760] hover:bg-[#24974c] hover:scale-110   transition-all   text-lg text-black font-bold px-4 py-3   mx-2 rounded-md"
-          >
-            Return to homepage
-          </Link>
-        </div>
-        <Footer />
+        <ReturnBtn />
       </div>
     </div>
   );

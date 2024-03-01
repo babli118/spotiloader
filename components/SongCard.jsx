@@ -2,12 +2,21 @@ import React, { useState } from "react";
 import Image from "next/image";
 import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
-import { HiDownload } from "react-icons/hi";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { IoMdArrowRoundBack } from "react-icons/io";
-const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
+import { IconContext } from "react-icons";
+const SongCard = ({
+  songInfo,
+  name,
+  duration,
+  resetState,
+  pl,
+  downloading,
+  download,
+  downloadMore,
+}) => {
   const [loading, setLoading] = useState(false);
   const [song, setSong] = useState(songInfo);
-
   const [downloadstatus, setdownloadstatus] = useState(false); // State to track download progress
   const [downloadbtn, setdownloadbtn] = useState(true); // State to track download progress
   const router = useRouter();
@@ -31,7 +40,10 @@ const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="bg-[#121212] text-white pt-4 py-2 px-4 rounded-md flex flex-col justify-center">
+      <div
+        style={{ background: "rgb(128 128 128 / 0.2)" }}
+        className=" text-text pt-4 py-2 px-4 rounded-md flex flex-col justify-center shadow-md"
+      >
         <div className="flex justify-center items-center w-[60vw] sm:w-[40vw] md:w-[20vw] lg:w-[15vw] mx-auto">
           <Image
             className="rounded-md"
@@ -48,8 +60,8 @@ const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
       {loading && (
         <div className="  ">
           <div className="flex items-center justify-center">
-            <h3 className=" flex p-2  bg-[#121212] text-white mt-4 rounded-sm font-base text-center ">
-              Your Song is Now Downloading ...
+            <h3 className=" flex p-2  bg-primary  mt-4 rounded-sm font-base text-center ">
+              {downloading}
             </h3>
           </div>
         </div>
@@ -61,22 +73,27 @@ const SongCard = ({ songInfo, name, duration, resetState, pl }) => {
             resetState();
             router.push("/");
           }}
-          className="bg-[#1ED760] flex p-2 justify-center items-center gap-1 text-black mt-2 text-center rounded-sm text-lg font-semibold hover:scale-105 transition-all"
+          className="bg-primary flex p-2 justify-center items-center gap-1 text-black mt-2 text-center rounded-sm text-lg font-semibold hover:scale-105 transition-all"
         >
           <div className="text-xl">
             <IoMdArrowRoundBack />
           </div>{" "}
-          Download more Songs
+          {downloadMore}
         </button>
       )}
 
       {downloadbtn && pl === false ? (
         <button
           onClick={fetchdlLink}
-          className="text-black font-bold text-lg hover:bg-[#3e8f5a] transition-all bg-[#1ED760] w-full p-2 rounded-full mt-4 flex justify-center items-center gap-1"
+          className="text-black font-bold text-lg hover:bg-[#3e8f5a]  transition-all bg-primary w-full p-2 rounded-full mt-4 flex justify-center items-center gap-1"
         >
-          <HiDownload />
-          <p>Download</p>
+          <div className="text-3xl">
+            <IconContext.Provider value={{ size: 22 }}>
+              <MdOutlineFileDownload />
+            </IconContext.Provider>
+          </div>
+
+          <p>{download}</p>
         </button>
       ) : null}
     </div>

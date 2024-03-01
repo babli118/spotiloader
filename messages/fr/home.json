@@ -1,1 +1,94 @@
-{"about":"À propos","aboutpara":"Si vous recherchez une méthode simple pour télécharger vos chansons et listes de lecture préférées depuis Spotify avec la meilleure qualité possible, ne cherchez pas plus loin – SpotifyLoader est là pour vous ! Cet outil convivial simplifie le processus, vous permettant de télécharger n'importe quelle chanson ou playlist Spotify en un seul clic. La meilleure partie? Vous n'avez rien à installer. Tout se passe de manière transparente dans votre navigateur Web. Profitez de la commodité des vitesses de téléchargement les plus rapides disponibles. Notre téléchargeur Spotify va encore plus loin, vous permettant de télécharger sans effort des chansons dans un fichier mp3 en un seul clic. C'est aussi simple que de coller le lien de la chanson, d'appuyer sur le bouton de téléchargement, et le tour est joué ! Ce qui nous distingue n'est pas seulement la vitesse, mais aussi la qualité MP3 exceptionnelle que nous proposons. Le temps de conversion des chansons est incroyablement rapide – quelques secondes seulement – vous permettant de convertir et de sauvegarder instantanément toutes les chansons de votre choix à une vitesse de téléchargement ultra-rapide. Et voici le meilleur : il n'y a pas de limite de tarif ! Téléchargez un nombre illimité de chansons sans aucune restriction, et le meilleur, c'est que tout est entièrement gratuit ! Dites adieu aux processus compliqués et aux limitations. Avec SpotifyLoader, profitez de la liberté de créer votre collection musicale sans effort et avec la meilleure qualité possible. Essayez-le aujourd'hui et découvrez la facilité de téléchargement de vos chansons et listes de lecture Spotify préférées comme jamais auparavant !","cntinfo":"Vous souhaitez nous contacter pour toute question, veuillez nous contacter en utilisant ce lien :","contact":"Contact","descripton":"SpotifyLoader est un téléchargeur de chansons Spotify qui vous permet de télécharger sans effort vos chansons, listes de lecture et albums Spotify préférés au format mp3 en un seul clic.","error":"URL de la chanson ou de la liste de lecture Spotify invalide. Veuillez saisir une URL valide et réessayer.","header":"Téléchargeur Spotify","howto":"Comment utiliser SpotifyLoader ?","pholder":"https://open.spotify.com/..../....","return":"Retour à la page d'accueil","search":"Recherche","SpotifyLoader - Spotify to MP3 Downloader Online":"SpotifyLoader - Téléchargeur Spotify vers MP3 en ligne","spotiinfo":"SpotifyLoader offre une solution pratique pour télécharger des chansons et des listes de lecture depuis Spotify, permettant aux utilisateurs de télécharger des pistes sans effort. SpotifyLoader garantit une expérience conviviale, rendant le processus de téléchargement de chansons depuis Spotify simple et efficace. En donnant la priorité aux considérations juridiques et éthiques, SpotifyLoader préserve la qualité et l'intégrité des pistes originales. Téléchargez vos chansons Spotify préférées en un seul clic pour une expérience d'écoute hors ligne fluide. Rapide, simple et conçu pour les mélomanes qui veulent écouter leur musique en déplacement !","step1":"Ouvrez votre application Spotify","step2":"Recherchez la chanson ou la playlist que vous souhaitez télécharger","step3":"Cliquez sur le bouton 3 \"points\". Le bouton ressemble à ceci \"...\"","step4":"Cliquez sur \"Partager\" puis sur le bouton \"Copier le lien\"","step5":"Collez le lien copié ci-dessus et appuyez sur \"Rechercher\"","step6":"Attendez la fin du traitement et cliquez sur le bouton \"Télécharger\"","tagline":"Téléchargez vos chansons et listes de lecture Spotify préférées avec notre téléchargeur efficace Spotify vers MP3 – convertissez et téléchargez rapidement des chansons pour une écoute hors ligne à tout moment et en tout lieu !","title":"Spotify Downloader - Téléchargeur de chansons et de listes de lecture Spotify en ligne","tut":"Voici un tutoriel simple sur la façon d'utiliser SpotifyLoader :","twdesc":"Téléchargez votre musique Spotify préférée sur MP3 avec SpotifyLoader, le téléchargeur Spotify vers MP3 en ligne"}
+{
+  "header": "Téléchargeur Spotify",
+  "tagline": "Téléchargez gratuitement des chansons et des listes de lecture Spotify sur MP3",
+  "faq": {
+    "heading": "FAQ pour le téléchargeur de chansons Spotify",
+    "questions": {
+      "0": {
+        "question": "Le téléchargeur de chansons Spotify est-il gratuit ?",
+        "answer": "Oui, utilisation totalement gratuite. \nVous pouvez télécharger autant de chansons et de listes de lecture Spotify au format mp3 que vous le souhaitez, gratuitement !"
+      },
+      "1": {
+        "answer": "Non, vous n'avez rien à payer, car notre service de téléchargement de chansons Spotify sur Mp3 est toujours gratuit ! \nNous prenons en charge tous les navigateurs modernes tels que Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, etc.",
+        "question": "Dois-je payer pour télécharger une chanson Spotify ?"
+      },
+      "2": {
+        "question": "Avez-vous besoin de Spotify Premium pour télécharger des chansons Spotify ?",
+        "answer": "Non. Avec SpotifyLoader, vous pouvez télécharger des chansons depuis Spotify sans compte premium. \nNotre outil fonctionne avec les comptes gratuits et premium, afin que chacun puisse profiter des avantages du téléchargement de musique pour une écoute hors ligne quand il le souhaite."
+      },
+      "3": {
+        "question": "Où sont enregistrés Spotify Mp3 après le téléchargement ?",
+        "answer": "Lorsque vous enregistrez de Spotify vers Mp3, les fichiers sont généralement enregistrés dans votre dossier « téléchargements ». \nDans les paramètres de votre navigateur, vous pouvez modifier et sélectionner manuellement le dossier de destination de vos fichiers."
+      },
+      "4": {
+        "question": "Quelle est la vitesse du téléchargeur Spotify ?",
+        "answer": "Le téléchargeur mp3 Spotify est extrêmement rapide, vous permettant de télécharger des chansons en quelques secondes. \nNotre technologie avancée garantit un processus de téléchargement transparent et fluide à chaque fois, afin que vous n'ayez jamais à vous soucier d'attendre votre musique."
+      },
+      "5": {
+        "question": "SpotifyLoader prend-il en charge le téléchargement de la liste de lecture Spotify ?",
+        "answer": "Oui. \nVous pouvez télécharger la liste de lecture Spotify depuis Spotify. \nCollez simplement le lien de la playlist et cliquez sur Télécharger. \nVous pouvez également télécharger des chansons et de la musique Spotify."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "L'utilisation de Spotify pour le téléchargement de mp3 présente de nombreux avantages.",
+        "points": {
+          "0": "Pour commencer, Spotify Downloader est entièrement gratuit et facile à utiliser. \nVous pouvez convertir un nombre illimité de chansons Spotify en mp3.",
+          "1": "De plus, notre téléchargeur Spotify vers mp3 vous permet de personnaliser votre musique de différentes manières afin que vous puissiez télécharger votre musique avec la meilleure qualité possible.",
+          "2": "Cet outil en ligne vous permet de télécharger rapidement et facilement n'importe quelle chanson, album ou liste de lecture Spotify depuis Spotify. \nMieux encore, c'est gratuit et facile à utiliser !",
+          "3": "Spotify song Downloader vous permet également d'enregistrer des chansons Spotify au format mp3 sur votre appareil.",
+          "4": "Donc, si vous êtes un mélomane qui souhaite un moyen simple de télécharger facilement tous ses morceaux préférés depuis Spotify, ne cherchez pas plus loin que notre téléchargeur de chansons Spotify en ligne !"
+        }
+      },
+      "1": {
+        "conclusion": "Alors pourquoi attendre ? \nEssayez-le dès aujourd'hui et découvrez par vous-même le téléchargement illimité de chansons Spotify ! \nDonc, si vous recherchez une solution tout-en-un pour tous vos besoins de téléchargement Spotify, ne cherchez pas plus loin que Spotify Downloader dès aujourd'hui !"
+      }
+    },
+    "heading": "Avantages de l'utilisation de Spotify Downloader Online"
+  },
+  "features": {
+    "c5heading": "100% GRATUIT, SÛR ET PROPRE",
+    "c3text": "Pas besoin de télécharger l'extension, essayez plutôt notre fonctionnalité PWA (Progressive Web Apps) pour une meilleure expérience.",
+    "c4heading": "TÉLÉCHARGEMENT SANS LIMITATION",
+    "c4text": "Téléchargez autant de Spotify et de listes de lecture que vous le souhaitez en utilisant le téléchargeur de chansons Spotify sans limitation et toujours gratuitement.",
+    "c5text": "Les chansons Spotify téléchargées au format mp3 avec SpotifyLoader sont totalement propres, sans aucun virus.",
+    "c6heading": "TOUTES LES PLATEFORMES PRISES EN CHARGE",
+    "c6text": "Nous prenons en charge toutes les plates-formes d'appareils. \nTéléchargez facilement des chansons Spotify, que vous utilisiez Windows, Mac ou Linux, Android, iPhone.",
+    "heading": "Quelles sont certaines des principales fonctionnalités du téléchargeur Spotify vers mp3 ?",
+    "c1text": "Avec une simple conversion en un clic, vous pouvez convertir et télécharger vos chansons Spotify préférées au format mp3 en un rien de temps.",
+    "c2text": "Prend en charge tous les navigateurs et appareils personnels tels que les téléphones, les ordinateurs et les tablettes.",
+    "c3heading": "APPLICATION WEB PROGRESSIVE",
+    "c1heading": "CONVERSION RAPIDE ET FACILE :",
+    "c2heading": "RAPIDE, GRATUIT ET FACILE À UTILISER"
+  },
+  "info": {
+    "text": "Donc, si vous souhaitez un moyen simple de télécharger des chansons, des albums et des listes de lecture depuis Spotify, ne cherchez pas plus loin que notre téléchargeur Spotify ! \nSon processus de conversion simple et rapide, son écoute sans publicité et sa sortie de haute qualité en font la solution parfaite pour tous vos besoins musicaux. \nEssayez-le aujourd'hui !",
+    "heading": "Spotify Downloader - Téléchargez des chansons, des albums et des listes de lecture depuis Spotify !"
+  },
+  "spotiinfo": "SpotifyLoader est un outil gratuit qui vous permet de télécharger des chansons, des albums et des listes de lecture Spotify au format MP3 en ligne. \nEnregistrez des chansons Spotify avec la meilleure qualité au format de fichier MP3. \nNotre téléchargeur de musique Spotify est entièrement gratuit, rapide et sécurisé. \nPas besoin d'installer d'applications, d'extensions ou de programmes, vous avez seulement besoin d'un lien Spotify Song ou Playlist à coller dans la zone de recherche sur le site Web SpotifyLoader Spotify Music Downloader et de télécharger le format de fichier MP3.",
+  "spdlQ": "Qu'est-ce que le téléchargeur Spotify ?",
+  "tut": "Voici un tutoriel simple pour télécharger des chansons Spotify :",
+  "step1": "Ouvrez votre application Spotify",
+  "step2": "Recherchez la chanson ou la playlist que vous souhaitez télécharger",
+  "step3": "Cliquez sur le bouton 3 \"points\". \nLe bouton ressemble à ceci \"...\"",
+  "step4": "Cliquez sur \"Partager\" puis sur le bouton \"Copier le lien\"",
+  "step5": "Collez le lien copié ci-dessus et appuyez sur \"Rechercher\"",
+  "step6": "Attendez la fin du traitement et cliquez sur le bouton \"Télécharger\"",
+  "pholder": "Collez le lien de la chanson ou de la liste de lecture Spotify ici",
+  "download": "Télécharger",
+  "error": "! \nURL Spotify invalide. \nVeuillez saisir une URL valide et réessayer.",
+  "downloadMore": "Télécharger plus de chansons",
+  "downloading": "Votre chanson est en cours de téléchargement...",
+  "return": "Retour à la page d'accueil",
+  "title": "Spotify Downloader : téléchargez des chansons et des listes de lecture Spotify sur MP3",
+  "descripton": "SpotifyLoader est un téléchargeur de chansons Spotify qui vous permet de télécharger gratuitement des chansons, de la musique et des listes de lecture Spotify au format mp3 en ligne.",
+  "twdesc": "Téléchargez votre musique Spotify préférée sur MP3 avec SpotifyLoader, le téléchargeur Spotify vers MP3 en ligne",
+  "about": "À propos",
+  "aboutpara": "Si vous recherchez une méthode simple pour télécharger vos chansons, albums et listes de lecture préférés depuis Spotify avec la meilleure qualité possible, ne cherchez pas plus loin – SpotifyLoader est là pour vous ! \nCet outil convivial simplifie le processus, vous permettant de télécharger n'importe quelle chanson ou playlist Spotify en un seul clic. \nLa meilleure partie? \nVous n'avez rien à installer. \nTout se passe de manière transparente dans votre navigateur Web. \nProfitez de la commodité des vitesses de téléchargement les plus rapides disponibles. \nNotre téléchargeur Spotify va encore plus loin, vous permettant de télécharger sans effort des chansons dans un fichier mp3 en un seul clic. \nC'est aussi simple que de coller le lien de la chanson, d'appuyer sur le bouton de téléchargement, et le tour est joué ! \nCe qui nous distingue n'est pas seulement la vitesse, mais aussi la qualité MP3 exceptionnelle que nous proposons. \nLe temps de conversion des chansons est incroyablement rapide – quelques secondes seulement – ​​vous permettant de convertir et de sauvegarder instantanément toutes les chansons de votre choix à une vitesse de téléchargement ultra-rapide. \nEt voici le meilleur : il n'y a pas de limite de tarif ! \nTéléchargez un nombre illimité de chansons sans aucune restriction, et le meilleur, c'est que tout est entièrement gratuit ! \nDites adieu aux processus compliqués et aux limitations. \nAvec SpotifyLoader, profitez de la liberté de créer votre collection musicale sans effort et avec la meilleure qualité possible. \nEssayez-le aujourd'hui et découvrez la facilité de téléchargement de vos chansons et listes de lecture Spotify préférées comme jamais auparavant !",
+  "cntinfo": "Vous souhaitez nous contacter pour toute question, veuillez nous contacter en utilisant ce lien :",
+  "contact": "Contact",
+  "search": "Recherche",
+  "howto": "Comment télécharger des chansons Spotify ?"
+}

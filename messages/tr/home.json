@@ -1,0 +1,94 @@
+{
+  "header": "Spotify İndirici",
+  "tagline": "Spotify Şarkılarını ve Çalma Listelerini MP3'e ücretsiz indirin",
+  "faq": {
+    "heading": "Spotify Şarkı İndiricisi için SSS",
+    "questions": {
+      "0": {
+        "question": "Spotify şarkı indiricisinin kullanımı ücretsiz mi?",
+        "answer": "Evet, kullanımı tamamen ücretsizdir. \nİstediğiniz kadar Spotify şarkısını ve çalma listesini tamamen ücretsiz olarak mp3'e indirebilirsiniz!"
+      },
+      "1": {
+        "answer": "Hayır, hiçbir şey için ödeme yapmanıza gerek yok çünkü Spotify şarkısını Mp3'e indirme hizmetimiz her zaman ücretsizdir! \nGoogle Chrome, Mozilla Firefox, Safari, Microsoft Edge vb. gibi tüm modern tarayıcıları destekliyoruz.",
+        "question": "Spotify şarkısını indirmek için ödeme yapmam gerekiyor mu?"
+      },
+      "2": {
+        "question": "Spotify şarkılarını indirmek için Spotify premium'a ihtiyacınız var mı?",
+        "answer": "Hayır. SpotifyLoader ile premium hesap olmadan Spotify'dan şarkı indirebilirsiniz. \nAracımız hem ücretsiz hem de premium hesaplarla çalışır, böylece herkes istediği zaman çevrimdışı dinlemek için müzik indirmenin avantajlarından yararlanabilir."
+      },
+      "3": {
+        "question": "Spotify Mp3 indirildikten sonra nereye kaydedilir?",
+        "answer": "Spotify'dan Mp3'e kaydettiğinizde dosyalar genellikle 'indirilenler' klasörünüze kaydedilir. \nTarayıcı ayarlarınızda, dosyalarınız için hedef klasörü değiştirebilir ve manuel olarak seçebilirsiniz."
+      },
+      "4": {
+        "question": "Spotify İndirici ne kadar hızlı?",
+        "answer": "Spotify mp3 indiricisi son derece hızlıdır ve şarkıları saniyeler içinde indirmenize olanak tanır. \nGelişmiş teknolojimiz her seferinde kesintisiz ve sorunsuz bir indirme işlemi sağlar, böylece müziğinizi beklemek konusunda asla endişelenmenize gerek kalmaz."
+      },
+      "5": {
+        "question": "SpotifyLoader Spotify Çalma Listesini İndirmeyi destekliyor mu?",
+        "answer": "Evet. \nSpotify çalma listesini Spotify'dan indirebilirsiniz. \nÇalma listesi bağlantısını yapıştırın ve İndir'i tıklayın. \nSpotify şarkılarını ve müziklerini de indirebilirsiniz."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "Spotify'ı mp3 indirici olarak kullanmanın birçok faydası vardır.",
+        "points": {
+          "0": "Başlangıç ​​olarak Spotify indiricisi tamamen ücretsiz ve kullanımı kolaydır. \nSınırsız Spotify şarkısını mp3'e dönüştürebilirsiniz.",
+          "1": "Ek olarak, Spotify'dan mp3'e indiricimiz, müziğinizi mümkün olan en yüksek kalitede indirebilmeniz için müziğinizi çeşitli şekillerde özelleştirmenize olanak tanır.",
+          "2": "Bu çevrimiçi araç, Spotify'dan herhangi bir Spotify şarkısını, albümünü veya çalma listesini hızlı ve kolay bir şekilde indirmenize olanak tanır. \nHepsinden iyisi, ücretsiz ve kullanımı kolaydır!",
+          "3": "Spotify şarkı İndirici ayrıca Spotify şarkılarını cihazınıza mp3 olarak kaydetmenize de olanak tanır.",
+          "4": "Dolayısıyla, Spotify'dan tüm favori parçalarını kolayca indirmenin basit bir yolunu isteyen bir müzik aşığıysanız, çevrimiçi Spotify Şarkı İndiricimizden başkasına bakmayın!"
+        }
+      },
+      "1": {
+        "conclusion": "Peki neden bekleyelim? \nBugün deneyin ve Spotify şarkılarının sınırsız indirilmesini kendiniz keşfedin! \nDolayısıyla, tüm Spotify indirme ihtiyaçlarınız için hepsi bir arada bir çözüm arıyorsanız, bugün Spotify Downloader'dan başkasına bakmayın!"
+      }
+    },
+    "heading": "Spotify Downloader Online'ı kullanmanın faydaları"
+  },
+  "features": {
+    "c5heading": "%100 ÜCRETSİZ, GÜVENLİ VE TEMİZ",
+    "c3text": "Uzantıyı indirmenize gerek yok, bunun yerine en iyi deneyim için PWA (Aşamalı Web Uygulamaları) özelliğimizi deneyin.",
+    "c4heading": "SINIRLAMA OLMADAN İNDİRİN",
+    "c4text": "Spotify şarkı indiricisini sınırlama olmadan ve her zaman ücretsiz kullanarak istediğiniz kadar Spotify ve çalma listesi indirin.",
+    "c5text": "SpotifyLoader ile mp3 olarak indirilen Spotify Şarkıları tamamen temiz ve virüssüzdür.",
+    "c6heading": "TÜM PLATFORMLAR DESTEKLENİR",
+    "c6text": "Tüm cihaz platformlarını destekliyoruz. \nWindows, Mac veya Linux, Android, iPhone kullanmanıza bakılmaksızın Spotify şarkılarını indirmek kolaydır.",
+    "heading": "Spotify'dan mp3'e İndiricinin en iyi özelliklerinden bazıları nelerdir?",
+    "c1text": "Tek tıklamayla basit bir dönüşümle favori Spotify şarkılarınızı anında mp3 formatına dönüştürebilir ve indirebilirsiniz.",
+    "c2text": "Tüm tarayıcıları ve telefon, bilgisayar ve tablet gibi kişisel cihazları destekler.",
+    "c3heading": "İLERLEMELİ WEB UYGULAMASI",
+    "c1heading": "HIZLI VE KOLAY DÖNÜŞÜM:",
+    "c2heading": "HIZLI ÜCRETSİZ VE KULLANIMI KOLAY"
+  },
+  "info": {
+    "text": "Spotify'dan şarkıları, albümleri ve çalma listelerini indirmenin kolay bir yolunu istiyorsanız Spotify İndiricimizden başkasına bakmayın! \nHızlı ve basit dönüştürme süreci, reklamsız dinleme ve yüksek kaliteli çıktı, onu tüm müzik ihtiyaçlarınız için mükemmel bir çözüm haline getiriyor. \nBugün bir deneyin!",
+    "heading": "Spotify İndirici - Spotify'dan şarkılar, albümler ve çalma listeleri indirin!"
+  },
+  "spotiinfo": "SpotifyLoader, Spotify şarkılarını, albümlerini ve çalma listelerini çevrimiçi olarak MP3 formatında indirmenize olanak tanıyan ücretsiz bir araçtır. \nSpotify şarkılarını en iyi kalitede MP3 dosya formatında kaydedin. \nSpotify Müzik İndiricimizin kullanımı tamamen ücretsizdir, hızlı ve güvenlidir. \nHerhangi bir uygulama, uzantı veya program yüklemenize gerek yok, yalnızca SpotifyLoader Spotify Müzik İndirici web sitesindeki Arama kutusuna yapıştırmak ve MP3 dosya formatını indirmek için bir Spotify Şarkısı veya Çalma Listesi bağlantısına ihtiyacınız var.",
+  "spdlQ": "Spotify İndirici nedir?",
+  "tut": "İşte Spotify şarkılarını indirmenin basit bir öğreticisi:",
+  "step1": "Spotify Uygulamanızı açın",
+  "step2": "İndirmek istediğiniz şarkıyı veya çalma listesini bulun",
+  "howto": "Spotify Şarkıları Nasıl İndirilir?",
+  "step3": "3 \"nokta\" düğmesine tıklayın. \nDüğme şuna benzer: \"...\"",
+  "step4": "\"Paylaş\" ve ardından \"Bağlantıyı Kopyala\" düğmesini tıklayın",
+  "step5": "Kopyalanan bağlantıyı yukarıya yapıştırın ve \"Ara\"ya basın",
+  "step6": "İşlemin bitmesini bekleyin ve \"İndir\" düğmesine tıklayın",
+  "pholder": "Spotify Şarkısını veya Çalma Listesi Bağlantısını Buraya Yapıştırın",
+  "download": "İndirmek",
+  "error": "! \nGeçersiz Spotify URL'si. \nLütfen geçerli bir URL girin ve tekrar deneyin.",
+  "downloadMore": "Daha Fazla Şarkı İndir",
+  "downloading": "Şarkınız Şimdi İndiriliyor...",
+  "return": "Ana sayfaya dön",
+  "title": "Spotify İndirici: Spotify Şarkılarını ve Çalma Listelerini MP3'e İndirin",
+  "descripton": "SpotifyLoader, Spotify şarkılarını, müziklerini ve çalma listelerini çevrimiçi olarak ücretsiz olarak mp3 olarak indirmenize olanak tanıyan bir Spotify Şarkı İndiricisidir.",
+  "twdesc": "Çevrimiçi Spotify'dan MP3'e indiricisi SpotifyLoader ile favori Spotify müziğinizi MP3'e indirin",
+  "about": "Hakkında",
+  "aboutpara": "Spotify'dan en sevdiğiniz şarkıları, albümleri ve çalma listelerini mümkün olan en yüksek kalitede indirmek için sorunsuz bir yöntem arıyorsanız, daha fazla kendinizi yormayın; SpotifyLoader size yardımcı olur! \nBu kullanıcı dostu araç, süreci basitleştirerek herhangi bir Spotify şarkısını veya çalma listesini tek bir tıklamayla indirmenize olanak tanır. \nEn iyi kısım? \nHiçbir şey yüklemenize gerek yok. \nWeb tarayıcınızda her şey sorunsuz bir şekilde gerçekleşir. \nMevcut en yüksek indirme hızlarının rahatlığının keyfini çıkarın. \nSpotify indiricimiz bunu bir adım daha ileri götürerek şarkıları tek tıklamayla zahmetsizce bir mp3 dosyasına indirmenize olanak tanır. \nŞarkı bağlantısını yapıştırmak, indirme düğmesine basmak kadar kolay ve işte! \nBizi farklı kılan sadece hız değil, sağladığımız olağanüstü MP3 kalitesidir. \nŞarkıların dönüştürme süresi inanılmaz derecede hızlıdır (sadece birkaç saniye), istediğiniz şarkıları süper yüksek bir indirme hızıyla anında dönüştürmenize ve kaydetmenize olanak tanır. \nVe işte en iyi kısmı: oran sınırı yok! \nSınırsız sayıda şarkıyı herhangi bir kısıtlama olmadan indirin ve en iyi yanı, tamamen ücretsiz olmasıdır! \nKarmaşık süreçlere ve sınırlamalara elveda deyin. \nSpotifyLoader ile müzik koleksiyonunuzu zahmetsizce ve mümkün olan en iyi kalitede oluşturma özgürlüğünün tadını çıkarın. \nBugün deneyin ve en sevdiğiniz Spotify şarkılarını ve çalma listelerini daha önce hiç olmadığı gibi indirmenin kolaylığını yaşayın!",
+  "cntinfo": "Herhangi bir sorunuz için bizimle iletişime geçmek istiyorsanız, lütfen bu bağlantıyı kullanarak bizimle bağlantı kurun:",
+  "contact": "Temas etmek",
+  "search": "Aramak"
+}

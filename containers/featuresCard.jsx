@@ -2,12 +2,18 @@ import React from "react";
 
 const FeaturesCard = ({ heading, text }) => {
   return (
-    <div className="bg-[#121212] w-[16rem] h-[20rem]  rounded-md text-center">
-      <div className="px-8 pt-10">
-        <p className="font-semibold  text-[#1ED760] mt-4 text-xl uppercase px-6 mx-8 ">
+    <div
+      style={{ background: "#41fc9c" }}
+      className="bg-accent w-[16rem] h-[18rem]  rounded-md text-center shadow-md"
+    >
+      <div className="px-8 pt-10 ">
+        <p
+          style={{ padding: "0px 10px" }}
+          className="font-medium  text-text mt-4 text-lg uppercase  mx-8 "
+        >
           {heading}
         </p>
-        <p className="mt-4 mx-4 mb-8">{text}</p>
+        <p className="mt-4 mx-4 mb-4 text-text text-base">{text}</p>
       </div>
     </div>
   );

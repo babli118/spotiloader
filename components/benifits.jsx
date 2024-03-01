@@ -1,49 +1,51 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 
 const Benifits = () => {
+  const t = useTranslations();
   return (
     <section
       id="about"
-      className="flex  flex-col items-center justify-center text-start w-[80vw] md:w-[60vw] mb-2"
+      className="flex  flex-col items-start justify-start text-start w-[85vw] md:w-[80vw] xl:w-[43vw] mb-2 "
     >
-      <h3 className="text-4xl text-start font-semibold text-[#1ED760] my-16">
-        Benefits of using the Spotify Downloader Online
+      <h3 className="text-3xl text-start font-medium text-text  ">
+        {t("benifits.heading")}
       </h3>{" "}
-      <div className="text-white text-base ">
+      <div className="text-text text-base ">
         <div>
-          <h3 className="mb-2 text-lg">
-            There are many benefits to using spotify to mp3 converter.
-          </h3>
-          <p className="my-6">
-            <span className="text-[#1ED760] font-semibold text-lg">1{")"}</span>
-            To start with, spotify downloader is completely free and easy to
-            use. You can convert unlimited spotify songs to mp3.
+          <h3 className=" text-lg mt-2">{t("benifits.content.0.title")}</h3>
+          <p className="my-2">
+            <span className="text-accent font-semibold text-base mr-2">
+              1{")"}
+            </span>
+            {t("benifits.content.0.points.0")}
           </p>
         </div>{" "}
-        <p className="my-6">
-          <span className="text-[#1ED760] font-semibold text-lg">2{")"}</span>
-          In addition, our mp3 downloader allow you to customize your music in a
-          number of different ways so that you can download your music at the
-          highest quality possible.
+        <p className="my-2">
+          <span className="text-accent font-semibold text-base mr-2">
+            2{")"}
+          </span>
+          {t("benifits.content.0.points.1")}
         </p>{" "}
-        <p className="my-6">
-          <span className="text-[#1ED760] font-semibold text-lg">3{")"}</span>
-          And finally, our spotify downloader service means you never have to
-          worry about waiting around for your songs and playlists - they&apos;ll
-          be ready and waiting for you the second you need them!
+        <p className="my-2">
+          <span className="text-accent font-semibold text-base mr-2">
+            3{")"}
+          </span>
+          {t("benifits.content.0.points.2")}
         </p>{" "}
-        <p className="my-6">
-          <span className="text-[#1ED760] font-semibold text-lg">4{")"}</span>
-          So if you&apos;re a music lover who wants a simple way to easily
-          download all their favorite tracks from Spotify, look no further than
-          our Spotify Downloader online!
+        <p className="my-2">
+          <span className="text-accent font-semibold text-base mr-2">
+            4{")"}
+          </span>
+          {t("benifits.content.0.points.3")}
         </p>{" "}
-        <p className="text-base mt-8">
-          So why wait? Try it out today and discover the world of music
-          downloading for yourself! And don&apos;t forget to tell your friends
-          about all the amazing benefits of using our tool - we&apos;re sure
-          they&apos;ll thank you for it!
-        </p>
+        <p className="my-2">
+          <span className="text-accent font-semibold text-base mr-2">
+            5{")"}
+          </span>
+          {t("benifits.content.0.points.4")}
+        </p>{" "}
+        <p className="text-base mt-8">{t("benifits.content.1.conclusion")}</p>
       </div>
     </section>
   );

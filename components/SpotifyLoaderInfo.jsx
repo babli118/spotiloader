@@ -1,10 +1,10 @@
 import React from "react";
 
-const SpotifyLoaderInfo = ({ spotiinfo }) => {
+const SpotifyLoaderInfo = ({ spotiinfo, spdlQ }) => {
   return (
-    <div className="text-whitetext-start mx-auto flex flex-col items-center mb-8 justify-center w-[80vw] md:w-[60vw] ">
-      <h2 className="text-4xl font-semibold text-[#1ED760]">SpotifyLoader</h2>
-      <p className="text-base  mt-6 text-white">{spotiinfo}</p>
+    <div className="text-start mx-auto flex flex-col items-start justify-start  mb-8 mt-4  w-[85vw] md:w-[80vw] xl:w-[43vw] ">
+      <h2 className="text-3xl font-medium text-text">{spdlQ}</h2>
+      <p className="text-base text-text  mt-4 leading-7">{spotiinfo}</p>
     </div>
   );
 };

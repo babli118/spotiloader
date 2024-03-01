@@ -2,19 +2,20 @@ import React, { useState, useEffect } from "react";
 import SongCard from "./SongCard";
 import getDlLink from "../utils/getDlLink.js";
 import { useRouter } from "next/navigation";
-const PlayListBlock = ({ playlist, resetState }) => {
+import { MdOutlineFileDownload } from "react-icons/md";
+import { TailSpin } from "react-loader-spinner";
+
+const PlayListBlock = ({ playlist, resetState, download }) => {
   const [songInfo, setSongInfo] = useState(null);
   const allTracks = playlist.tracks;
   const filteredTracks = allTracks.filter((track) => track.name.length > 0);
   const tracks = filteredTracks;
   const router = useRouter();
   const [downloadStatus, setDownloadStatus] = useState(
-    Array(tracks.length).fill("Download")
+    Array(tracks.length).fill(false)
   );
 
-  useEffect(() => {
-    console.log("");
-  }, [songInfo]);
+  useEffect(() => {}, [songInfo]);
 
   const fetchdlLink = async (track, index, e) => {
     const name = track.name + "SongAuthor" + track.artist;
@@ -23,18 +24,20 @@ const PlayListBlock = ({ playlist, resetState }) => {
     // Set download status to 'Downloading' for the specific track
     setDownloadStatus((prevStatus) => {
       const newStatus = [...prevStatus];
-      newStatus[index] = "Downloading..";
+      newStatus[index] = true;
       return newStatus;
     });
 
     const dlLinkInfo = await getDlLink(name, duration);
     const dlLink = dlLinkInfo.dlLink.url;
 
+    // Reset download status to false when download is complete
     setDownloadStatus((prevStatus) => {
       const newStatus = [...prevStatus];
-      newStatus[index] = "Download";
+      newStatus[index] = false;
       return newStatus;
     });
+
     // Redirect to the download link
     router.push(dlLink);
   };
@@ -47,34 +50,48 @@ const PlayListBlock = ({ playlist, resetState }) => {
           name={playlist.preview.description}
         />
       </div>
-      <div className="text-white pt-4">
+      <div className="text-text pt-4">
         {tracks.map((track, index) => (
           <div key={index}>
-            <div className="bg-[#121212] my-4 flex items-center justify-between px-4 rounded-md">
+            <div className="bg-primary/20 my-4 flex items-center justify-between  px-4 rounded-md   w-[85vw] md:w-[80vw] xl:w-[43vw]">
               <div className="flex justify-center items-center  ">
                 <div className=" flex">
                   <div className="pr-4 text-lg flex ">
                     <p>{index + 1}</p> <span>.</span>{" "}
                   </div>
                 </div>
-                <div className="flex flex-col justify-center py-4  ">
-                  <p className="md:text-lg text-lg text-[#1ED760] mr-2">
+                <div className="flex flex-col justify-center py-4   ">
+                  <p className="text-lg text-text font-semibold mr-2">
                     {track.name}
                   </p>
                   <p className="text-sm pr-4">{track.artist}</p>
                 </div>
               </div>
-              <div className="flex flex-col items-center justify-center">
+              <div
+                onClick={(e) => {
+                  fetchdlLink(track, index);
+                }}
+                disabled={downloadStatus[index]} // Here, we directly use the disabled attribute
+                className="flex flex-col items-center justify-center cursor-pointer w-[120px]   hover:bg-[#3e8f5a]  disabled:bg-[#3e8f5a] transition-all bg-primary rounded-md   "
+              >
                 <button
+                  disabled={downloadStatus[index]} // Here, we directly use the disabled attribute
                   id={index}
-                  onClick={(e) => {
-                    fetchdlLink(track, index);
-                  }}
-                  className="text-black flex items-center justify-center font-bold text-base sm:w-[130px] disabled:bg-[#3e8f5a] focus:bg-[#3e8f5a] hover:bg-[#3e8f5a] my-4 transition-all bg-[#1ED760] py-2 px-4 rounded-full"
-                  style={{ width: "120px" }} // Set a fixed width for the button
-                  disabled={downloadStatus[index] === "Downloading..."}
+                  className="flex items-center justify-center text-grey font-bold  text-black text-4xl  ml-2 transition-all py-2 px-4  "
                 >
-                  {downloadStatus[index]}
+                  {downloadStatus[index] ? (
+                    <TailSpin
+                      visible={true}
+                      height="24"
+                      width="20"
+                      color="#000000"
+                      ariaLabel="three-circles-loading"
+                    />
+                  ) : (
+                    <div className="flex flex-col justify-center items-center">
+                      <p className="sm:text-base text-sm">{download}</p>
+                    </div>
+                  )}
                 </button>
               </div>
             </div>

@@ -1,0 +1,94 @@
+{
+  "header": "Scaricatore di Spotify",
+  "tagline": "Scarica brani e playlist Spotify su MP3 gratuitamente",
+  "faq": {
+    "heading": "Domande frequenti su Spotify Song Downloader",
+    "questions": {
+      "0": {
+        "question": "Spotify Song Downloader è gratuito?",
+        "answer": "Sì, totalmente gratuito. \nPuoi scaricare tutti i brani e le playlist di Spotify in mp3 che desideri in modo completamente gratuito!"
+      },
+      "1": {
+        "answer": "No, non devi pagare nulla, perché il nostro servizio di download di brani Spotify in Mp3 è sempre gratuito! \nSupportiamo tutti i browser moderni come Google Chrome, Mozilla Firefox, Safari, Microsoft Edge ecc.",
+        "question": "Devo pagare per scaricare la canzone Spotify?"
+      },
+      "2": {
+        "question": "Hai bisogno di Spotify premium per scaricare brani Spotify?",
+        "answer": "No. Con SpotifyLoader puoi scaricare brani da Spotify senza un account premium. \nIl nostro strumento funziona sia con account gratuiti che premium, così chiunque può godere dei vantaggi di scaricare musica per ascoltarla offline ogni volta che lo desidera."
+      },
+      "3": {
+        "question": "Dove vengono salvati Spotify Mp3 dopo il download?",
+        "answer": "Quando salvi da Spotify a Mp3, i file vengono generalmente salvati nella cartella \"download\". \nNelle impostazioni del tuo browser, puoi modificare e selezionare manualmente la cartella di destinazione dei tuoi file."
+      },
+      "4": {
+        "question": "Quanto è veloce Spotify Downloader?",
+        "answer": "Il downloader mp3 di Spotify è estremamente veloce e ti consente di scaricare brani in pochi secondi. \nLa nostra tecnologia avanzata garantisce ogni volta un processo di download fluido e senza intoppi, così non dovrai mai preoccuparti di aspettare la tua musica."
+      },
+      "5": {
+        "question": "SpotifyLoader supporta il download della playlist Spotify?",
+        "answer": "SÌ. \nPuoi scaricare la playlist Spotify da Spotify. \nBasta incollare il collegamento alla playlist e fare clic su Scarica. \nPuoi anche scaricare brani e musica da Spotify."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "Ci sono molti vantaggi nell'usare Spotify per scaricare mp3.",
+        "points": {
+          "0": "Per cominciare, Spotify Downloader è completamente gratuito e facile da usare. \nPuoi convertire un numero illimitato di brani Spotify in mp3.",
+          "1": "Inoltre, il nostro downloader da Spotify a mp3 ti consente di personalizzare la tua musica in molti modi diversi in modo da poter scaricare la tua musica con la massima qualità possibile.",
+          "2": "Questo strumento online ti consente di scaricare rapidamente e facilmente qualsiasi brano, album o playlist Spotify da Spotify. \nMeglio ancora, è gratuito e facile da usare!",
+          "3": "Spotify song Downloader ti consente anche di salvare i brani Spotify su mp3 sul tuo dispositivo.",
+          "4": "Quindi, se sei un amante della musica e desideri un modo semplice per scaricare facilmente tutti i suoi brani preferiti da Spotify, non cercare oltre il nostro Spotify Song Downloader online!"
+        }
+      },
+      "1": {
+        "conclusion": "Allora perché aspettare? \nProvalo oggi e scopri tu stesso il download illimitato di brani Spotify! \nQuindi, se stai cercando una soluzione all-in-one per tutte le tue esigenze di download di Spotify, non cercare oltre Spotify Downloader oggi!"
+      }
+    },
+    "heading": "Vantaggi dell'utilizzo di Spotify Downloader Online"
+  },
+  "features": {
+    "c5heading": "100% GRATUITO, SICURO E PULITO",
+    "c3text": "Non è necessario scaricare l'estensione, prova invece la nostra funzionalità PWA (Progressive Web Apps) per la migliore esperienza.",
+    "c4heading": "SCARICA SENZA LIMITAZIONE",
+    "c4text": "Scarica tutti gli Spotify e le playlist che desideri utilizzando il downloader di brani Spotify senza limitazioni e sempre gratuito.",
+    "c5text": "I brani Spotify scaricati su mp3 con SpotifyLoader sono totalmente puliti senza alcun virus.",
+    "c6heading": "TUTTE LE PIATTAFORME SUPPORTATE",
+    "c6text": "Supportiamo tutte le piattaforme di dispositivi. \nScarica facilmente i brani Spotify indipendentemente dal fatto che utilizzi Windows, Mac o Linux, Android, iPhone.",
+    "heading": "Quali sono alcune delle funzionalità principali del downloader da Spotify a mp3?",
+    "c1text": "Con una semplice conversione con un clic, puoi convertire e scaricare le tue canzoni Spotify preferite in formato mp3 in un batter d'occhio.",
+    "c2text": "Supporta tutti i browser e dispositivi personali come telefoni, computer e tablet.",
+    "c3heading": "APP WEB PROGRESSIVA",
+    "c1heading": "CONVERSIONE VELOCE E FACILE:",
+    "c2heading": "VELOCE GRATUITO E FACILE DA USARE"
+  },
+  "info": {
+    "text": "Quindi, se desideri un modo semplice per scaricare brani, album e playlist da Spotify, non cercare oltre il nostro Spotify Downloader! \nIl suo processo di conversione semplice e veloce, l'ascolto senza pubblicità e l'output di alta qualità lo rendono la soluzione perfetta per tutte le tue esigenze musicali. \nProvatelo oggi!",
+    "heading": "Spotify Downloader: scarica brani, album e playlist da Spotify!"
+  },
+  "spotiinfo": "SpotifyLoader è uno strumento gratuito che ti consente di scaricare brani, album e playlist di Spotify in MP3 online. \nSalva brani Spotify con la migliore qualità in un formato di file MP3. \nIl nostro Spotify Music Downloader è completamente gratuito, veloce e sicuro. \nNon è necessario installare app, estensioni o programmi, è sufficiente un collegamento Spotify Song o Playlist da incollare nella casella di ricerca sul sito SpotifyLoader Spotify Music Downloader e scaricare il formato file MP3.",
+  "spdlQ": "Cos'è Spotify Downloader?",
+  "tut": "Ecco un semplice tutorial per scaricare brani Spotify:",
+  "step1": "Apri l'app Spotify",
+  "step2": "Trova il brano o la playlist che desideri scaricare",
+  "step3": "Fare clic sul pulsante 3 \"punti\". \nIl pulsante ha questo aspetto \"...\"",
+  "step4": "Fai clic su \"Condividi\" e poi sul pulsante \"Copia collegamento\".",
+  "step5": "Incolla il link copiato sopra e premi \"Cerca\"",
+  "step6": "Attendi il completamento dell'elaborazione e fai clic sul pulsante \"Download\".",
+  "pholder": "Incolla qui il collegamento al brano o alla playlist Spotify",
+  "download": "Scaricamento",
+  "error": "! \nURL Spotify non valido. \nInserisci un URL valido e riprova.",
+  "downloadMore": "Scarica più brani",
+  "downloading": "La tua canzone è in fase di download...",
+  "return": "Ritorna alla home page",
+  "title": "Spotify Downloader: scarica brani e playlist Spotify su MP3",
+  "descripton": "SpotifyLoader è uno Spotify Song Downloader che ti consente di scaricare gratuitamente brani, musica e playlist Spotify in mp3 online.",
+  "twdesc": "Scarica la tua musica Spotify preferita su MP3 con SpotifyLoader, il downloader online da Spotify a MP3",
+  "about": "Di",
+  "aboutpara": "Se stai cercando un metodo semplice per scaricare i tuoi brani, album e playlist preferiti da Spotify con la massima qualità possibile, non cercare oltre: SpotifyLoader ti copre! \nQuesto strumento intuitivo semplifica il processo, consentendoti di scaricare qualsiasi brano o playlist di Spotify con un solo clic. \nLa parte migliore? \nNon è necessario installare nulla. \nTutto avviene senza problemi all'interno del tuo browser web. \nGoditi la comodità delle velocità di download più elevate disponibili. \nIl nostro downloader Spotify fa un ulteriore passo avanti, consentendoti di scaricare facilmente brani in un file mp3 con un solo clic. \nÈ facile come incollare il collegamento del brano, premere il pulsante di download e voilà! \nCiò che ci distingue non è solo la velocità, ma l'eccezionale qualità MP3 che forniamo. \nIl tempo di conversione dei brani è incredibilmente rapido – pochi secondi – permettendoti di convertire e salvare istantaneamente tutti i brani che desideri a una velocità di download super veloce. \nEd ecco la parte migliore: non ci sono limiti di tariffa! \nScarica un numero illimitato di brani senza alcuna restrizione e la parte migliore è che è tutto completamente gratuito! \nDi' addio a processi e limitazioni complicati. \nCon SpotifyLoader, goditi la libertà di creare la tua raccolta musicale senza sforzo e con la migliore qualità possibile. \nProvalo oggi e sperimenta la facilità di scaricare i tuoi brani e playlist Spotify preferiti come mai prima d'ora!",
+  "cntinfo": "Vuoi metterti in contatto con noi per qualsiasi domanda, ti preghiamo di connetterti con noi utilizzando questo link:",
+  "contact": "Contatto",
+  "search": "Ricerca",
+  "howto": "Come scaricare brani Spotify?"
+}

@@ -1,0 +1,94 @@
+{
+  "header": "Trình tải xuống Spotify",
+  "tagline": "Tải xuống miễn phí các bài hát và danh sách phát trên Spotify sang MP3",
+  "faq": {
+    "heading": "Câu hỏi thường gặp về Trình tải xuống bài hát Spotify",
+    "questions": {
+      "0": {
+        "question": "Trình tải xuống bài hát Spotify có miễn phí sử dụng không?",
+        "answer": "Có, hoàn toàn miễn phí sử dụng. \nBạn có thể tải xuống bao nhiêu bài hát và danh sách phát Spotify xuống mp3 tùy thích hoàn toàn miễn phí!"
+      },
+      "1": {
+        "answer": "Không, bạn không phải trả bất kỳ khoản nào vì dịch vụ tải bài hát Spotify sang Mp3 của chúng tôi luôn miễn phí! \nChúng tôi hỗ trợ tất cả các trình duyệt hiện đại như Google Chrome, Mozilla Firefox, Safari, Microsoft Edge, v.v.",
+        "question": "Tôi có phải trả tiền để tải xuống bài hát Spotify không?"
+      },
+      "2": {
+        "question": "Bạn có cần Spotify trả phí để tải xuống các bài hát trên Spotify không?",
+        "answer": "Không. Với SpotifyLoader, bạn có thể tải xuống các bài hát từ Spotify mà không cần có tài khoản trả phí. \nCông cụ của chúng tôi hoạt động với cả tài khoản miễn phí và tài khoản trả phí, vì vậy bất kỳ ai cũng có thể tận hưởng những lợi ích của việc tải nhạc xuống để nghe ngoại tuyến bất cứ khi nào họ muốn."
+      },
+      "3": {
+        "question": "Spotify Mp3 được lưu ở đâu sau khi tải xuống?",
+        "answer": "Khi bạn lưu từ Spotify sang Mp3, các tệp thường được lưu vào thư mục 'tải xuống' của bạn. \nTrong cài đặt trình duyệt, bạn có thể thay đổi và chọn thủ công thư mục đích cho các tệp của mình."
+      },
+      "4": {
+        "question": "Trình tải xuống Spotify nhanh như thế nào?",
+        "answer": "Trình tải xuống mp3 Spotify cực kỳ nhanh, cho phép bạn tải xuống các bài hát trong vài giây. \nCông nghệ tiên tiến của chúng tôi đảm bảo quá trình tải xuống liền mạch và mượt mà mọi lúc, vì vậy bạn không bao giờ phải lo lắng về việc chờ đợi âm nhạc của mình."
+      },
+      "5": {
+        "question": "SpotifyLoader có hỗ trợ Tải xuống danh sách phát Spotify không?",
+        "answer": "Đúng. \nBạn có thể tải xuống danh sách phát Spotify từ Spotify. \nChỉ cần dán liên kết danh sách phát và nhấp vào Tải xuống. \nBạn cũng có thể tải xuống các bài hát và nhạc Spotify."
+      }
+    }
+  },
+  "benifits": {
+    "content": {
+      "0": {
+        "title": "Có rất nhiều lợi ích khi sử dụng Spotify để tải xuống mp3.",
+        "points": {
+          "0": "Để bắt đầu, trình tải xuống Spotify hoàn toàn miễn phí và dễ sử dụng. \nBạn có thể chuyển đổi các bài hát Spotify sang mp3 không giới hạn.",
+          "1": "Ngoài ra, trình tải xuống Spotify to mp3 của chúng tôi cho phép bạn tùy chỉnh nhạc của mình theo một số cách khác nhau để bạn có thể tải nhạc xuống với chất lượng cao nhất có thể.",
+          "2": "Công cụ trực tuyến này cho phép bạn tải xuống nhanh chóng và dễ dàng bất kỳ bài hát, album hoặc danh sách phát Spotify nào từ Spotify. \nĐiều tuyệt vời nhất là nó miễn phí và dễ sử dụng!",
+          "3": "Spotify song Downloader cũng cho phép bạn lưu các bài hát Spotify sang mp3 trên thiết bị của mình.",
+          "4": "Vì vậy, nếu bạn là người yêu âm nhạc và muốn một cách đơn giản để dễ dàng tải xuống tất cả các bản nhạc yêu thích của họ từ Spotify, thì không cần phải tìm đâu xa hơn Spotify Song Downloader trực tuyến của chúng tôi!"
+        }
+      },
+      "1": {
+        "conclusion": "Vậy tại sao phải chờ đợi? \nHãy dùng thử ngay hôm nay và khám phá khả năng tải xuống không giới hạn các bài hát Spotify cho chính bạn! \nVì vậy, nếu bạn đang tìm kiếm một giải pháp tất cả trong một cho tất cả các nhu cầu tải xuống Spotify của mình, thì không đâu khác ngoài Spotify Downloader ngay hôm nay!"
+      }
+    },
+    "heading": "Lợi ích của việc sử dụng Spotify Downloader Online"
+  },
+  "features": {
+    "c5heading": "MIỄN PHÍ 100%, AN TOÀN VÀ SẠCH SẼ",
+    "c3text": "Không cần tải xuống tiện ích mở rộng, thay vào đó hãy thử tính năng PWA (Ứng dụng web lũy tiến) của chúng tôi để có trải nghiệm tốt nhất.",
+    "c4heading": "TẢI XUỐNG KHÔNG GIỚI HẠN",
+    "c4text": "Tải xuống bao nhiêu Spotify và danh sách phát tùy thích bằng cách sử dụng trình tải xuống bài hát Spotify không giới hạn và luôn miễn phí.",
+    "c5text": "Các bài hát Spotify được tải xuống mp3 bằng SpotifyLoader hoàn toàn sạch và không có vi-rút.",
+    "c6heading": "TẤT CẢ CÁC NỀN TẢNG ĐƯỢC HỖ TRỢ",
+    "c6text": "Chúng tôi hỗ trợ tất cả các nền tảng thiết bị. \nDễ dàng tải xuống các bài hát Spotify bất kể bạn đang sử dụng Windows, Mac hay Linux, Android, iPhone.",
+    "heading": "Một số tính năng hàng đầu của Spotify to mp3 Downloader là gì?",
+    "c1text": "Với chuyển đổi đơn giản bằng một cú nhấp chuột, bạn có thể chuyển đổi và tải xuống các bài hát Spotify yêu thích của mình sang định dạng mp3 mà không mất thời gian.",
+    "c2text": "Hỗ trợ tất cả các trình duyệt và thiết bị cá nhân như điện thoại, máy tính và máy tính bảng.",
+    "c3heading": "ỨNG DỤNG WEB TIẾN BỘ",
+    "c1heading": "CHUYỂN ĐỔI NHANH CHÓNG VÀ DỄ DÀNG:",
+    "c2heading": "NHANH CHÓNG MIỄN PHÍ VÀ DỄ DÀNG SỬ DỤNG"
+  },
+  "info": {
+    "text": "Vì vậy, nếu bạn muốn tải xuống các bài hát, album và danh sách phát từ Spotify một cách dễ dàng, thì không cần phải tìm đâu xa hơn Spotify Downloader của chúng tôi! \nQuá trình chuyển đổi nhanh chóng và đơn giản, nghe không có quảng cáo và đầu ra chất lượng cao khiến nó trở thành giải pháp hoàn hảo cho mọi nhu cầu âm nhạc của bạn. \nHãy thử ngay hôm nay!",
+    "heading": "Spotify Downloader - Tải xuống các bài hát, album và danh sách phát từ Spotify!"
+  },
+  "spotiinfo": "SpotifyLoader là một công cụ miễn phí cho phép bạn tải xuống các bài hát, album và danh sách phát Spotify dưới dạng MP3 trực tuyến. \nLưu các bài hát Spotify với chất lượng tốt nhất ở định dạng tệp MP3. \nSpotify Music Downloader của chúng tôi hoàn toàn miễn phí sử dụng, nhanh chóng và an toàn. \nKhông cần cài đặt bất kỳ ứng dụng, tiện ích mở rộng hay chương trình nào bạn chỉ cần liên kết Bài hát Spotify hoặc Danh sách phát để dán vào hộp Tìm kiếm trên trang web SpotifyLoader Spotify Music Downloader và tải xuống định dạng tệp MP3.",
+  "spdlQ": "Trình tải xuống Spotify là gì?",
+  "tut": "Dưới đây là hướng dẫn đơn giản tải xuống các bài hát Spotify:",
+  "step1": "Mở ứng dụng Spotify của bạn",
+  "step2": "Tìm bài hát hoặc danh sách phát bạn muốn tải xuống",
+  "howto": "Làm cách nào để tải xuống bài hát Spotify?",
+  "step3": "Bấm vào nút 3 \"chấm\". \nNút trông như thế này \"...\"",
+  "step4": "Nhấp vào nút \"Chia sẻ\" và sau đó nhấp vào nút \"Sao chép liên kết\"",
+  "step5": "Dán liên kết đã sao chép ở trên và nhấn \"Tìm kiếm\"",
+  "step6": "Đợi quá trình xử lý kết thúc và nhấp vào nút \"Tải xuống\"",
+  "pholder": "Dán liên kết bài hát Spotify hoặc danh sách phát vào đây",
+  "download": "Tải xuống",
+  "error": "! \nUrl Spotify không hợp lệ. \nVui lòng nhập url hợp lệ và thử lại.",
+  "downloadMore": "Tải thêm bài hát",
+  "downloading": "Bài hát của bạn hiện đang được tải xuống...",
+  "return": "Trở về trang chủ",
+  "title": "Spotify Downloader: Tải bài hát và danh sách phát Spotify xuống MP3",
+  "descripton": "SpotifyLoader là Trình tải xuống bài hát Spotify cho phép bạn tải xuống miễn phí các bài hát, nhạc và danh sách phát trên Spotify dưới dạng mp3 trực tuyến.",
+  "twdesc": "Tải nhạc Spotify yêu thích của bạn xuống MP3 bằng SpotifyLoader, trình tải xuống Spotify sang MP3 trực tuyến",
+  "about": "Về",
+  "aboutpara": "Nếu bạn đang tìm kiếm một phương pháp dễ dàng để tải xuống các bài hát, album và danh sách phát yêu thích của mình từ Spotify với chất lượng cao nhất có thể thì không cần tìm đâu xa - SpotifyLoader đã giúp bạn! \nCông cụ thân thiện với người dùng này giúp đơn giản hóa quy trình, cho phép bạn tải xuống bất kỳ bài hát hoặc danh sách phát Spotify nào chỉ bằng một cú nhấp chuột. \nPhần tốt nhất? \nBạn không cần phải cài đặt bất cứ điều gì. \nMọi thứ diễn ra liền mạch trong trình duyệt web của bạn. \nTận hưởng sự tiện lợi của tốc độ tải xuống nhanh nhất hiện có. \nTrình tải xuống Spotify của chúng tôi tiến thêm một bước nữa, cho phép bạn dễ dàng tải các bài hát xuống tệp mp3 chỉ bằng một cú nhấp chuột. \nThật dễ dàng như dán liên kết bài hát, nhấn nút tải xuống và thì đấy! \nĐiều khiến chúng tôi khác biệt không chỉ là tốc độ mà còn là chất lượng MP3 vượt trội mà chúng tôi cung cấp. \nThời gian chuyển đổi bài hát cực kỳ nhanh chóng – chỉ vài giây – cho phép bạn chuyển đổi ngay lập tức và lưu bất kỳ bài hát nào bạn muốn với tốc độ tải xuống cực nhanh. \nVà đây là phần hay nhất: không có giới hạn tỷ lệ! \nTải xuống số lượng bài hát không giới hạn mà không có bất kỳ hạn chế nào và điều tuyệt vời nhất là tất cả đều hoàn toàn miễn phí! \nNói lời tạm biệt với các quy trình và hạn chế phức tạp. \nVới SpotifyLoader, bạn có thể thoải mái xây dựng bộ sưu tập nhạc của mình một cách dễ dàng và có chất lượng tốt nhất có thể. \nHãy dùng thử ngay hôm nay và trải nghiệm sự dễ dàng tải xuống các bài hát và danh sách phát Spotify yêu thích của bạn hơn bao giờ hết!",
+  "cntinfo": "Muốn liên hệ với chúng tôi nếu có bất kỳ thắc mắc nào, vui lòng kết nối với chúng tôi bằng cách sử dụng liên kết này:",
+  "contact": "Liên hệ",
+  "search": "Tìm kiếm"
+}

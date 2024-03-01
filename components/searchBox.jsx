@@ -7,8 +7,6 @@ import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
 import { useTranslations } from "next-intl";
-import { MdOutlineContentPaste } from "react-icons/md";
-import { FaWindows } from "react-icons/fa6";
 
 const SearchBox = () => {
   const [inputValue, setInputValue] = useState("");
@@ -30,11 +28,6 @@ const SearchBox = () => {
     const value = e.target.value;
     setInputValue(value);
     setIsClicked(true);
-  };
-  const handlePasteClick = () => {
-    navigator.clipboard.readText().then((pastedContent) => {
-      setInputValue(pastedContent);
-    });
   };
 
   const handleInputPaste = (e) => {
@@ -60,44 +53,44 @@ const SearchBox = () => {
   const handleSearchClick = async (e) => {
     e.preventDefault();
     setError(null);
-    setLoading(false);
-    setSongInfo("");
-    setPlayListInfo("");
+    setLoading(true); // Set loading to true initially
 
-    if (inputValue.startsWith("https://open.spotify.com/playlist/")) {
-      setLoading(true);
-      try {
-        setPlayListInfo("");
-        setError(null);
-        const playListInfo = await getPlayListInfo(inputValue);
-        setLoading(false);
+    try {
+      setSongInfo("");
+      setPlayListInfo("");
+
+      if (
+        inputValue.startsWith("https://open.spotify.com/playlist/") ||
+        inputValue.startsWith("https://open.spotify.com/album/") ||
+        inputValue.startsWith("https://open.spotify.com/artist/")
+      ) {
+        let playListInfo = null;
+
+        if (inputValue.startsWith("https://open.spotify.com/playlist/")) {
+          playListInfo = await getPlayListInfo(inputValue, "playlist");
+        } else if (inputValue.startsWith("https://open.spotify.com/album/")) {
+          playListInfo = await getPlayListInfo(inputValue, "album");
+        } else if (inputValue.startsWith("https://open.spotify.com/artist/")) {
+          playListInfo = await getPlayListInfo(inputValue, "artist");
+        }
+
         setPlayListInfo(playListInfo);
         scrollToSong();
-      } catch (error) {
-        setError("Something went Wrong. Please try again later");
-        setLoading(false);
-        return;
-      }
-    } else if (inputValue.startsWith("https://open.spotify.com/track/")) {
-      try {
-        setSongInfo("");
-        setError(null);
-        setLoading(true);
+      } else if (inputValue.startsWith("https://open.spotify.com/track/")) {
         const songInfo = await getSongInfo(inputValue);
-        setLoading(false);
         setDuration(songInfo.tracks[0].duration);
         setSongInfo(songInfo.preview);
         scrollToSong();
-      } catch (error) {
-        setError("Something went Wrong. Please try again later");
+      } else {
+        setError(
+          "Invalid Spotify URL. Please enter a valid URL and try again."
+        );
       }
-    } else {
-      setError(
-        "Invalid Spotify Song or Playlist url. Please enter a valid url and try again."
-      );
+    } catch (error) {
+      setError("Something went wrong. Please try again later.");
+    } finally {
+      setLoading(false); // Set loading to false after processing
     }
-
-    setLoading(false);
   };
   const resetState = () => {
     setSongInfo(null);
@@ -111,74 +104,53 @@ const SearchBox = () => {
   };
 
   return (
-    <div className="md:my-10 my-12  ">
-      <div className="flex flex-col justify-center content-center w-screen mt-4 md:mt-20 mb-6">
-        <div className="flex justify-center content-center">
-          <div className="flex flex-col justify-center content-center">
-            <h1 className="text-[#1ED760] text-center font-semibold text-4xl sm:text-5xl mb-4 sm:mb-8">
-              {t("header")}
-            </h1>
-            <p className="text-white hidden sm:block text-center font-medium  sm:font-semibold text-base mb-8 my-4 mx-6">
-              {t("tagline")}
-            </p>
-            <p className="text-white  sm:hidden text-center font-medium  sm:font-semibold text-base mb-8 my-4 mx-6">
-              Convert and download Spotify Songs and Playlists to MP3
-            </p>
-            <div className=" flex flex-col mx-auto  ">
-              <div className="flex flex-col sm:flex-row  mx-auto w-[85vw] max-w-[780px]">
-                <input
-                  className={`bg-[#121212] border-solid border-2 border-transparent focus:outline-none focus:border-white appearance-none text-white p-4 w-full rounded-md duration-50`}
-                  type="text"
-                  placeholder={"Paste Spotify Song or Playlist Link Here!"}
-                  required
-                  value={inputValue}
-                  autoComplete="off"
-                  onClick={handleInputChange}
-                  onPaste={handleInputPaste}
-                  onChange={handleInputValue}
-                />
+    <div className="  ">
+      <div className="flex flex-col justify-center content-center w-screen mt-10 mb-6">
+        <div className=" flex flex-col mx-auto  justify-center content-center">
+          <div className="flex flex-col md:flex-row  mx-auto  w-[85vw]  md:w-[60vw] lg:w-[40vw] xl:w-[38vw]  ">
+            <input
+              className={`bg-background  text-text border-4 border-solid border-primary  text-base outline-none focus:border-accent/60 transition-all  p-4 w-full rounded-md placeholder:font-medium placeholder:text-text/70 `}
+              type="text"
+              placeholder={t("pholder")}
+              title="Paste Spotify Song or Playlist Link Here!"
+              required
+              value={inputValue}
+              autoComplete="off"
+              onClick={handleInputChange}
+              onPaste={handleInputPaste}
+              onChange={handleInputValue}
+            />
 
-                <div className="flex">
-                  <button
-                    onClick={handleSearchClick}
-                    className="bg-[#1ED760] w-full relative mt-4 sm:mt-0 hover:scale-110  transition-all text-lg text-black font-bold px-4 py-3 mx-2 rounded-md"
-                  >
-                    {t("search")}
-                  </button>
-
-                  <div
-                    onClick={handlePasteClick}
-                    className="text-white absolute -left-20 top-2 border-2 border-white/30 rounded-full cursor-pointer hover:bg-blue-800/30 transition-all   "
-                  >
-                    <div className="flex justify-center items-center  p-2">
-                      <MdOutlineContentPaste />
-                      <p>Paste</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex mx-12 lg:mx-4 mt-2">
-                <p className="text-white  ">
-                  By using our service you accept our{" "}
-                  <Link className="text-[#A7A7A7] underline" href={"/tos"}>
-                    Terms of Service
-                  </Link>{" "}
-                  &{" "}
-                  <Link
-                    className="text-[#A7A7A7] underline"
-                    href={"/privacy-policy"}
-                  >
-                    Privacy Policy
-                  </Link>
-                </p>
-              </div>
-            </div>
-            <div className="text-center">
-              {error && (
-                <p className="text-red-500 mx-10 mt-2 "> {t("error")}</p>
-              )}
+            <div className="flex">
+              <button
+                onClick={handleSearchClick}
+                style={{ color: "#040409" }}
+                className="!bg-primary w-full relative mt-4 md:mt-0 hover:scale-105 md:ml-2 transition-all text-lg !text-text font-semibold px-4 py-2  rounded-md"
+              >
+                {t("download")}
+              </button>
             </div>
           </div>
+          <div className="flex mx-6  md:mx-4 mt-2">
+            <p className="text-text  ">
+              By using our service you accept our{" "}
+              <Link className="text-text/70 underline" href={"/tos"}>
+                Terms of Service
+              </Link>{" "}
+              &{" "}
+              <Link className="text-text/70 underline" href={"/privacy-policy"}>
+                Privacy Policy
+              </Link>
+              .
+            </p>
+          </div>
+        </div>
+        <div className="text-center">
+          {error && (
+            <p className=" mx-10 mt-2 font-semibold text-base text-[red] ">
+              {t("error")}
+            </p>
+          )}
         </div>
       </div>
       {loading === true ? (
@@ -208,6 +180,9 @@ const SearchBox = () => {
                 songInfo={songInfo}
                 resetState={resetState}
                 pl={false}
+                download={t("download")}
+                downloadMore={t("downloadMore")}
+                downloading={t("downloading")}
               />
             </div>
           </div>
@@ -215,9 +190,13 @@ const SearchBox = () => {
           ""
         )}
         {playListInfo ? (
-          <div className="flex flex-col justify-center content-center  mt-4 mx-10 lg:mx-0">
+          <div className="flex flex-col justify-center content-center  mt-4 md:mx-10 mx-4 lg:mx-0">
             <div className="flex content-center mx-auto justify-between">
-              <PlayListBlock resetState={resetState} playlist={playListInfo} />
+              <PlayListBlock
+                resetState={resetState}
+                playlist={playListInfo}
+                download={t("download")}
+              />
             </div>
           </div>
         ) : null}

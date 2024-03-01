@@ -10,8 +10,8 @@ const Info = () => {
   const t = useTranslations();
   return (
     <div className=" mt-10 flex flex-col gap-4 overflow-x-hidden items-center justify-center">
+      <SpotifyLoaderInfo spotiinfo={t("spotiinfo")} spdlQ={t("spdlQ")} />
       <HowToDownload />
-      <SpotifyLoaderInfo spotiinfo={t("spotiinfo")} />
       <Features />
       <Benifits />
       <FAQ />

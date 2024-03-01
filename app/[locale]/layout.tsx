@@ -6,6 +6,8 @@ require("dotenv").config();
 import { ReactNode } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import TaskBar from "../../components/taskBar";
+import Footer from "../../components/Footer";
 const roboto = Roboto({
   weight: ["400", "700", "500"],
   subsets: ["latin"],
@@ -29,7 +31,7 @@ export async function generateMetadata({
     author: "SpotifyLoader",
     manifest: "/manifest.webmanifest",
     twitter: {
-      title: t("SpotifyLoader - Spotify to MP3 Downloader Online"),
+      title: t("title"),
       card: "summary_large_image",
       description: t("twdesc"),
     },
@@ -39,7 +41,6 @@ export async function generateMetadata({
     alternates: {
       canonical: "/",
       languages: {
-        en: "/en",
         de: "/de",
         es: "/es",
         pt: "/pt",
@@ -48,6 +49,7 @@ export async function generateMetadata({
         ru: "/ru",
         nl: "/nl",
         ar: "/ar",
+        "x-default": "/",
       },
     },
   };
@@ -57,18 +59,23 @@ export default function RootLayout({ children, params: { locale } }) {
   if (!locales.includes(locale)) {
     locale = "en";
   }
+  unstable_setRequestLocale(locale);
   const messages = useMessages();
   return (
     <html lang={locale} className={roboto.className}>
       <NextIntlClientProvider locale={locale} messages={messages}>
         <body
           className={
-            "bg-black flex flex-col h-auto overflow-x-hidden  scroll-smooth   "
+            "bg-background1 flex flex-col h-auto overflow-x-hidden scroll-smooth text-black relative"
           }
         >
           <GoogleTagManager gtmId="GTM-TH35ND4D" />
-          <div className={roboto.className + "overflow-x-hidden"}>
+          <div
+            className={roboto.className + " overflow-x-hidden bg-background"}
+          >
+            <TaskBar locale={locale} />
             {children}
+            <Footer locale={locale} />
           </div>
         </body>
       </NextIntlClientProvider>

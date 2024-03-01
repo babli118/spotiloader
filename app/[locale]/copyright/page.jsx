@@ -1,17 +1,23 @@
 import React from "react";
-import TaskBar from "../../../components/taskBar";
-import Footer from "../../../components/Footer";
 import Link from "next/link";
+import ReturnBtn from "../../../containers/returnBtn";
+
+export const metadata = {
+  title: "Copyright Information - SpotifyLoader",
+  metadataBase: new URL("https://spotifyloader.com"),
+  alternates: {
+    canonical: "/copyright",
+  },
+};
 
 const Page = () => {
   return (
     <div className=" flex flex-col ">
-      <TaskBar />
-      <div className="mx-10 sm:mx-[12rem] md:mx-[15rem] lg:mx-[25rem]  ">
-        <h3 className="text-4xl  font-semibold  text-[#1ED760] my-10 text-center  ">
+      <div className="mx-auto w-[85vw] md:w-[80vw] xl:w-[43vw]   ">
+        <h3 className="text-4xl  font-semibold  text-primary my-10 text-center  ">
           COPYRIGHT - SPOTIFYLOADER
         </h3>
-        <div className="text-white ">
+        <div className="text-text">
           <p>
             {" "}
             ・ We respect the intellectual property rights of others. You may
@@ -36,7 +42,7 @@ const Page = () => {
             copyright infringement. Notifications should be e-mailed to
             <span> </span>
             <a
-              className="text-[#1ED760]"
+              className="text-primary"
               href="mailto:abuse_spotifyloader@proton.me"
             >
               abuse_spotifyloader@proton.me
@@ -117,17 +123,7 @@ const Page = () => {
             </p>
           </div>
         </div>
-        <div className="mt-10 transform  transition-all mx-auto items-center flex justify-center my-7 ">
-          <Link
-            href={"/"}
-            className="bg-[#1ED760] hover:bg-[#24974c] hover:scale-110   transition-all   text-lg text-black font-bold px-4 py-3   mx-2 rounded-md"
-          >
-            Return to homepage
-          </Link>
-        </div>
-      </div>
-      <div className="">
-        <Footer />
+        <ReturnBtn />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
   "start_url": "/",
   "name": "SpotifyLoader",
   "short_name": "SpotifyLoader",
-  "description": "Spotify Downloader - Spotify Songs and Playlists Downloader Online",
+  "description": "Spotify Downloader: Download Spotify Songs and Playlists to MP3",
   "icons": [
     {
       "src": "/icon-192x192.png",

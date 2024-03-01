@@ -1,0 +1,103 @@
+{
+  "about": "关于",
+  "aboutpara": "如果您正在寻找一种无忧无虑地从 Spotify 下载您喜爱的歌曲、专辑和播放列表的方法，并且希望以最高可能的质量下载，那么您不需要再继续寻找了 - SpotifyLoader 已为您提供了完美的解决方案！这款用户友好的工具简化了整个过程，让您只需点击一次即可下载任何 Spotify 歌曲或播放列表。最棒的部分？您无需安装任何东西。一切都在您的网络浏览器内无缝进行。享受最快的下载速度的便利。我们的 Spotify 下载器更进一步，使您能够轻松地将歌曲下载到 mp3 文件中，只需点击一次。只需粘贴歌曲链接，点击下载按钮，就可以了！我们与众不同的不仅仅是速度，还有我们提供的卓越 MP3 质量。歌曲的转换时间非常快 - 仅需几秒钟 - 让您可以立即转换并以超快的下载速度保存任何您想要的歌曲。而且最棒的是：没有速率限制！下载无限数量的歌曲，没有任何限制，而且最棒的是，这一切都是完全免费的！告别复杂的流程和限制。通过 SpotifyLoader，轻松构建您的音乐收藏，并以最佳质量享受自由。立即尝试，并体验从未有过的下载您最喜爱的 Spotify 歌曲和播放列表的便捷方式！",
+  "cntinfo": "想与我们联系进行任何查询，请使用以下链接与我们联系：",
+  "contact": "联系",
+  "error": "! 无效的 Spotify 链接。请输入有效的链接，然后重试。",
+  "header": "Spotify 下载器",
+  "howto": "如何下载 Spotify 歌曲？",
+  "pholder": "在此粘贴 Spotify 歌曲或播放列表链接",
+  "return": "返回首页",
+  "search": "搜索",
+  "download": "下载",
+  "downloading": "您的歌曲正在下载中...",
+  "downloadMore": "下载更多歌曲",
+  "spdlQ": "什么是 Spotify 下载器？",
+  "spotiinfo": "SpotifyLoader 是一个免费工具，允许您在线下载 Spotify 歌曲、专辑和播放列表的 MP3。以最佳质量保存 Spotify 歌曲，以 MP3 文件格式。我们的 Spotify 音乐下载器完全免费、快速且安全。无需安装任何应用程序、扩展或程序，您只需在 SpotifyLoader Spotify 音乐下载器网站的搜索框中粘贴 Spotify 歌曲或播放列表链接，即可下载 MP3 文件格式。",
+  "step1": "打开您的 Spotify 应用",
+  "step2": "找到您想要下载的歌曲或播放列表",
+  "step3": "点击三个“点”按钮。按钮看起来像这样“...”",
+  "step4": "点击“分享”，然后点击“复制链接”按钮",
+  "step5": "粘贴复制的链接并点击“搜索”",
+  "step6": "等待处理完成，然后点击“下载”按钮",
+  "tagline": "免费下载 Spotify 歌曲和播放列表到 MP3",
+  "title": "Spotify 下载器：下载 Spotify 歌曲和播放列表到 MP3",
+  "descripton": "SpotifyLoader 是一个 Spotify 歌曲下载器，允许您免费在线下载 Spotify 歌曲、音乐和播放列表的 MP3。",
+  "tut": "以下是一个简单的教程下载 Spotify 歌曲：",
+  "twdesc": "使用 SpotifyLoader，将您最喜爱的 Spotify 音乐下载为 MP3，这是在线 Spotify 到 MP3 下载器",
+
+  "features": {
+    "heading": "Spotify 到 mp3 下载器的一些顶级功能",
+    "c1heading": "快速简便的转换：",
+    "c1text": "只需简单的一键转换，您就可以在短时间内将您喜爱的 Spotify 歌曲转换为 mp3 格式下载。",
+
+    "c2heading": "快速、免费且易于使用",
+    "c2text": "支持所有浏览器和个人设备，如手机、电脑和平板电脑。",
+
+    "c3heading": "渐进式网络应用程序",
+    "c3text": "无需下载扩展，而是尝试我们的 PWA（渐进式网络应用程序）功能，以获得最佳体验。",
+
+    "c4heading": "无限制地下载",
+    "c4text": "使用 Spotify 歌曲下载器，您可以无限制地下载尽可能多的 Spotify 和播放列表，并且始终免费。",
+
+    "c5heading": "100% 免费、安全和干净",
+    "c5text": "使用 SpotifyLoader 下载的 Spotify 歌曲以 mp3 格式完全干净，没有任何病毒。",
+
+    "c6heading": "支持所有平台",
+    "c6text": "我们支持所有设备平台。无论您使用 Windows、Mac 还是 Linux、Android、iPhone，都可以轻松下载 Spotify 歌曲。",
+
+    "title": "Spotify 下载器 - 从 Spotify 下载歌曲、专辑和播放列表！",
+    "description": "因此，如果您想要一种简单的方法从 Spotify 下载歌曲、专辑和播放列表，那么不需要再寻找了，我们的 Spotify 下载器就是您的不二选择！其快速且简单的转换过程、无广告的收听以及高质量的输出使其成为您所有音乐需求的完美解决方案。今天就试试吧！"
+  },
+  "info": {
+    "heading": "Spotify 下载器 - 从 Spotify 下载歌曲、专辑和播放列表！",
+    "text": "因此，如果您想要一种简单的方法从 Spotify 下载歌曲、专辑和播放列表，那么不需要再寻找了，我们的 Spotify 下载器就是您的不二选择！其快速且简单的转换过程、无广告的收听以及高质量的输出使其成为您所有音乐需求的完美解决方案。今天就试试吧！"
+  },
+  "benifits": {
+    "heading": "使用 Spotify 下载器在线的好处",
+    "content": [
+      {
+        "title": "使用 Spotify 到 mp3 下载器有许多好处。",
+        "points": [
+          "首先，Spotify 下载器完全免费且易于使用。您可以将无限量的 Spotify 歌曲转换为 mp3。",
+          "此外，我们的 Spotify 到 mp3 下载器允许您以多种不同的方式自定义您的音乐，以便以最高的质量下载您的音乐。",
+          "这款在线工具让您可以快速轻松地从 Spotify 下载任何歌曲、专辑或播放列表。最重要的是，它是免费且易于使用的！",
+          "Spotify 歌曲下载器还允许您将 Spotify 歌曲保存为 mp3 格式在您的设备上。",
+          "因此，如果您是一个音乐爱好者，希望以简单的方式轻松下载所有来自 Spotify 的最喜爱的曲目，那么请不要再寻找其他工具了，我们的 Spotify 歌曲下载器在线就是您的最佳选择！"
+        ]
+      },
+      {
+        "conclusion": "那么为什么等待呢？今天就尝试一下，为自己发现无限下载 Spotify 歌曲！因此，如果您正在寻找一种满足您所有 Spotify 下载需求的一站式解决方案，那么不需要再寻找其他工具，立即使用 Spotify 下载器吧！"
+      }
+    ]
+  },
+  "faq": {
+    "heading": "Spotify 歌曲下载器的常见问题解答",
+    "questions": [
+      {
+        "question": "Spotify 歌曲下载器是否免费使用？",
+        "answer": "是的，完全免费使用。您可以完全免费下载尽可能多的 Spotify 歌曲和播放列表到 mp3！"
+      },
+      {
+        "question": "我需要支付费用来下载 Spotify 歌曲吗？",
+        "answer": "不，您不必支付任何费用，因为我们的 Spotify 歌曲下载到 Mp3 服务始终是免费的！我们支持所有现代浏览器，如 Google Chrome、Mozilla Firefox、Safari、Microsoft Edge 等。"
+      },
+      {
+        "question": "我需要 Spotify premium 才能下载 Spotify 歌曲吗？",
+        "answer": "不需要。使用 SpotifyLoader，您可以在没有高级账户的情况下从 Spotify 下载歌曲。我们的工具适用于免费和高级账户，因此任何人都可以在需要时享受下载音乐以进行离线收听的好处。"
+      },
+      {
+        "question": "下载的 Spotify Mp3 文件保存在哪里？",
+        "answer": "当您将 Spotify 保存到 Mp3 时，文件通常保存在“下载”文件夹中。在浏览器设置中，您可以更改并手动选择文件的目标文件夹。"
+      },
+      {
+        "question": "Spotify 下载器有多快？",
+        "answer": "Spotify mp3 下载器非常快速，可以在几秒钟内下载歌曲。我们先进的技术确保每次下载都是无缝和顺畅的，因此您永远不必担心等待音乐。"
+      },
+      {
+        "question": "SpotifyLoader 是否支持下载 Spotify 播放列表？",
+        "answer": "是的。您可以从 Spotify 下载 Spotify 播放列表。只需粘贴播放列表链接并单击下载。您还可以下载 Spotify 歌曲和音乐。"
+      }
+    ]
+  }
+}

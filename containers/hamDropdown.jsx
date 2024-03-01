@@ -1,95 +1,289 @@
 "use client";
-import Link from "next/link";
 import React from "react";
-import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
+import NavLink from "../containers/NavLink.jsx";
 
-import { useRouter, usePathname } from "../navigation.js";
-
-const HamDropdown = ({ locale }) => {
-  const router = useRouter();
-  const pathname = usePathname();
+const HamDropdown = ({ locale, pathname }) => {
   const [showOptions, setShowOptions] = useState(false);
 
-  const handleChangeLanguage = (newLocale) => {
-    router.push(pathname, { locale: newLocale });
-  };
-  const t = useTranslations();
   return (
-    <div className="mx-4 bg-[#121212] rounded-lg  transition-all  ">
-      <div className="flex flex-col gap-2   ">
-        <Link
-          className=" text-[#1ED760] border-top-2 text-xl mt-2  mx-4 px-4 font-semibold transition-all "
-          href={"https://spotifyloader.com"}
-        >
-          {t("header")}
-        </Link>
-        <Link className="    text-xl  mx-4 px-4  transition-all " href="/about">
-          {t("about")}
-        </Link>
-        <Link
-          className="     text-xl  mx-4 px-4 transition-all "
-          href="/contact"
-        >
-          {t("contact")}
-        </Link>
-        <Link
-          className="     text-xl  mx-4 px-4   transition-all "
-          href="/copyright"
-        >
-          Copyright
-        </Link>
-      </div>
-      <div>
-        <div
-          onClick={() => setShowOptions(!showOptions)}
-          className="flex  gap-1 cursor-pointer  text-xl  mx-4 px-4 rounded-md items-center duration-50 hover:text-white transition-all "
-        >
-          <button className=" transition-all py-2   font-bold ">
-            Language
-          </button>
-          <div className=" mt-2 ml-1 text-base">
-            {showOptions ? <FaAngleUp /> : <FaAngleDown />}
-          </div>
+    <div className="mx-8  rounded-lg  transition-all  lg:hidden  ">
+      <div className="bg-white lg:hidden transition-all flex flex-col justify-center items-center mx-auto px-4 w-[85vw] md:w-[80vw] xl:w-[50vw]">
+        <div className="flex flex-col gap-2 w-full justify-center items-center">
+          <NavLink
+            c={true}
+            p="0.1"
+            href={"/"}
+            locale={locale}
+            name="Spotify Downlader"
+          />
         </div>
-        {showOptions && (
-          <div className=" -mt-2 shadow-lg shadow-black  bottom w-[300px] mx-auto left-10 transition-all  bg-[#121212] rounded-md">
-            <div className="py-1 flex  flex-col transition-all items-center justify-center">
+
+        <div className="flex flex-col  w-full ">
+          <div onClick={() => setShowOptions(!showOptions)}>
+            <div
+              style={{
+                marginBottom: "1rem",
+                marginTop: "0.5rem",
+                background: "#1ED760",
+              }}
+              className="flex  gap-2  cursor-pointer  text-text text-base font-medium  rounded-md items-center duration-50 transition-all "
+            >
               <button
-                className={`mt-2 block px-2 py-2 text-left text-sm font-semibold `}
-                onClick={() => handleChangeLanguage("en")}
+                style={{ padding: "2px 0px 2px 8px" }}
+                className=" transition-all      "
               >
-                English
+                Language
               </button>
-              <button
-                className={`block px-4 py-2 text-left text-sm font-semibold   `}
-                onClick={() => handleChangeLanguage("de")}
-              >
-                Deutsch
-              </button>
-              <button
-                className={`block px-4 py-2 text-left text-sm font-semibold`}
-                onClick={() => handleChangeLanguage("es")}
-              >
-                Español
-              </button>
-              <button
-                className={`block px-4 py-2 text-left text-sm font-semibold`}
-                onClick={() => handleChangeLanguage("pt")}
-              >
-                português
-              </button>
-              <button
-                className={`block px-4 py-2 text-left text-sm font-semibold`}
-                onClick={() => handleChangeLanguage("id")}
-              >
-                indonesian
-              </button>
+              <div style={{ marginTop: "5px" }} className="  text-base">
+                {showOptions ? <FaAngleUp /> : <FaAngleDown />}
+              </div>
             </div>
           </div>
-        )}
+          {showOptions && (
+            <div className="flex flex-col ">
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"en"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span className="text-base ">English</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"de"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base ">
+                    <span>Deutsch</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"es"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base ">
+                    <span>Español</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"pt"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>português</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"id"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>indonesian</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"it"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Italian</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"nl"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Dutch</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"tr"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Türkçe</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"ar"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Arabic</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"vi"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Vietnamese</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"ru"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>россия</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"hi"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Hindi</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"zh"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base ">
+                    <span>Chinese</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"ja"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base ">
+                    <span>Japanese</span>
+                    <hr
+                      style={{ color: "rgb(242 236 236 / 0.4)" }}
+                      className=" w-full h-2"
+                    />
+                  </span>
+                }
+              />
+              <NavLink
+                c={true}
+                p="0.1"
+                locale={"th"}
+                href={pathname}
+                style={{ padding: "0.2rem 0.4rem" }}
+                name={
+                  <span className="text-base  ">
+                    <span>Thai</span>
+                  </span>
+                }
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
