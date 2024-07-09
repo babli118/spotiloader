@@ -81,10 +81,10 @@ export default function RootLayout({ children, params: { locale } }) {
         >
           {/* <GoogleAdSense publisherId="pub-8487155941342821" />
           <GoogleTagManager gtmId="GTM-TH35ND4D" /> */}
-          {/* <Script
+          <script
             type="text/javascript"
-            src="//lockupaccede.com/8a/06/5e/8a065e7d02c958215d7363865fa2adef.js"
-          ></Script> */}
+            src="//pl22734743.highrevenuenetwork.com/b4/2c/e3/b42ce3725f64d46e4be70e10ac38fc11.js"
+          ></script>
           <div
             className={roboto.className + " overflow-x-hidden bg-background"}
           >

@@ -7,6 +7,7 @@ import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
 import { useTranslations } from "next-intl";
+import Script from "next/script";
 import AdComponent from "../containers/AdComponent.tsx";
 
 const SearchBox = () => {
@@ -155,9 +156,7 @@ const SearchBox = () => {
           )}
         </div>
       </div>
-      {/* <div className="flex sm:hidden justify-center items-center  w-[85vw] md:w-[60vw] xl:w-[43vw] mx-auto ">
-        <div className="bg-text h-[200px] w-full"></div>
-      </div> */}
+
       {loading === true ? (
         <div className="flex flex-col justify-center content-center w-[100vw]  mt-10">
           <div className="flex content-center mx-auto justify-between">

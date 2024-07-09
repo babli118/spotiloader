@@ -6,18 +6,15 @@ type Props = {
   children: ReactNode;
 };
 
-declare global {
-  interface Window {
-    adsbygoogle?: any | any[];
-  }
-}
-
 const AdComponent = ({ children }: Props) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   useEffect(() => {
     try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
+      <script
+        type="text/javascript"
+        src="//pl22734743.highrevenuenetwork.com/b4/2c/e3/b42ce3725f64d46e4be70e10ac38fc11.js"
+      ></script>;
     } catch (err) {
       console.error(err);
     }
