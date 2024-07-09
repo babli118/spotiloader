@@ -40,10 +40,7 @@ const SongCard = ({
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <div
-        style={{ background: "rgb(128 128 128 / 0.2)" }}
-        className=" text-text pt-4 py-2 px-4 rounded-md flex flex-col justify-center shadow-md"
-      >
+      <div className=" text-text bg-text/10 pt-4 py-2 px-4 rounded-md flex flex-col justify-center shadow-md">
         <div className="flex justify-center items-center w-[60vw] sm:w-[40vw] md:w-[20vw] lg:w-[15vw] mx-auto">
           <Image
             className="rounded-md"
@@ -51,10 +48,11 @@ const SongCard = ({
             width={300}
             height={200}
             alt="song cover image"
+            priority={true}
           />
         </div>
         <h3 className="text-xl font-bold mt-4">{song.title}</h3>
-        <h3 className="text-md mt">{name ? name : song.artist}</h3>
+        <h3 className="text-md mt font-medium">{name ? name : song.artist}</h3>
       </div>
 
       {loading && (

@@ -6,7 +6,7 @@ const Benifits = () => {
   return (
     <section
       id="about"
-      className="flex  flex-col items-start justify-start text-start w-[85vw] md:w-[80vw] xl:w-[43vw] mb-2 "
+      className="flex  flex-col items-start justify-start text-start w-[85vw] md:w-[60vw] xl:w-[43vw] mb-2 "
     >
       <h3 className="text-3xl text-start font-medium text-text  ">
         {t("benifits.heading")}

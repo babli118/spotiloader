@@ -5,7 +5,7 @@ const FAQ = () => {
   const t = useTranslations();
 
   return (
-    <div className="flex flex-col  mx-auto items-start justify-start text-start w-[85vw] md:w-[80vw] xl:w-[43vw] my-10">
+    <div className="flex flex-col  mx-auto items-start justify-start text-start w-[85vw] md:w-[60vw] xl:w-[43vw] my-10">
       <h3 className="text-3xl text-start font-medium text-text mb-8">
         {t("faq.heading")}
       </h3>

@@ -4,7 +4,7 @@ import FootLink from "../containers/footLink.jsx";
 const Footer = ({ locale }) => {
   return (
     <div className="items-centre mt-10 bg-background border-t-text/10 border-t-2 flex flex-col justify-center items-center ">
-      <div className="w-[85vw] md:w-[80vw] xl:w-[43vw]">
+      <div className="w-[85vw] md:w-[60vw] xl:w-[43vw]">
         <div className=" flex justify-center items-center   mx-0  pt-4  sm:gap-4 text-sm text-white ">
           <FootLink name={"About"} href={"/about"} locale={locale} />
           <FootLink

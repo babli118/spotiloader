@@ -11,7 +11,7 @@ const HowToDownload = () => {
   return (
     <section
       id="use"
-      className="text-white scroll-smooth text-start  flex flex-col  mx-auto w-[85vw] md:w-[80vw] xl:w-[43vw]"
+      className="text-white scroll-smooth text-start  flex flex-col  mx-auto w-[85vw] md:w-[60vw] xl:w-[43vw]"
     >
       <h3 className="text-3xl text-text font-medium text-start  mb-4 ">
         {t("howto")}

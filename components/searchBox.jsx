@@ -7,6 +7,7 @@ import SongCard from "./SongCard";
 import { ThreeCircles } from "react-loader-spinner";
 import PlayListBlock from "./PlayListBlock.jsx";
 import { useTranslations } from "next-intl";
+import AdComponent from "../containers/AdComponent.tsx";
 
 const SearchBox = () => {
   const [inputValue, setInputValue] = useState("");
@@ -145,6 +146,7 @@ const SearchBox = () => {
             </p>
           </div>
         </div>
+        <div id="container-b9c85e62862826641de05d08f073473c"></div>
         <div className="text-center">
           {error && (
             <p className=" mx-10 mt-2 font-semibold text-base text-[red] ">
@@ -153,6 +155,9 @@ const SearchBox = () => {
           )}
         </div>
       </div>
+      {/* <div className="flex sm:hidden justify-center items-center  w-[85vw] md:w-[60vw] xl:w-[43vw] mx-auto ">
+        <div className="bg-text h-[200px] w-full"></div>
+      </div> */}
       {loading === true ? (
         <div className="flex flex-col justify-center content-center w-[100vw]  mt-10">
           <div className="flex content-center mx-auto justify-between">
@@ -190,7 +195,7 @@ const SearchBox = () => {
           ""
         )}
         {playListInfo ? (
-          <div className="flex flex-col justify-center content-center  mt-4 md:mx-10 mx-4 lg:mx-0">
+          <div className="flex flex-col justify-center content-center  mt-4 sm:mx-10 mx-2 lg:mx-0">
             <div className="flex content-center mx-auto justify-between">
               <PlayListBlock
                 resetState={resetState}

@@ -7,7 +7,7 @@ const Features = ({ heading }) => {
   return (
     <section
       id="features"
-      className="text-white text-start mx-auto flex flex-col items-center justify-center w-[85vw] md:w-[80vw] xl:w-[43vw] mb-8  "
+      className="text-white text-start mx-auto flex flex-col items-center justify-center w-[85vw] md:w-[60vw] xl:w-[43vw] mb-8  "
     >
       <h3 className="text-3xl font-medium text-text">
         {t("features.heading")}

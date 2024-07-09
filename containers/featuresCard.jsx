@@ -3,7 +3,11 @@ import React from "react";
 const FeaturesCard = ({ heading, text }) => {
   return (
     <div
-      style={{ background: "#41fc9c" }}
+      style={{
+        background: "#41fc9c",
+        paddingLeft: "14px",
+        paddingRight: "14px",
+      }}
       className="bg-accent w-[16rem] h-[18rem]  rounded-md text-center shadow-md"
     >
       <div className="px-8 pt-10 ">
